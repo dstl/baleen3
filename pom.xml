@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.3.4.RELEASE</version>
+  </parent>
+
+  <groupId>uk.gov.dstl</groupId>
+  <artifactId>baleen</artifactId>
+  <version>3.0.0</version>
+
+  <name>Baleen 3</name>
+  <description>Baleen 3 is a tool for building and running pipelines using the Annot8 data processing framework</description>
+  <inceptionYear>2020</inceptionYear>
+  <url>https://github.com/dstl/baleen3</url>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <organization>
+    <name>Dstl</name>
+    <url>http://www.dstl.gov.uk</url>
+  </organization>
+
+  <developers>
+    <developer>
+      <name>James Baker</name>
+      <organization>Dstl</organization>
+    </developer>
+    <developer>
+      <name>Stuart Hendren</name>
+      <organization>Committed</organization>
+    </developer>
+  </developers>
+
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/dstl/baleen3/issues</url>
+  </issueManagement>
+
+  <scm>
+    <url>http://github.com/dstl/baleen3</url>
+    <connection>scm:git:git://github.com/dstl/baleen3.git</connection>
+  </scm>
+
+  <properties>
+    <java.version>11</java.version>
+
+    <annot8.version>1.0</annot8.version>
+    <frontend-maven-plugin.version>1.10.0</frontend-maven-plugin.version>
+    <frontend-src-dir>${project.basedir}/src/main/app</frontend-src-dir>
+    <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
+    <node.version>v12.3.1</node.version>
+    <typescript-generator-maven-plugin.version>2.26.723</typescript-generator-maven-plugin.version>
+    <yarn.version>v1.22.4</yarn.version>
+  </properties>
+
+  <dependencies>
+    <!-- Spring Boot -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <!-- Open API -->
+    <dependency>
+      <groupId>org.springdoc</groupId>
+      <artifactId>springdoc-openapi-ui</artifactId>
+      <version>1.4.8</version>
+    </dependency>
+
+    <!-- JSON -->
+    <dependency>
+      <groupId>com.github.victools</groupId>
+      <artifactId>jsonschema-generator</artifactId>
+      <version>4.16.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.johnzon</groupId>
+      <artifactId>johnzon-mapper</artifactId>
+      <version>1.2.8</version>
+    </dependency>
+
+    <!-- Annot8 -->
+    <dependency>
+      <groupId>io.annot8</groupId>
+      <artifactId>annot8-api</artifactId>
+      <version>${annot8.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.annot8</groupId>
+      <artifactId>annot8-common-components</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.annot8</groupId>
+      <artifactId>annot8-conventions</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.annot8</groupId>
+      <artifactId>annot8-reference-implementation</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.annot8</groupId>
+      <artifactId>annot8-implementations-support</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.annot8</groupId>
+      <artifactId>annot8-pipeline-implementation</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.annot8</groupId>
+      <artifactId>annot8-common-serialization</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+
+    <!-- Other -->
+    <dependency>
+      <groupId>io.github.classgraph</groupId>
+      <artifactId>classgraph</artifactId>
+      <version>4.8.90</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>29.0-jre</version>
+    </dependency>
+
+    <!-- Testing -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+
+      <!-- Exclude JUnit 4 -->
+      <exclusions>
+        <exclusion>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.junit.vintage</groupId>
+          <artifactId>junit-vintage-engine</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <dependency>
+      <groupId>io.annot8</groupId>
+      <artifactId>annot8-components-geo</artifactId>
+      <version>1.0.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.annot8</groupId>
+      <artifactId>annot8-components-print</artifactId>
+      <version>1.0.0</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <layout>ZIP</layout>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <forkCount>0</forkCount>
+        </configuration>
+      </plugin>
+
+      <!-- Add Header and Licence -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>license-maven-plugin</artifactId>
+        <version>2.0.0</version>
+        <configuration>
+          <licenseName>apache_v2</licenseName>
+          <roots>
+            <root>src/main/java</root>
+            <root>src/test/java</root>
+            <root>src/main/app/src</root>
+          </roots>
+          <extraExtensions>
+            <tsx>java</tsx>
+          </extraExtensions>
+
+          <excludeTransitiveDependencies>true</excludeTransitiveDependencies>
+
+          <outputDirectory>${pom.basedir}</outputDirectory>
+        </configuration>
+
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>add-third-party</goal>
+
+              <!-- To add headers to all files on every build, uncomment the following -->
+              <!-- Can also be run manually with mvn license:update-file-header -->
+              <!-- <goal>update-file-header</goal> -->
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- Front End Build -->
+      <plugin>
+        <groupId>cz.habarta.typescript-generator</groupId>
+        <artifactId>typescript-generator-maven-plugin</artifactId>
+        <version>${typescript-generator-maven-plugin.version}</version>
+        <executions>
+          <execution>
+            <id>generate</id>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+            <phase>process-classes</phase>
+          </execution>
+        </executions>
+        <configuration>
+          <jsonLibrary>jsonb</jsonLibrary>
+          <optionalProperties>useSpecifiedAnnotations</optionalProperties>
+          <optionalAnnotations>
+            <annotation>javax.annotation.Nullable</annotation>
+          </optionalAnnotations>
+          <optionalPropertiesDeclaration>questionMark</optionalPropertiesDeclaration>
+          <classPatterns>
+            <pattern>uk.gov.dstl.baleen.controllers.rest.*</pattern>
+            <pattern>uk.gov.dstl.baleen.logging.BaleenLogEntry</pattern>
+            <pattern>uk.gov.dstl.baleen.data.*</pattern>
+            <pattern>io.micrometer.core.instrument.Measurement</pattern>
+            <pattern>io.micrometer.core.instrument.Statistic</pattern>
+          </classPatterns>
+          <excludeClasses>
+            <exclude>uk.gov.dstl.baleen.data.PipelineHolder</exclude>
+            <exclude>io.annot8.api.components.Annot8ComponentDescriptor</exclude>
+            <exclude>java.lang.Class</exclude>
+          </excludeClasses>
+          <customTypeMappings>
+            <mapping>io.annot8.api.components.SourceDescriptor[S,T]:SourceDescriptor</mapping>
+            <mapping>io.annot8.api.components.ProcessorDescriptor[S,T]:ProcessorDescriptor</mapping>
+            <mapping>java.lang.Throwable:Throwable</mapping>
+          </customTypeMappings>
+          <mapDate>asString</mapDate>
+          <outputKind>module</outputKind>
+          <outputFile>src/main/app/src/types/server-types.ts</outputFile>
+          <outputFileType>implementationFile</outputFileType>
+          <generateSpringApplicationClient>true</generateSpringApplicationClient>
+          <importDeclarations>
+            <importDeclaration>import {ProcessorDescriptor, SourceDescriptor, Throwable} from './base-types'</importDeclaration>
+          </importDeclarations>
+        </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>cz.habarta.typescript-generator</groupId>
+            <artifactId>typescript-generator-spring</artifactId>
+            <version>${typescript-generator-maven-plugin.version}</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+
+      <plugin>
+        <groupId>com.github.eirslett</groupId>
+        <artifactId>frontend-maven-plugin</artifactId>
+        <version>${frontend-maven-plugin.version}</version>
+
+        <configuration>
+          <nodeVersion>${node.version}</nodeVersion>
+          <yarnVersion>${yarn.version}</yarnVersion>
+          <workingDirectory>${frontend-src-dir}</workingDirectory>
+          <installDirectory>${project.build.directory}</installDirectory>
+        </configuration>
+
+        <executions>
+          <execution>
+            <id>install-frontend-tools</id>
+            <goals>
+              <goal>install-node-and-yarn</goal>
+            </goals>
+          </execution>
+
+          <execution>
+            <id>yarn-install</id>
+            <goals>
+              <goal>yarn</goal>
+            </goals>
+            <configuration>
+              <arguments>install</arguments>
+            </configuration>
+          </execution>
+
+          <execution>
+            <id>yarn-test</id>
+            <goals>
+              <goal>yarn</goal>
+            </goals>
+            <phase>test</phase>
+            <configuration>
+              <arguments>test:ci</arguments>
+            </configuration>
+          </execution>
+
+          <execution>
+            <id>yarn-lint</id>
+            <goals>
+              <goal>yarn</goal>
+            </goals>
+            <phase>test</phase>
+            <configuration>
+              <arguments>lint</arguments>
+            </configuration>
+          </execution>
+
+          <execution>
+            <id>build-frontend</id>
+            <goals>
+              <goal>yarn</goal>
+            </goals>
+            <phase>prepare-package</phase>
+            <configuration>
+              <arguments>build</arguments>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>${maven-resources-plugin.version}</version>
+        <executions>
+          <execution>
+            <id>position-react-build</id>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <phase>prepare-package</phase>
+            <configuration>
+              <outputDirectory>${project.build.outputDirectory}/static</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>${frontend-src-dir}/build</directory>
+                  <filtering>false</filtering>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

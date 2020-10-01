@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders dark without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="div-root div-root"
+      >
+        <div
+          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
+            data-shrink="true"
+          >
+            Submit Text
+          </label>
+          <div
+            class="MuiInputBase-root MuiFilledInput-root makeStyles-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-multiline MuiFilledInput-multiline"
+          >
+            <textarea
+              aria-invalid="false"
+              class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputMultiline MuiFilledInput-inputMultiline"
+              rows="5"
+            />
+          </div>
+          <p
+            class="MuiFormHelperText-root MuiFormHelperText-contained"
+          >
+            Enter text to be submitted to the pipeline
+          </p>
+        </div>
+      </div>
+      <div
+        class="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Clear
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary"
+            tabindex="0"
+            type="submit"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Submit
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="div-root div-root"
+      >
+        <div
+          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
+            data-shrink="true"
+          >
+            Submit Text
+          </label>
+          <div
+            class="MuiInputBase-root MuiFilledInput-root makeStyles-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-multiline MuiFilledInput-multiline"
+          >
+            <textarea
+              aria-invalid="false"
+              class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputMultiline MuiFilledInput-inputMultiline"
+              rows="5"
+            />
+          </div>
+          <p
+            class="MuiFormHelperText-root MuiFormHelperText-contained"
+          >
+            Enter text to be submitted to the pipeline
+          </p>
+        </div>
+      </div>
+      <div
+        class="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Clear
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary"
+            tabindex="0"
+            type="submit"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Submit
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

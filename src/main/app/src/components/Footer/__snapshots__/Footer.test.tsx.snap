@@ -1,0 +1,421 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders dark without error 1`] = `
+<DocumentFragment>
+  <div>
+    <footer>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root"
+        />
+        <div
+          class="MuiContainer-root MuiContainer-maxWidthLg"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            >
+              <h1
+                class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h1"
+              >
+                Credits
+              </h1>
+              <p
+                class="WrappedTypography-root WrappedTypography-root"
+              >
+                Built on top of 
+                <a
+                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover WithNoOpener-root Component-root MuiTypography-colorPrimary"
+                  href="https://annot8.io/"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Annot8
+                </a>
+              </p>
+              <div
+                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+              >
+                <p
+                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                >
+                  Developed by
+                </p>
+                <div
+                  class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <img
+                      alt="dstl"
+                      src="dstl-mini.png"
+                      width="16px"
+                    />
+                  </div>
+                </div>
+                <p
+                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                >
+                  <a
+                    class="MuiTypography-root MuiLink-root MuiLink-underlineHover WithNoOpener-root Component-root MuiTypography-colorPrimary"
+                    href="https://github.com/dstl"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    Dstl
+                  </a>
+                   and 
+                </p>
+                <div
+                  class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                >
+                  <svg
+                    class="LogoSvg-root LogoSvg-root"
+                    height="1em"
+                    viewBox="0 0 512 512"
+                    width="1em"
+                  >
+                    <path
+                      class="commit_logo"
+                      d="M215.24 77.76c-.868 3.559-7.539 2.572-10.803 4.426-57.9 16.732-105.793 64.482-122.607 122.209-17.516 57.076-4.33 122.373 34.549 168.197 25.341 30.436 60.348 52.047 98.861 60.888v76.73h81.52v-76.728c61.23-13.633 113.393-61.476 132.248-121.443 18.804-57.048 6.763-122.973-31.692-169.713-25.29-31.406-61.287-54.014-100.595-62.998V2.211h-81.48V77.76zm36.694 78.515c39.604-1.953 78.901 21.962 95.022 58.244 17.615 36.825 9.21 83.858-19.937 112.407-27.57 28.496-72.69 37.623-109.183 22.09-37.152-14.827-62.907-53.607-61.966-93.626-.136-40.346 26.841-78.952 64.788-92.681 9.991-3.841 20.604-5.837 31.276-6.434z"
+                      fill="#fb0"
+                      stroke="#fb0"
+                      stroke-width="4"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                >
+                  <a
+                    class="MuiTypography-root MuiLink-root MuiLink-underlineHover WithNoOpener-root Component-root MuiTypography-colorPrimary"
+                    href="https://committed.software/"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    Committed
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            >
+              <h1
+                class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h1"
+              >
+                License
+              </h1>
+              <p
+                class="WrappedTypography-root WrappedTypography-root"
+              >
+                Dstl © 
+                <a
+                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover WithNoOpener-root Component-root MuiTypography-colorPrimary"
+                  href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Crown Copyright 2020
+                </a>
+              </p>
+              <p
+                class="WrappedTypography-root WrappedTypography-root"
+              >
+                Licensed under the 
+                <a
+                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover WithNoOpener-root Component-root MuiTypography-colorPrimary"
+                  href="http://www.apache.org/licenses/LICENSE-2.0"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Apache License, Version 2.0
+                </a>
+              </p>
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            >
+              <div
+                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+              >
+                <a
+                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover WithNoOpener-root Component-root MuiTypography-colorPrimary"
+                  href="https://www.gov.uk/government/organisations/defence-science-and-technology-laboratory"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <p
+                      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                      font-weight="700"
+                    >
+                      Dstl
+                    </p>
+                    <div
+                      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                    >
+                      <img
+                        alt="dstl"
+                        src="dstl-dark.png"
+                        width="64px"
+                      />
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+              >
+                <a
+                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover WithNoOpener-root Component-root MuiTypography-colorPrimary"
+                  href="https://github.com/dstl/baleen3"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <p
+                      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                      font-weight="700"
+                    >
+                      GitHub
+                    </p>
+                    <div
+                      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                    >
+                      <img
+                        alt="GitHub"
+                        src="GitHub-Mark-Light-64px.png"
+                        width="64px"
+                      />
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders without error 1`] = `
+<DocumentFragment>
+  <div>
+    <footer>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root"
+        />
+        <div
+          class="MuiContainer-root MuiContainer-maxWidthLg"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            >
+              <h1
+                class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h1"
+              >
+                Credits
+              </h1>
+              <p
+                class="WrappedTypography-root WrappedTypography-root"
+              >
+                Built on top of 
+                <a
+                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover WithNoOpener-root Component-root MuiTypography-colorPrimary"
+                  href="https://annot8.io/"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Annot8
+                </a>
+              </p>
+              <div
+                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+              >
+                <p
+                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                >
+                  Developed by
+                </p>
+                <div
+                  class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <img
+                      alt="dstl"
+                      src="dstl-mini.png"
+                      width="16px"
+                    />
+                  </div>
+                </div>
+                <p
+                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                >
+                  <a
+                    class="MuiTypography-root MuiLink-root MuiLink-underlineHover WithNoOpener-root Component-root MuiTypography-colorPrimary"
+                    href="https://github.com/dstl"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    Dstl
+                  </a>
+                   and 
+                </p>
+                <div
+                  class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                >
+                  <svg
+                    class="LogoSvg-root LogoSvg-root"
+                    height="1em"
+                    viewBox="0 0 512 512"
+                    width="1em"
+                  >
+                    <path
+                      class="commit_logo"
+                      d="M215.24 77.76c-.868 3.559-7.539 2.572-10.803 4.426-57.9 16.732-105.793 64.482-122.607 122.209-17.516 57.076-4.33 122.373 34.549 168.197 25.341 30.436 60.348 52.047 98.861 60.888v76.73h81.52v-76.728c61.23-13.633 113.393-61.476 132.248-121.443 18.804-57.048 6.763-122.973-31.692-169.713-25.29-31.406-61.287-54.014-100.595-62.998V2.211h-81.48V77.76zm36.694 78.515c39.604-1.953 78.901 21.962 95.022 58.244 17.615 36.825 9.21 83.858-19.937 112.407-27.57 28.496-72.69 37.623-109.183 22.09-37.152-14.827-62.907-53.607-61.966-93.626-.136-40.346 26.841-78.952 64.788-92.681 9.991-3.841 20.604-5.837 31.276-6.434z"
+                      fill="#fb0"
+                      stroke="#fb0"
+                      stroke-width="4"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                >
+                  <a
+                    class="MuiTypography-root MuiLink-root MuiLink-underlineHover WithNoOpener-root Component-root MuiTypography-colorPrimary"
+                    href="https://committed.software/"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    Committed
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            >
+              <h1
+                class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h1"
+              >
+                License
+              </h1>
+              <p
+                class="WrappedTypography-root WrappedTypography-root"
+              >
+                Dstl © 
+                <a
+                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover WithNoOpener-root Component-root MuiTypography-colorPrimary"
+                  href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Crown Copyright 2020
+                </a>
+              </p>
+              <p
+                class="WrappedTypography-root WrappedTypography-root"
+              >
+                Licensed under the 
+                <a
+                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover WithNoOpener-root Component-root MuiTypography-colorPrimary"
+                  href="http://www.apache.org/licenses/LICENSE-2.0"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Apache License, Version 2.0
+                </a>
+              </p>
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            >
+              <div
+                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+              >
+                <a
+                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover WithNoOpener-root Component-root MuiTypography-colorPrimary"
+                  href="https://www.gov.uk/government/organisations/defence-science-and-technology-laboratory"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <p
+                      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                      font-weight="700"
+                    >
+                      Dstl
+                    </p>
+                    <div
+                      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                    >
+                      <img
+                        alt="dstl"
+                        src="dstl-light.png"
+                        width="64px"
+                      />
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+              >
+                <a
+                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover WithNoOpener-root Component-root MuiTypography-colorPrimary"
+                  href="https://github.com/dstl/baleen3"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <p
+                      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                      font-weight="700"
+                    >
+                      GitHub
+                    </p>
+                    <div
+                      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                    >
+                      <img
+                        alt="GitHub"
+                        src="GitHub-Mark-64px.png"
+                        width="64px"
+                      />
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</DocumentFragment>
+`;

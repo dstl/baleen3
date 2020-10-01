@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders dark without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+    >
+      <svg
+        class="ForwardRef(SvgBaleenVertical)-root ForwardRef(SvgBaleenVertical)-root"
+      >
+        Baleen_Vertical.svg
+      </svg>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <p
+          align="center"
+          class="WrappedTypography-root WrappedTypography-root"
+        >
+          Baleen allows you to create unstructured data processing pipelines by joining configurable pipeline components together. Once created pipelines can process data submitted through one of the source components. Pipelines can be viewed, edited and deleted. You can view the available 
+          <a
+            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+            href="/components"
+          >
+            components
+          </a>
+           or get started creating a new pipeline:
+        </p>
+      </div>
+      <a
+        class="Link-root"
+        href="/new"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Create Pipeline
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+    >
+      <svg
+        class="ForwardRef(SvgBaleenVertical)-root ForwardRef(SvgBaleenVertical)-root"
+      >
+        Baleen_Vertical.svg
+      </svg>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <p
+          align="center"
+          class="WrappedTypography-root WrappedTypography-root"
+        >
+          Baleen allows you to create unstructured data processing pipelines by joining configurable pipeline components together. Once created pipelines can process data submitted through one of the source components. Pipelines can be viewed, edited and deleted. You can view the available 
+          <a
+            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+            href="/components"
+          >
+            components
+          </a>
+           or get started creating a new pipeline:
+        </p>
+      </div>
+      <a
+        class="Link-root"
+        href="/new"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Create Pipeline
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

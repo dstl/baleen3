@@ -1,0 +1,43 @@
+package uk.gov.dstl.baleen.logging;
+
+/*-
+ * #%L
+ * Baleen 3
+ * %%
+ * Copyright (C) 2020 Dstl
+ * %%
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * #L%
+ */
+
+import org.slf4j.ILoggerFactory;
+import org.slf4j.Logger;
+
+import java.util.Collection;
+
+/**
+ * SLF4J LoggerFactory implementation for creating a {@link BaleenLogger}.
+ */
+public class BaleenLoggerFactory implements ILoggerFactory {
+
+  private final Collection<BaleenLogEntry> logEntries;
+
+  public BaleenLoggerFactory(Collection<BaleenLogEntry> logEntries) {
+    this.logEntries = logEntries;
+  }
+
+  @Override
+  public Logger getLogger(String name) {
+    return new BaleenLogger(name, logEntries);
+  }
+}

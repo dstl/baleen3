@@ -1,0 +1,46 @@
+package uk.gov.dstl.baleen.utils;
+
+/*-
+ * #%L
+ * Baleen 3
+ * %%
+ * Copyright (C) 2020 Dstl
+ * %%
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * #L%
+ */
+
+import io.annot8.api.pipelines.NoOpOrderer;
+import org.junit.jupiter.api.Test;
+import uk.gov.dstl.baleen.exceptions.BadRequestException;
+import uk.gov.dstl.baleen.exceptions.ComponentNotFoundException;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+public class Annot8UtilsTest {
+  @Test
+  public void testGetOrdererNoOpOrderer(){
+    assertEquals(NoOpOrderer.getInstance(), Annot8Utils.getOrderer("io.annot8.api.pipelines.NoOpOrderer"));
+  }
+
+  @Test
+  public void testGetOrdererMissing(){
+    assertThrows(ComponentNotFoundException.class, () -> Annot8Utils.getOrderer("this.doesnt.Exist"));
+  }
+
+  @Test
+  public void testGetOrdererNotOrderer(){
+    assertThrows(BadRequestException.class, () -> Annot8Utils.getOrderer(String.class.getName()));
+  }
+}

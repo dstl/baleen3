@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders dark without error 1`] = `
+<DocumentFragment>
+  <div>
+    <a
+      aria-current="page"
+      class="Link-root"
+      href="/"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders without error 1`] = `
+<DocumentFragment>
+  <div>
+    <a
+      aria-current="page"
+      class="Link-root"
+      href="/"
+    />
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,2051 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders dark without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+    >
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3"
+        >
+          Logs
+        </h3>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root MuiIconButton-disabled MuiButtonBase-disabled"
+          disabled=""
+          tabindex="-1"
+          title="Refresh"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          class="div-root div-root"
+        >
+          <div
+            class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-disabled MuiInputLabel-disabled MuiFormLabel-filled"
+              data-shrink="true"
+            >
+              Level
+            </label>
+            <div
+              class="MuiInputBase-root MuiFilledInput-root makeStyles-root MuiInputBase-disabled MuiFilledInput-disabled makeStyles-disabled MuiInputBase-fullWidth MuiInputBase-formControl"
+            >
+              <div
+                aria-disabled="true"
+                aria-haspopup="listbox"
+                aria-label="Level"
+                class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-filled MuiInputBase-input MuiFilledInput-input MuiInputBase-disabled MuiFilledInput-disabled makeStyles-disabled MuiSelect-disabled"
+                role="button"
+              >
+                INFO
+              </div>
+              <input
+                aria-hidden="true"
+                class="MuiSelect-nativeInput"
+                tabindex="-1"
+                value="INFO"
+              />
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconFilled MuiSelect-disabled"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="div-root div-root"
+        >
+          <div
+            class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-disabled MuiInputLabel-disabled MuiFormLabel-filled"
+              data-shrink="true"
+            >
+              Max entries
+            </label>
+            <div
+              class="MuiInputBase-root MuiFilledInput-root makeStyles-root MuiInputBase-disabled MuiFilledInput-disabled makeStyles-disabled MuiInputBase-fullWidth MuiInputBase-formControl"
+            >
+              <div
+                aria-disabled="true"
+                aria-haspopup="listbox"
+                aria-label="Max entries"
+                class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-filled MuiInputBase-input MuiFilledInput-input MuiInputBase-disabled MuiFilledInput-disabled makeStyles-disabled MuiSelect-disabled"
+                role="button"
+              >
+                500
+              </div>
+              <input
+                aria-hidden="true"
+                class="MuiSelect-nativeInput"
+                tabindex="-1"
+                value="500"
+              />
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconFilled MuiSelect-disabled"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root Styled(WithStyles(ForwardRef(Card)))-root MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              2020-06-05T10:13:26.264288 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              TRACE 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              uk.gov.dstl.baleen.controllers.rest.Annot8Controller 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              Pipeline Latvian Lats SSL Tasty Concrete Shirt Outdoors started 
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              2020-06-05T10:14:57.268388 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              DEBUG 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              io.annot8.implementations.pipeline.InMemoryPipelineRunner 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              Pipeline Latvian Lats SSL Tasty Concrete Shirt Outdoors started 
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              2020-06-05T15:36:05.655163 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              INFO    
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              io.annot8.implementations.pipeline.SimplePipeline$Builder 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              Pipeline Latvian Lats SSL Tasty Concrete Shirt Outdoors started 
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              2020-06-05T15:36:05.655537 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              WARN  
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              io.annot8.implementations.pipeline.SimplePipeline$Builder 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              Could not create default settings - io.annot8.api.settings.NoSettings does not have a no-args constructor 
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              2020-06-05T14:23:37.384968 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              ERROR 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              dispatcherServlet 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: java.io.IOException: Broken pipe; nested exception is javax.json.JsonException: java.io.IOException: Broken pipe] with root cause   
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+             
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                Deserialization failed - could not find class io.annot8.components.geo.processors.Mgrs
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.apache.johnzon.jsonb.JohnzonJsonb.fromJson(JohnzonJsonb.java:180)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at uk.gov.dstl.baleen.services.PipelineService.createPipelineFromFile(PipelineService.java:132)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at uk.gov.dstl.baleen.services.PipelineService.startPersistedPipelines(PipelineService.java:124)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at java.lang.reflect.Method.invoke(Method.java:564)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at uk.gov.dstl.baleen.Baleen.main(Baleen.java:20)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+             
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+    >
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3"
+        >
+          Logs
+        </h3>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root MuiIconButton-disabled MuiButtonBase-disabled"
+          disabled=""
+          tabindex="-1"
+          title="Refresh"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          class="div-root div-root"
+        >
+          <div
+            class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-disabled MuiInputLabel-disabled MuiFormLabel-filled"
+              data-shrink="true"
+            >
+              Level
+            </label>
+            <div
+              class="MuiInputBase-root MuiFilledInput-root makeStyles-root MuiInputBase-disabled MuiFilledInput-disabled makeStyles-disabled MuiInputBase-fullWidth MuiInputBase-formControl"
+            >
+              <div
+                aria-disabled="true"
+                aria-haspopup="listbox"
+                aria-label="Level"
+                class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-filled MuiInputBase-input MuiFilledInput-input MuiInputBase-disabled MuiFilledInput-disabled makeStyles-disabled MuiSelect-disabled"
+                role="button"
+              >
+                INFO
+              </div>
+              <input
+                aria-hidden="true"
+                class="MuiSelect-nativeInput"
+                tabindex="-1"
+                value="INFO"
+              />
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconFilled MuiSelect-disabled"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="div-root div-root"
+        >
+          <div
+            class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-disabled MuiInputLabel-disabled MuiFormLabel-filled"
+              data-shrink="true"
+            >
+              Max entries
+            </label>
+            <div
+              class="MuiInputBase-root MuiFilledInput-root makeStyles-root MuiInputBase-disabled MuiFilledInput-disabled makeStyles-disabled MuiInputBase-fullWidth MuiInputBase-formControl"
+            >
+              <div
+                aria-disabled="true"
+                aria-haspopup="listbox"
+                aria-label="Max entries"
+                class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-filled MuiInputBase-input MuiFilledInput-input MuiInputBase-disabled MuiFilledInput-disabled makeStyles-disabled MuiSelect-disabled"
+                role="button"
+              >
+                500
+              </div>
+              <input
+                aria-hidden="true"
+                class="MuiSelect-nativeInput"
+                tabindex="-1"
+                value="500"
+              />
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconFilled MuiSelect-disabled"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root Styled(WithStyles(ForwardRef(Card)))-root MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              2020-06-05T10:13:26.264288 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              TRACE 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              uk.gov.dstl.baleen.controllers.rest.Annot8Controller 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              Pipeline Latvian Lats SSL Tasty Concrete Shirt Outdoors started 
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              2020-06-05T10:14:57.268388 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              DEBUG 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              io.annot8.implementations.pipeline.InMemoryPipelineRunner 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              Pipeline Latvian Lats SSL Tasty Concrete Shirt Outdoors started 
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              2020-06-05T15:36:05.655163 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              INFO    
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              io.annot8.implementations.pipeline.SimplePipeline$Builder 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              Pipeline Latvian Lats SSL Tasty Concrete Shirt Outdoors started 
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              2020-06-05T15:36:05.655537 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              WARN  
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              io.annot8.implementations.pipeline.SimplePipeline$Builder 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              Could not create default settings - io.annot8.api.settings.NoSettings does not have a no-args constructor 
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              2020-06-05T14:23:37.384968 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              ERROR 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              dispatcherServlet 
+            </span>
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+              Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: java.io.IOException: Broken pipe; nested exception is javax.json.JsonException: java.io.IOException: Broken pipe] with root cause   
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+             
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                Deserialization failed - could not find class io.annot8.components.geo.processors.Mgrs
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.apache.johnzon.jsonb.JohnzonJsonb.fromJson(JohnzonJsonb.java:180)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at uk.gov.dstl.baleen.services.PipelineService.createPipelineFromFile(PipelineService.java:132)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at uk.gov.dstl.baleen.services.PipelineService.startPersistedPipelines(PipelineService.java:124)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at java.lang.reflect.Method.invoke(Method.java:564)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+            <span
+              class="WrappedTypography-root WrappedTypography-root Component-root Component-root"
+              font-size="6"
+              m="0"
+            >
+                  at uk.gov.dstl.baleen.Baleen.main(Baleen.java:20)
+            </span>
+          </pre>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <pre
+            class="WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root"
+            variant="body1"
+          >
+             
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

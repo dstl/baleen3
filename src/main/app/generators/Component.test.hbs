@@ -1,0 +1,13 @@
+import React from 'react'
+import { render, renderDark } from '../../utils/test'
+import { {{ name }} } from '.'
+
+it('renders without error', () => {
+  const { asFragment } = render(<{{ name }} />)
+  expect(asFragment()).toMatchSnapshot()
+})
+
+it('renders dark without error', () => {
+  const { asFragment } = renderDark(<{{ name }} />)
+  expect(asFragment()).toMatchSnapshot()
+})

@@ -1,0 +1,2995 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders dark without error 1`] = `
+<DocumentFragment>
+  <div>
+    <header
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary WithStyles(ForwardRef(AppBar))-root WithStyles(ForwardRef(AppBar))-root Styled(WithStyles(ForwardRef(AppBar)))-root Styled(WithStyles(ForwardRef(AppBar)))-root MuiPaper-elevation0"
+    >
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-regular Component-root Component-root MuiToolbar-gutters"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <a
+              aria-current="page"
+              class="Link-root"
+              href="/"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <svg
+                    class="ForwardRef(SvgBaleenHorizontal)-root ForwardRef(SvgBaleenHorizontal)-root"
+                  >
+                    Baleen_Horizontal.svg
+                  </svg>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </a>
+          </div>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <span
+                class="MuiButton-startIcon MuiButton-iconSizeMedium"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3H3v18h18V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"
+                  />
+                </svg>
+              </span>
+              Save Pipeline
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <a
+            aria-label="components"
+            class="Link-root"
+            href="/components"
+          >
+            <button
+              class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+              tabindex="0"
+              title="Components"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12.09 2.91C10.08.9 7.07.49 4.65 1.67l4.34 4.34-3 3-4.34-4.34C.48 7.1.89 10.09 2.9 12.1c1.86 1.86 4.58 2.35 6.89 1.48l9.82 9.82 3.71-3.71-9.78-9.79c.92-2.34.44-5.1-1.45-6.99z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </a>
+          <a
+            aria-label="help"
+            class="Link-root"
+            href="/help"
+          >
+            <button
+              class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+              tabindex="0"
+              title="Help"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </a>
+          <button
+            aria-label="switch-theme"
+            class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root MuiIconButton-colorPrimary"
+            tabindex="0"
+            title="Use dark theme"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-color makeStyles-color"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 2c-1.05 0-2.05.16-3 .46 4.06 1.27 7 5.06 7 9.54s-2.94 8.27-7 9.54c.95.3 1.95.46 3 .46 5.52 0 10-4.48 10-10S14.52 2 9 2z"
+                />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+    >
+      <header
+        class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorDefault WithStyles(ForwardRef(AppBar))-root WithStyles(ForwardRef(AppBar))-root Component-root Component-root mui-fixed MuiPaper-elevation0"
+      >
+        <div
+          class="MuiContainer-root MuiContainer-maxWidthLg"
+        >
+          <div
+            class="MuiToolbar-root MuiToolbar-regular Component-root Component-root MuiToolbar-gutters"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            />
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8z"
+                    />
+                  </svg>
+                </span>
+                Undo
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M18.4 10.6C16.55 8.99 14.15 8 11.5 8c-4.65 0-8.58 3.03-9.96 7.22L3.9 16c1.05-3.19 4.05-5.5 7.6-5.5 1.95 0 3.73.72 5.12 1.88L13 16h9V7l-3.6 3.6z"
+                    />
+                  </svg>
+                </span>
+                Redo
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                    />
+                  </svg>
+                </span>
+                Add Source
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                    />
+                  </svg>
+                </span>
+                Add Processor
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg"
+    >
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <h1
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root Component-root Component-root MuiTypography-h1 MuiTypography-alignCenter"
+        >
+          Empty
+          <button
+            class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </h1>
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3 MuiTypography-alignCenter"
+        >
+          Empty pipeline
+          <button
+            class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </h3>
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
+        />
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3"
+        >
+          Sources
+        </h3>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        data-rbd-droppable-context-id="2"
+        data-rbd-droppable-id="sources"
+      >
+        <button
+          aria-label="Insert Source"
+          class="MuiButtonBase-root"
+          tabindex="0"
+          title="Insert Source"
+          type="button"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root Styled(Styled(MuiBox))-root Styled(Styled(MuiBox))-root"
+            />
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            style="opacity: 0; visibility: hidden;"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+              />
+            </svg>
+          </div>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
+        />
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3"
+        >
+          Processors
+        </h3>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        data-rbd-droppable-context-id="3"
+        data-rbd-droppable-id="processors"
+      >
+        <button
+          aria-label="Insert Processors"
+          class="MuiButtonBase-root"
+          tabindex="0"
+          title="Insert Processors"
+          type="button"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root Styled(Styled(MuiBox))-root Styled(Styled(MuiBox))-root"
+            />
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            style="opacity: 0; visibility: hidden;"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+              />
+            </svg>
+          </div>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root WithStyles(ForwardRef(Backdrop))-root WithStyles(ForwardRef(Backdrop))-root"
+      style="opacity: 0; visibility: hidden;"
+    >
+      <svg
+        class="ForwardRef(SvgBaleenLogo)-root ForwardRef(SvgBaleenLogo)-root makeStyles-animation"
+      >
+        Baleen_Logo.svg
+      </svg>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders dark without error 2`] = `
+<DocumentFragment>
+  <div>
+    <header
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary WithStyles(ForwardRef(AppBar))-root WithStyles(ForwardRef(AppBar))-root Styled(WithStyles(ForwardRef(AppBar)))-root Styled(WithStyles(ForwardRef(AppBar)))-root MuiPaper-elevation0"
+    >
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-regular Component-root Component-root MuiToolbar-gutters"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <a
+              aria-current="page"
+              class="Link-root"
+              href="/"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <svg
+                    class="ForwardRef(SvgBaleenHorizontal)-root ForwardRef(SvgBaleenHorizontal)-root"
+                  >
+                    Baleen_Horizontal.svg
+                  </svg>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </a>
+          </div>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <span
+                class="MuiButton-startIcon MuiButton-iconSizeMedium"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3H3v18h18V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"
+                  />
+                </svg>
+              </span>
+              Replace pipeline
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <a
+            aria-label="components"
+            class="Link-root"
+            href="/components"
+          >
+            <button
+              class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+              tabindex="0"
+              title="Components"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12.09 2.91C10.08.9 7.07.49 4.65 1.67l4.34 4.34-3 3-4.34-4.34C.48 7.1.89 10.09 2.9 12.1c1.86 1.86 4.58 2.35 6.89 1.48l9.82 9.82 3.71-3.71-9.78-9.79c.92-2.34.44-5.1-1.45-6.99z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </a>
+          <a
+            aria-label="help"
+            class="Link-root"
+            href="/help"
+          >
+            <button
+              class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+              tabindex="0"
+              title="Help"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </a>
+          <button
+            aria-label="switch-theme"
+            class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root MuiIconButton-colorPrimary"
+            tabindex="0"
+            title="Use dark theme"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-color makeStyles-color"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 2c-1.05 0-2.05.16-3 .46 4.06 1.27 7 5.06 7 9.54s-2.94 8.27-7 9.54c.95.3 1.95.46 3 .46 5.52 0 10-4.48 10-10S14.52 2 9 2z"
+                />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+    >
+      <header
+        class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorDefault WithStyles(ForwardRef(AppBar))-root WithStyles(ForwardRef(AppBar))-root Component-root Component-root mui-fixed MuiPaper-elevation0"
+      >
+        <div
+          class="MuiContainer-root MuiContainer-maxWidthLg"
+        >
+          <div
+            class="MuiToolbar-root MuiToolbar-regular Component-root Component-root MuiToolbar-gutters"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            />
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8z"
+                    />
+                  </svg>
+                </span>
+                Undo
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M18.4 10.6C16.55 8.99 14.15 8 11.5 8c-4.65 0-8.58 3.03-9.96 7.22L3.9 16c1.05-3.19 4.05-5.5 7.6-5.5 1.95 0 3.73.72 5.12 1.88L13 16h9V7l-3.6 3.6z"
+                    />
+                  </svg>
+                </span>
+                Redo
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                    />
+                  </svg>
+                </span>
+                Add Source
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                    />
+                  </svg>
+                </span>
+                Add Processor
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+    >
+      <header
+        class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary WithStyles(ForwardRef(AppBar))-root WithStyles(ForwardRef(AppBar))-root Component-root Component-root Styled(Component)-root Styled(Component)-root mui-fixed MuiPaper-elevation0"
+      >
+        <div
+          class="MuiContainer-root MuiContainer-maxWidthLg"
+        >
+          <div
+            class="MuiPaper-root MuiAlert-root MuiAlert-filledError MuiPaper-elevation0"
+            role="alert"
+          >
+            <div
+              class="MuiAlert-icon"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                />
+              </svg>
+            </div>
+            <div
+              class="MuiAlert-message"
+            >
+              Server rejected pipeline - further configuration may be required
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg"
+    >
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <h1
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root Component-root Component-root MuiTypography-h1 MuiTypography-alignCenter"
+        >
+          Empty
+          <button
+            class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </h1>
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3 MuiTypography-alignCenter"
+        >
+          Empty pipeline
+          <button
+            class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </h3>
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
+        />
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3"
+        >
+          Sources
+        </h3>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        data-rbd-droppable-context-id="6"
+        data-rbd-droppable-id="sources"
+      >
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          data-rbd-draggable-context-id="6"
+          data-rbd-draggable-id="1"
+        >
+          <button
+            aria-label="Insert Source"
+            class="MuiButtonBase-root"
+            tabindex="0"
+            title="Insert Source"
+            type="button"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            >
+              <div
+                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root Styled(Styled(MuiBox))-root Styled(Styled(MuiBox))-root"
+              />
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+              style="opacity: 0; visibility: hidden;"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                />
+              </svg>
+            </div>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <div
+            aria-describedby="rbd-hidden-text-6-hidden-text-15"
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            data-rbd-drag-handle-context-id="6"
+            data-rbd-drag-handle-draggable-id="1"
+            draggable="false"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              tabindex="-1"
+            >
+              <div
+                class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+                tabindex="0"
+              >
+                <div
+                  class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+                >
+                  <div
+                    class="MuiCardHeader-content"
+                  >
+                    <span
+                      class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                    >
+                      Baleen 3 REST API
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiCardHeader-subheader MuiTypography-caption MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                    >
+                      REST API
+                    </span>
+                  </div>
+                  <div
+                    class="MuiCardHeader-action"
+                  >
+                    <div
+                      style="opacity: 0; visibility: hidden;"
+                    >
+                      <button
+                        aria-label="Edit name"
+                        class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                        tabindex="0"
+                        title="Edit name"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-label="Edit settings"
+                        class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root MuiIconButton-disabled MuiButtonBase-disabled"
+                        disabled=""
+                        tabindex="-1"
+                        title="Edit Settings"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19.44 12.99l-.01.02c.04-.33.08-.67.08-1.01 0-.34-.03-.66-.07-.99l.01.02 2.44-1.92-2.43-4.22-2.87 1.16.01.01c-.52-.4-1.09-.74-1.71-1h.01L14.44 2H9.57l-.44 3.07h.01c-.62.26-1.19.6-1.71 1l.01-.01-2.88-1.17-2.44 4.22 2.44 1.92.01-.02c-.04.33-.07.65-.07.99 0 .34.03.68.08 1.01l-.01-.02-2.1 1.65-.33.26 2.43 4.2 2.88-1.15-.02-.04c.53.41 1.1.75 1.73 1.01h-.03L9.58 22h4.85s.03-.18.06-.42l.38-2.65h-.01c.62-.26 1.2-.6 1.73-1.01l-.02.04 2.88 1.15 2.43-4.2s-.14-.12-.33-.26l-2.11-1.66zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <button
+                        aria-label="Delete"
+                        class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                        tabindex="0"
+                        title="Delete"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M6 21h12V7H6v14zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiCardContent-root"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                    >
+                      <p
+                        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                      >
+                        Rest API
+                      </p>
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          aria-label="Insert Source"
+          class="MuiButtonBase-root"
+          tabindex="0"
+          title="Insert Source"
+          type="button"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root Styled(Styled(MuiBox))-root Styled(Styled(MuiBox))-root"
+            />
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            style="opacity: 0; visibility: hidden;"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+              />
+            </svg>
+          </div>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
+        />
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3"
+        >
+          Processors
+        </h3>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        data-rbd-droppable-context-id="7"
+        data-rbd-droppable-id="processors"
+      >
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          data-rbd-draggable-context-id="7"
+          data-rbd-draggable-id="2"
+        >
+          <button
+            aria-label="Insert Processors"
+            class="MuiButtonBase-root"
+            tabindex="0"
+            title="Insert Processors"
+            type="button"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            >
+              <div
+                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root Styled(Styled(MuiBox))-root Styled(Styled(MuiBox))-root"
+              />
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+              style="opacity: 0; visibility: hidden;"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                />
+              </svg>
+            </div>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <div
+            aria-describedby="rbd-hidden-text-7-hidden-text-18"
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            data-rbd-drag-handle-context-id="7"
+            data-rbd-drag-handle-draggable-id="2"
+            draggable="false"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              tabindex="-1"
+            >
+              <div
+                class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+                tabindex="0"
+              >
+                <div
+                  class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+                >
+                  <div
+                    class="MuiCardHeader-content"
+                  >
+                    <span
+                      class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                    >
+                      Geo
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiCardHeader-subheader MuiTypography-caption MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                    >
+                      MGRS
+                    </span>
+                  </div>
+                  <div
+                    class="MuiCardHeader-action"
+                  >
+                    <div
+                      style="opacity: 0; visibility: hidden;"
+                    >
+                      <button
+                        aria-label="Edit name"
+                        class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                        tabindex="0"
+                        title="Edit name"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-label="Edit settings"
+                        class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                        tabindex="0"
+                        title="Edit Settings"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19.44 12.99l-.01.02c.04-.33.08-.67.08-1.01 0-.34-.03-.66-.07-.99l.01.02 2.44-1.92-2.43-4.22-2.87 1.16.01.01c-.52-.4-1.09-.74-1.71-1h.01L14.44 2H9.57l-.44 3.07h.01c-.62.26-1.19.6-1.71 1l.01-.01-2.88-1.17-2.44 4.22 2.44 1.92.01-.02c-.04.33-.07.65-.07.99 0 .34.03.68.08 1.01l-.01-.02-2.1 1.65-.33.26 2.43 4.2 2.88-1.15-.02-.04c.53.41 1.1.75 1.73 1.01h-.03L9.58 22h4.85s.03-.18.06-.42l.38-2.65h-.01c.62-.26 1.2-.6 1.73-1.01l-.02.04 2.88 1.15 2.43-4.2s-.14-.12-.33-.26l-2.11-1.66zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-label="Delete"
+                        class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                        tabindex="0"
+                        title="Delete"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M6 21h12V7H6v14zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiCardContent-root"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                    >
+                      <p
+                        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                      >
+                        Extract MGRS coordinates, optionally ignoring MGRS coordinates that could be dates
+                      </p>
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          data-rbd-draggable-context-id="7"
+          data-rbd-draggable-id="3"
+        >
+          <button
+            aria-label="Insert Processors"
+            class="MuiButtonBase-root"
+            tabindex="0"
+            title="Insert Processors"
+            type="button"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            >
+              <div
+                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root Styled(Styled(MuiBox))-root Styled(Styled(MuiBox))-root"
+              />
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+              style="opacity: 0; visibility: hidden;"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                />
+              </svg>
+            </div>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <div
+            aria-describedby="rbd-hidden-text-7-hidden-text-18"
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            data-rbd-drag-handle-context-id="7"
+            data-rbd-drag-handle-draggable-id="3"
+            draggable="false"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              tabindex="-1"
+            >
+              <div
+                class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+                tabindex="0"
+              >
+                <div
+                  class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+                >
+                  <div
+                    class="MuiCardHeader-content"
+                  >
+                    <span
+                      class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                    >
+                      Print Out
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiCardHeader-subheader MuiTypography-caption MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                    >
+                      Print Spans
+                    </span>
+                  </div>
+                  <div
+                    class="MuiCardHeader-action"
+                  >
+                    <div
+                      style="opacity: 0; visibility: hidden;"
+                    >
+                      <button
+                        aria-label="Edit name"
+                        class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                        tabindex="0"
+                        title="Edit name"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-label="Edit settings"
+                        class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root MuiIconButton-disabled MuiButtonBase-disabled"
+                        disabled=""
+                        tabindex="-1"
+                        title="Edit Settings"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19.44 12.99l-.01.02c.04-.33.08-.67.08-1.01 0-.34-.03-.66-.07-.99l.01.02 2.44-1.92-2.43-4.22-2.87 1.16.01.01c-.52-.4-1.09-.74-1.71-1h.01L14.44 2H9.57l-.44 3.07h.01c-.62.26-1.19.6-1.71 1l.01-.01-2.88-1.17-2.44 4.22 2.44 1.92.01-.02c-.04.33-.07.65-.07.99 0 .34.03.68.08 1.01l-.01-.02-2.1 1.65-.33.26 2.43 4.2 2.88-1.15-.02-.04c.53.41 1.1.75 1.73 1.01h-.03L9.58 22h4.85s.03-.18.06-.42l.38-2.65h-.01c.62-.26 1.2-.6 1.73-1.01l-.02.04 2.88 1.15 2.43-4.2s-.14-.12-.33-.26l-2.11-1.66zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <button
+                        aria-label="Delete"
+                        class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                        tabindex="0"
+                        title="Delete"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M6 21h12V7H6v14zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiCardContent-root"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                    >
+                      <p
+                        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                      >
+                        Print Spans
+                      </p>
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          aria-label="Insert Processors"
+          class="MuiButtonBase-root"
+          tabindex="0"
+          title="Insert Processors"
+          type="button"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root Styled(Styled(MuiBox))-root Styled(Styled(MuiBox))-root"
+            />
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            style="opacity: 0; visibility: hidden;"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+              />
+            </svg>
+          </div>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root WithStyles(ForwardRef(Backdrop))-root WithStyles(ForwardRef(Backdrop))-root"
+      style="opacity: 0; visibility: hidden;"
+    >
+      <svg
+        class="ForwardRef(SvgBaleenLogo)-root ForwardRef(SvgBaleenLogo)-root makeStyles-animation"
+      >
+        Baleen_Logo.svg
+      </svg>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders without error 1`] = `
+<DocumentFragment>
+  <div>
+    <header
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary WithStyles(ForwardRef(AppBar))-root WithStyles(ForwardRef(AppBar))-root Styled(WithStyles(ForwardRef(AppBar)))-root Styled(WithStyles(ForwardRef(AppBar)))-root MuiPaper-elevation0"
+    >
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-regular Component-root Component-root MuiToolbar-gutters"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <a
+              aria-current="page"
+              class="Link-root"
+              href="/"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <svg
+                    class="ForwardRef(SvgBaleenHorizontal)-root ForwardRef(SvgBaleenHorizontal)-root"
+                  >
+                    Baleen_Horizontal.svg
+                  </svg>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </a>
+          </div>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <span
+                class="MuiButton-startIcon MuiButton-iconSizeMedium"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3H3v18h18V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"
+                  />
+                </svg>
+              </span>
+              Save Pipeline
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <a
+            aria-label="components"
+            class="Link-root"
+            href="/components"
+          >
+            <button
+              class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+              tabindex="0"
+              title="Components"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12.09 2.91C10.08.9 7.07.49 4.65 1.67l4.34 4.34-3 3-4.34-4.34C.48 7.1.89 10.09 2.9 12.1c1.86 1.86 4.58 2.35 6.89 1.48l9.82 9.82 3.71-3.71-9.78-9.79c.92-2.34.44-5.1-1.45-6.99z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </a>
+          <a
+            aria-label="help"
+            class="Link-root"
+            href="/help"
+          >
+            <button
+              class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+              tabindex="0"
+              title="Help"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </a>
+          <button
+            aria-label="switch-theme"
+            class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root MuiIconButton-colorPrimary"
+            tabindex="0"
+            title="Use dark theme"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-color makeStyles-color"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 2c-1.05 0-2.05.16-3 .46 4.06 1.27 7 5.06 7 9.54s-2.94 8.27-7 9.54c.95.3 1.95.46 3 .46 5.52 0 10-4.48 10-10S14.52 2 9 2z"
+                />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+    >
+      <header
+        class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorDefault WithStyles(ForwardRef(AppBar))-root WithStyles(ForwardRef(AppBar))-root Component-root Component-root mui-fixed MuiPaper-elevation0"
+      >
+        <div
+          class="MuiContainer-root MuiContainer-maxWidthLg"
+        >
+          <div
+            class="MuiToolbar-root MuiToolbar-regular Component-root Component-root MuiToolbar-gutters"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            />
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8z"
+                    />
+                  </svg>
+                </span>
+                Undo
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M18.4 10.6C16.55 8.99 14.15 8 11.5 8c-4.65 0-8.58 3.03-9.96 7.22L3.9 16c1.05-3.19 4.05-5.5 7.6-5.5 1.95 0 3.73.72 5.12 1.88L13 16h9V7l-3.6 3.6z"
+                    />
+                  </svg>
+                </span>
+                Redo
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                    />
+                  </svg>
+                </span>
+                Add Source
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                    />
+                  </svg>
+                </span>
+                Add Processor
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg"
+    >
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <h1
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root Component-root Component-root MuiTypography-h1 MuiTypography-alignCenter"
+        >
+          Empty
+          <button
+            class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </h1>
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3 MuiTypography-alignCenter"
+        >
+          Empty pipeline
+          <button
+            class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </h3>
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
+        />
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3"
+        >
+          Sources
+        </h3>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        data-rbd-droppable-context-id="0"
+        data-rbd-droppable-id="sources"
+      >
+        <button
+          aria-label="Insert Source"
+          class="MuiButtonBase-root"
+          tabindex="0"
+          title="Insert Source"
+          type="button"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root Styled(Styled(MuiBox))-root Styled(Styled(MuiBox))-root"
+            />
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            style="opacity: 0; visibility: hidden;"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+              />
+            </svg>
+          </div>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
+        />
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3"
+        >
+          Processors
+        </h3>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        data-rbd-droppable-context-id="1"
+        data-rbd-droppable-id="processors"
+      >
+        <button
+          aria-label="Insert Processors"
+          class="MuiButtonBase-root"
+          tabindex="0"
+          title="Insert Processors"
+          type="button"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root Styled(Styled(MuiBox))-root Styled(Styled(MuiBox))-root"
+            />
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            style="opacity: 0; visibility: hidden;"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+              />
+            </svg>
+          </div>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root WithStyles(ForwardRef(Backdrop))-root WithStyles(ForwardRef(Backdrop))-root"
+      style="opacity: 0; visibility: hidden;"
+    >
+      <svg
+        class="ForwardRef(SvgBaleenLogo)-root ForwardRef(SvgBaleenLogo)-root makeStyles-animation"
+      >
+        Baleen_Logo.svg
+      </svg>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders without error 2`] = `
+<DocumentFragment>
+  <div>
+    <header
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary WithStyles(ForwardRef(AppBar))-root WithStyles(ForwardRef(AppBar))-root Styled(WithStyles(ForwardRef(AppBar)))-root Styled(WithStyles(ForwardRef(AppBar)))-root MuiPaper-elevation0"
+    >
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-regular Component-root Component-root MuiToolbar-gutters"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <a
+              aria-current="page"
+              class="Link-root"
+              href="/"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <svg
+                    class="ForwardRef(SvgBaleenHorizontal)-root ForwardRef(SvgBaleenHorizontal)-root"
+                  >
+                    Baleen_Horizontal.svg
+                  </svg>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </a>
+          </div>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <span
+                class="MuiButton-startIcon MuiButton-iconSizeMedium"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3H3v18h18V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"
+                  />
+                </svg>
+              </span>
+              Save Pipeline
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <a
+            aria-label="components"
+            class="Link-root"
+            href="/components"
+          >
+            <button
+              class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+              tabindex="0"
+              title="Components"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12.09 2.91C10.08.9 7.07.49 4.65 1.67l4.34 4.34-3 3-4.34-4.34C.48 7.1.89 10.09 2.9 12.1c1.86 1.86 4.58 2.35 6.89 1.48l9.82 9.82 3.71-3.71-9.78-9.79c.92-2.34.44-5.1-1.45-6.99z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </a>
+          <a
+            aria-label="help"
+            class="Link-root"
+            href="/help"
+          >
+            <button
+              class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+              tabindex="0"
+              title="Help"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </a>
+          <button
+            aria-label="switch-theme"
+            class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root MuiIconButton-colorPrimary"
+            tabindex="0"
+            title="Use dark theme"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-color makeStyles-color"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 2c-1.05 0-2.05.16-3 .46 4.06 1.27 7 5.06 7 9.54s-2.94 8.27-7 9.54c.95.3 1.95.46 3 .46 5.52 0 10-4.48 10-10S14.52 2 9 2z"
+                />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+    >
+      <header
+        class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorDefault WithStyles(ForwardRef(AppBar))-root WithStyles(ForwardRef(AppBar))-root Component-root Component-root mui-fixed MuiPaper-elevation0"
+      >
+        <div
+          class="MuiContainer-root MuiContainer-maxWidthLg"
+        >
+          <div
+            class="MuiToolbar-root MuiToolbar-regular Component-root Component-root MuiToolbar-gutters"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            />
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8z"
+                    />
+                  </svg>
+                </span>
+                Undo
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M18.4 10.6C16.55 8.99 14.15 8 11.5 8c-4.65 0-8.58 3.03-9.96 7.22L3.9 16c1.05-3.19 4.05-5.5 7.6-5.5 1.95 0 3.73.72 5.12 1.88L13 16h9V7l-3.6 3.6z"
+                    />
+                  </svg>
+                </span>
+                Redo
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                    />
+                  </svg>
+                </span>
+                Add Source
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                    />
+                  </svg>
+                </span>
+                Add Processor
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+    >
+      <header
+        class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary WithStyles(ForwardRef(AppBar))-root WithStyles(ForwardRef(AppBar))-root Component-root Component-root Styled(Component)-root Styled(Component)-root mui-fixed MuiPaper-elevation0"
+      >
+        <div
+          class="MuiContainer-root MuiContainer-maxWidthLg"
+        >
+          <div
+            class="MuiPaper-root MuiAlert-root MuiAlert-filledError MuiPaper-elevation0"
+            role="alert"
+          >
+            <div
+              class="MuiAlert-icon"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                />
+              </svg>
+            </div>
+            <div
+              class="MuiAlert-message"
+            >
+              Server rejected pipeline - further configuration may be required
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg"
+    >
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <h1
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root Component-root Component-root MuiTypography-h1 MuiTypography-alignCenter"
+        >
+          Empty
+          <button
+            class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </h1>
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3 MuiTypography-alignCenter"
+        >
+          Empty pipeline
+          <button
+            class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </h3>
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
+        />
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3"
+        >
+          Sources
+        </h3>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        data-rbd-droppable-context-id="4"
+        data-rbd-droppable-id="sources"
+      >
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          data-rbd-draggable-context-id="4"
+          data-rbd-draggable-id="1"
+        >
+          <button
+            aria-label="Insert Source"
+            class="MuiButtonBase-root"
+            tabindex="0"
+            title="Insert Source"
+            type="button"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            >
+              <div
+                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root Styled(Styled(MuiBox))-root Styled(Styled(MuiBox))-root"
+              />
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+              style="opacity: 0; visibility: hidden;"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                />
+              </svg>
+            </div>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <div
+            aria-describedby="rbd-hidden-text-4-hidden-text-8"
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            data-rbd-drag-handle-context-id="4"
+            data-rbd-drag-handle-draggable-id="1"
+            draggable="false"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              tabindex="-1"
+            >
+              <div
+                class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+                tabindex="0"
+              >
+                <div
+                  class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+                >
+                  <div
+                    class="MuiCardHeader-content"
+                  >
+                    <span
+                      class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                    >
+                      Baleen 3 REST API
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiCardHeader-subheader MuiTypography-caption MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                    >
+                      REST API
+                    </span>
+                  </div>
+                  <div
+                    class="MuiCardHeader-action"
+                  >
+                    <div
+                      style="opacity: 0; visibility: hidden;"
+                    >
+                      <button
+                        aria-label="Edit name"
+                        class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                        tabindex="0"
+                        title="Edit name"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-label="Edit settings"
+                        class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root MuiIconButton-disabled MuiButtonBase-disabled"
+                        disabled=""
+                        tabindex="-1"
+                        title="Edit Settings"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19.44 12.99l-.01.02c.04-.33.08-.67.08-1.01 0-.34-.03-.66-.07-.99l.01.02 2.44-1.92-2.43-4.22-2.87 1.16.01.01c-.52-.4-1.09-.74-1.71-1h.01L14.44 2H9.57l-.44 3.07h.01c-.62.26-1.19.6-1.71 1l.01-.01-2.88-1.17-2.44 4.22 2.44 1.92.01-.02c-.04.33-.07.65-.07.99 0 .34.03.68.08 1.01l-.01-.02-2.1 1.65-.33.26 2.43 4.2 2.88-1.15-.02-.04c.53.41 1.1.75 1.73 1.01h-.03L9.58 22h4.85s.03-.18.06-.42l.38-2.65h-.01c.62-.26 1.2-.6 1.73-1.01l-.02.04 2.88 1.15 2.43-4.2s-.14-.12-.33-.26l-2.11-1.66zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <button
+                        aria-label="Delete"
+                        class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                        tabindex="0"
+                        title="Delete"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M6 21h12V7H6v14zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiCardContent-root"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                    >
+                      <p
+                        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                      >
+                        Rest API
+                      </p>
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          aria-label="Insert Source"
+          class="MuiButtonBase-root"
+          tabindex="0"
+          title="Insert Source"
+          type="button"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root Styled(Styled(MuiBox))-root Styled(Styled(MuiBox))-root"
+            />
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            style="opacity: 0; visibility: hidden;"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+              />
+            </svg>
+          </div>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
+        />
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3"
+        >
+          Processors
+        </h3>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        data-rbd-droppable-context-id="5"
+        data-rbd-droppable-id="processors"
+      >
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          data-rbd-draggable-context-id="5"
+          data-rbd-draggable-id="2"
+        >
+          <button
+            aria-label="Insert Processors"
+            class="MuiButtonBase-root"
+            tabindex="0"
+            title="Insert Processors"
+            type="button"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            >
+              <div
+                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root Styled(Styled(MuiBox))-root Styled(Styled(MuiBox))-root"
+              />
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+              style="opacity: 0; visibility: hidden;"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                />
+              </svg>
+            </div>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <div
+            aria-describedby="rbd-hidden-text-5-hidden-text-11"
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            data-rbd-drag-handle-context-id="5"
+            data-rbd-drag-handle-draggable-id="2"
+            draggable="false"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              tabindex="-1"
+            >
+              <div
+                class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+                tabindex="0"
+              >
+                <div
+                  class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+                >
+                  <div
+                    class="MuiCardHeader-content"
+                  >
+                    <span
+                      class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                    >
+                      Geo
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiCardHeader-subheader MuiTypography-caption MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                    >
+                      MGRS
+                    </span>
+                  </div>
+                  <div
+                    class="MuiCardHeader-action"
+                  >
+                    <div
+                      style="opacity: 0; visibility: hidden;"
+                    >
+                      <button
+                        aria-label="Edit name"
+                        class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                        tabindex="0"
+                        title="Edit name"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-label="Edit settings"
+                        class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                        tabindex="0"
+                        title="Edit Settings"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19.44 12.99l-.01.02c.04-.33.08-.67.08-1.01 0-.34-.03-.66-.07-.99l.01.02 2.44-1.92-2.43-4.22-2.87 1.16.01.01c-.52-.4-1.09-.74-1.71-1h.01L14.44 2H9.57l-.44 3.07h.01c-.62.26-1.19.6-1.71 1l.01-.01-2.88-1.17-2.44 4.22 2.44 1.92.01-.02c-.04.33-.07.65-.07.99 0 .34.03.68.08 1.01l-.01-.02-2.1 1.65-.33.26 2.43 4.2 2.88-1.15-.02-.04c.53.41 1.1.75 1.73 1.01h-.03L9.58 22h4.85s.03-.18.06-.42l.38-2.65h-.01c.62-.26 1.2-.6 1.73-1.01l-.02.04 2.88 1.15 2.43-4.2s-.14-.12-.33-.26l-2.11-1.66zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-label="Delete"
+                        class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                        tabindex="0"
+                        title="Delete"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M6 21h12V7H6v14zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiCardContent-root"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                    >
+                      <p
+                        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                      >
+                        Extract MGRS coordinates, optionally ignoring MGRS coordinates that could be dates
+                      </p>
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          data-rbd-draggable-context-id="5"
+          data-rbd-draggable-id="3"
+        >
+          <button
+            aria-label="Insert Processors"
+            class="MuiButtonBase-root"
+            tabindex="0"
+            title="Insert Processors"
+            type="button"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            >
+              <div
+                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root Styled(Styled(MuiBox))-root Styled(Styled(MuiBox))-root"
+              />
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+              style="opacity: 0; visibility: hidden;"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                />
+              </svg>
+            </div>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <div
+            aria-describedby="rbd-hidden-text-5-hidden-text-11"
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            data-rbd-drag-handle-context-id="5"
+            data-rbd-drag-handle-draggable-id="3"
+            draggable="false"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              tabindex="-1"
+            >
+              <div
+                class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+                tabindex="0"
+              >
+                <div
+                  class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+                >
+                  <div
+                    class="MuiCardHeader-content"
+                  >
+                    <span
+                      class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                    >
+                      Print Out
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiCardHeader-subheader MuiTypography-caption MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                    >
+                      Print Spans
+                    </span>
+                  </div>
+                  <div
+                    class="MuiCardHeader-action"
+                  >
+                    <div
+                      style="opacity: 0; visibility: hidden;"
+                    >
+                      <button
+                        aria-label="Edit name"
+                        class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                        tabindex="0"
+                        title="Edit name"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-label="Edit settings"
+                        class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root MuiIconButton-disabled MuiButtonBase-disabled"
+                        disabled=""
+                        tabindex="-1"
+                        title="Edit Settings"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19.44 12.99l-.01.02c.04-.33.08-.67.08-1.01 0-.34-.03-.66-.07-.99l.01.02 2.44-1.92-2.43-4.22-2.87 1.16.01.01c-.52-.4-1.09-.74-1.71-1h.01L14.44 2H9.57l-.44 3.07h.01c-.62.26-1.19.6-1.71 1l.01-.01-2.88-1.17-2.44 4.22 2.44 1.92.01-.02c-.04.33-.07.65-.07.99 0 .34.03.68.08 1.01l-.01-.02-2.1 1.65-.33.26 2.43 4.2 2.88-1.15-.02-.04c.53.41 1.1.75 1.73 1.01h-.03L9.58 22h4.85s.03-.18.06-.42l.38-2.65h-.01c.62-.26 1.2-.6 1.73-1.01l-.02.04 2.88 1.15 2.43-4.2s-.14-.12-.33-.26l-2.11-1.66zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <button
+                        aria-label="Delete"
+                        class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                        tabindex="0"
+                        title="Delete"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M6 21h12V7H6v14zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiCardContent-root"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                    >
+                      <p
+                        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                      >
+                        Print Spans
+                      </p>
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          aria-label="Insert Processors"
+          class="MuiButtonBase-root"
+          tabindex="0"
+          title="Insert Processors"
+          type="button"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root Styled(Styled(MuiBox))-root Styled(Styled(MuiBox))-root"
+            />
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            style="opacity: 0; visibility: hidden;"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+              />
+            </svg>
+          </div>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root WithStyles(ForwardRef(Backdrop))-root WithStyles(ForwardRef(Backdrop))-root"
+      style="opacity: 0; visibility: hidden;"
+    >
+      <svg
+        class="ForwardRef(SvgBaleenLogo)-root ForwardRef(SvgBaleenLogo)-root makeStyles-animation"
+      >
+        Baleen_Logo.svg
+      </svg>
+    </div>
+  </div>
+</DocumentFragment>
+`;

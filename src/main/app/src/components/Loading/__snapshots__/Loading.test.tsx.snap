@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders dark without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+    >
+      <svg
+        class="ForwardRef(SvgBaleenLogo)-root ForwardRef(SvgBaleenLogo)-root makeStyles-animation"
+      >
+        Baleen_Logo.svg
+      </svg>
+      <h1
+        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h1"
+      >
+        Loading...
+      </h1>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+    >
+      <svg
+        class="ForwardRef(SvgBaleenLogo)-root ForwardRef(SvgBaleenLogo)-root makeStyles-animation"
+      >
+        Baleen_Logo.svg
+      </svg>
+      <h1
+        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h1"
+      >
+        Loading...
+      </h1>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders dark without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <div
+          class="dropzone"
+          style="margin: 8px; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; border-width: 2px; border-radius: 2px; border-color: #aaaaaa; color: rgb(170, 170, 170); border-style: dashed; outline: none; min-height: 75px; transition: border .24s ease-in-out;"
+          tabindex="0"
+        >
+          <input
+            autocomplete="off"
+            multiple=""
+            style="display: none;"
+            tabindex="-1"
+            type="file"
+          />
+          <p
+            class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+          >
+            Drag 'n' drop files here, or click to select files
+          </p>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        />
+      </div>
+      <div
+        class="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Clear
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary"
+            tabindex="0"
+            type="submit"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Submit
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <div
+          class="dropzone"
+          style="margin: 8px; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; border-width: 2px; border-radius: 2px; border-color: #aaaaaa; color: rgb(170, 170, 170); border-style: dashed; outline: none; min-height: 75px; transition: border .24s ease-in-out;"
+          tabindex="0"
+        >
+          <input
+            autocomplete="off"
+            multiple=""
+            style="display: none;"
+            tabindex="-1"
+            type="file"
+          />
+          <p
+            class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+          >
+            Drag 'n' drop files here, or click to select files
+          </p>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        />
+      </div>
+      <div
+        class="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Clear
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary"
+            tabindex="0"
+            type="submit"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Submit
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

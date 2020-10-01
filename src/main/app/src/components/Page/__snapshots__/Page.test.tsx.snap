@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders dark without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg"
+    >
+      Content
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg"
+    >
+      Contents
+    </div>
+  </div>
+</DocumentFragment>
+`;

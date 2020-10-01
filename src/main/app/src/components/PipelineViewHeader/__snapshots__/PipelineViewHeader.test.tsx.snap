@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders dark without error 1`] = `
+<DocumentFragment>
+  <div>
+    <h1
+      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h1 MuiTypography-alignCenter"
+    >
+      Empty
+    </h1>
+    <h3
+      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3 MuiTypography-alignCenter"
+    >
+      Empty pipeline
+    </h3>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders dark without error 2`] = `
+<DocumentFragment>
+  <div>
+    <h1
+      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h1 MuiTypography-alignCenter"
+    >
+      Versatile invoice
+    </h1>
+    <h3
+      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3 MuiTypography-alignCenter"
+    >
+      Non voluptatibus corporis accusantium. Velit saepe odio. Dolorum veritatis et natus est qui molestias. Culpa est veritatis quia explicabo. Quas sint in. Aliquid eos et eos ut eius ut animi reiciendis.
+    </h3>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders without error 1`] = `
+<DocumentFragment>
+  <div>
+    <h1
+      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h1 MuiTypography-alignCenter"
+    >
+      Empty
+    </h1>
+    <h3
+      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3 MuiTypography-alignCenter"
+    >
+      Empty pipeline
+    </h3>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders without error 2`] = `
+<DocumentFragment>
+  <div>
+    <h1
+      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h1 MuiTypography-alignCenter"
+    >
+      Versatile invoice
+    </h1>
+    <h3
+      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3 MuiTypography-alignCenter"
+    >
+      Non voluptatibus corporis accusantium. Velit saepe odio. Dolorum veritatis et natus est qui molestias. Culpa est veritatis quia explicabo. Quas sint in. Aliquid eos et eos ut eius ut animi reiciendis.
+    </h3>
+  </div>
+</DocumentFragment>
+`;

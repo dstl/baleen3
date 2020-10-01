@@ -1,0 +1,835 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders dark without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg"
+    >
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <h1
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h1 MuiTypography-alignCenter"
+        >
+          Select a template
+        </h1>
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3 MuiTypography-alignCenter"
+        >
+          The templates below give starting points for pipelines which you can then edit.
+        </h3>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation15 MuiPaper-rounded"
+            style="min-width: 125px;"
+          >
+            <button
+              class="MuiButtonBase-root MuiCardActionArea-root"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="MuiCardContent-root WithStyles(ForwardRef(CardContent))-root WithStyles(ForwardRef(CardContent))-root"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                >
+                  <p
+                    class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                  >
+                    Empty
+                  </p>
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M21 3H3v18h18V3zm-4 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="MuiCardActionArea-focusHighlight"
+              />
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            style="min-width: 125px;"
+          >
+            <button
+              class="MuiButtonBase-root MuiCardActionArea-root"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="MuiCardContent-root WithStyles(ForwardRef(CardContent))-root WithStyles(ForwardRef(CardContent))-root"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                >
+                  <p
+                    class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                  >
+                    NLP Base
+                  </p>
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm8.94 3c-.46-4.17-3.77-7.48-7.94-7.94V1h-2v2.06C6.83 3.52 3.52 6.83 3.06 11H1v2h2.06c.46 4.17 3.77 7.48 7.94 7.94V23h2v-2.06c4.17-.46 7.48-3.77 7.94-7.94H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="MuiCardActionArea-focusHighlight"
+              />
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            style="min-width: 125px;"
+          >
+            <button
+              class="MuiButtonBase-root MuiCardActionArea-root"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="MuiCardContent-root WithStyles(ForwardRef(CardContent))-root WithStyles(ForwardRef(CardContent))-root"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                >
+                  <p
+                    class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                  >
+                    People
+                  </p>
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M16.5 12c1.38 0 2.49-1.12 2.49-2.5S17.88 7 16.5 7 14 8.12 14 9.5s1.12 2.5 2.5 2.5zM9 11c1.66 0 2.99-1.34 2.99-3S10.66 5 9 5 6 6.34 6 8s1.34 3 3 3zm7.5 3c-1.83 0-5.5.92-5.5 2.75V19h11v-2.25c0-1.83-3.67-2.75-5.5-2.75zM9 13c-2.33 0-7 1.17-7 3.5V19h7v-2.25c0-.85.33-2.34 2.37-3.47C10.5 13.1 9.66 13 9 13z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="MuiCardActionArea-focusHighlight"
+              />
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            style="min-width: 125px;"
+          >
+            <button
+              class="MuiButtonBase-root MuiCardActionArea-root"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="MuiCardContent-root WithStyles(ForwardRef(CardContent))-root WithStyles(ForwardRef(CardContent))-root"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                >
+                  <p
+                    class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                  >
+                    Full
+                  </p>
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M23 12l-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68L23 12zm-10 5h-2v-2h2v2zm0-4h-2V7h2v6z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="MuiCardActionArea-focusHighlight"
+              />
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            style="min-width: 125px;"
+          >
+            <button
+              class="MuiButtonBase-root MuiCardActionArea-root"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="MuiCardContent-root WithStyles(ForwardRef(CardContent))-root WithStyles(ForwardRef(CardContent))-root"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                >
+                  <p
+                    class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                  >
+                    Upload
+                  </p>
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="MuiCardActionArea-focusHighlight"
+              />
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root"
+        />
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <p
+            class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+          >
+            Start from an empty pipeline. Use this if you know how to create 
+          </p>
+        </div>
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root"
+        />
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Use Template
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders with templates provided 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg"
+    >
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <h1
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h1 MuiTypography-alignCenter"
+        >
+          Select a template
+        </h1>
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3 MuiTypography-alignCenter"
+        >
+          The templates below give starting points for pipelines which you can then edit.
+        </h3>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation15 MuiPaper-rounded"
+            style="min-width: 125px;"
+          >
+            <button
+              class="MuiButtonBase-root MuiCardActionArea-root"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="MuiCardContent-root WithStyles(ForwardRef(CardContent))-root WithStyles(ForwardRef(CardContent))-root"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                >
+                  <p
+                    class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                  >
+                    Empty
+                  </p>
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M21 3H3v18h18V3zm-4 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="MuiCardActionArea-focusHighlight"
+              />
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            style="min-width: 125px;"
+          >
+            <button
+              class="MuiButtonBase-root MuiCardActionArea-root"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="MuiCardContent-root WithStyles(ForwardRef(CardContent))-root WithStyles(ForwardRef(CardContent))-root"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                >
+                  <p
+                    class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                  >
+                    NLP Base
+                  </p>
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm8.94 3c-.46-4.17-3.77-7.48-7.94-7.94V1h-2v2.06C6.83 3.52 3.52 6.83 3.06 11H1v2h2.06c.46 4.17 3.77 7.48 7.94 7.94V23h2v-2.06c4.17-.46 7.48-3.77 7.94-7.94H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="MuiCardActionArea-focusHighlight"
+              />
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            style="min-width: 125px;"
+          >
+            <button
+              class="MuiButtonBase-root MuiCardActionArea-root"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="MuiCardContent-root WithStyles(ForwardRef(CardContent))-root WithStyles(ForwardRef(CardContent))-root"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                >
+                  <p
+                    class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                  >
+                    People
+                  </p>
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M16.5 12c1.38 0 2.49-1.12 2.49-2.5S17.88 7 16.5 7 14 8.12 14 9.5s1.12 2.5 2.5 2.5zM9 11c1.66 0 2.99-1.34 2.99-3S10.66 5 9 5 6 6.34 6 8s1.34 3 3 3zm7.5 3c-1.83 0-5.5.92-5.5 2.75V19h11v-2.25c0-1.83-3.67-2.75-5.5-2.75zM9 13c-2.33 0-7 1.17-7 3.5V19h7v-2.25c0-.85.33-2.34 2.37-3.47C10.5 13.1 9.66 13 9 13z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="MuiCardActionArea-focusHighlight"
+              />
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            style="min-width: 125px;"
+          >
+            <button
+              class="MuiButtonBase-root MuiCardActionArea-root"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="MuiCardContent-root WithStyles(ForwardRef(CardContent))-root WithStyles(ForwardRef(CardContent))-root"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                >
+                  <p
+                    class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                  >
+                    Full
+                  </p>
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M23 12l-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68L23 12zm-10 5h-2v-2h2v2zm0-4h-2V7h2v6z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="MuiCardActionArea-focusHighlight"
+              />
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            style="min-width: 125px;"
+          >
+            <button
+              class="MuiButtonBase-root MuiCardActionArea-root"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="MuiCardContent-root WithStyles(ForwardRef(CardContent))-root WithStyles(ForwardRef(CardContent))-root"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                >
+                  <p
+                    class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                  >
+                    Upload
+                  </p>
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="MuiCardActionArea-focusHighlight"
+              />
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root"
+        />
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <p
+            class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+          >
+            Start from an empty pipeline. Use this if you know how to create 
+          </p>
+        </div>
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root"
+        />
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Use Template
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg"
+    >
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <h1
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h1 MuiTypography-alignCenter"
+        >
+          Select a template
+        </h1>
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3 MuiTypography-alignCenter"
+        >
+          The templates below give starting points for pipelines which you can then edit.
+        </h3>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation15 MuiPaper-rounded"
+            style="min-width: 125px;"
+          >
+            <button
+              class="MuiButtonBase-root MuiCardActionArea-root"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="MuiCardContent-root WithStyles(ForwardRef(CardContent))-root WithStyles(ForwardRef(CardContent))-root"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                >
+                  <p
+                    class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                  >
+                    Empty
+                  </p>
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M21 3H3v18h18V3zm-4 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="MuiCardActionArea-focusHighlight"
+              />
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            style="min-width: 125px;"
+          >
+            <button
+              class="MuiButtonBase-root MuiCardActionArea-root"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="MuiCardContent-root WithStyles(ForwardRef(CardContent))-root WithStyles(ForwardRef(CardContent))-root"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                >
+                  <p
+                    class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                  >
+                    NLP Base
+                  </p>
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm8.94 3c-.46-4.17-3.77-7.48-7.94-7.94V1h-2v2.06C6.83 3.52 3.52 6.83 3.06 11H1v2h2.06c.46 4.17 3.77 7.48 7.94 7.94V23h2v-2.06c4.17-.46 7.48-3.77 7.94-7.94H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="MuiCardActionArea-focusHighlight"
+              />
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            style="min-width: 125px;"
+          >
+            <button
+              class="MuiButtonBase-root MuiCardActionArea-root"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="MuiCardContent-root WithStyles(ForwardRef(CardContent))-root WithStyles(ForwardRef(CardContent))-root"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                >
+                  <p
+                    class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                  >
+                    People
+                  </p>
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M16.5 12c1.38 0 2.49-1.12 2.49-2.5S17.88 7 16.5 7 14 8.12 14 9.5s1.12 2.5 2.5 2.5zM9 11c1.66 0 2.99-1.34 2.99-3S10.66 5 9 5 6 6.34 6 8s1.34 3 3 3zm7.5 3c-1.83 0-5.5.92-5.5 2.75V19h11v-2.25c0-1.83-3.67-2.75-5.5-2.75zM9 13c-2.33 0-7 1.17-7 3.5V19h7v-2.25c0-.85.33-2.34 2.37-3.47C10.5 13.1 9.66 13 9 13z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="MuiCardActionArea-focusHighlight"
+              />
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            style="min-width: 125px;"
+          >
+            <button
+              class="MuiButtonBase-root MuiCardActionArea-root"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="MuiCardContent-root WithStyles(ForwardRef(CardContent))-root WithStyles(ForwardRef(CardContent))-root"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                >
+                  <p
+                    class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                  >
+                    Full
+                  </p>
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M23 12l-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68L23 12zm-10 5h-2v-2h2v2zm0-4h-2V7h2v6z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="MuiCardActionArea-focusHighlight"
+              />
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            style="min-width: 125px;"
+          >
+            <button
+              class="MuiButtonBase-root MuiCardActionArea-root"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="MuiCardContent-root WithStyles(ForwardRef(CardContent))-root WithStyles(ForwardRef(CardContent))-root"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                >
+                  <p
+                    class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                  >
+                    Upload
+                  </p>
+                  <div
+                    class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="MuiCardActionArea-focusHighlight"
+              />
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root"
+        />
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <p
+            class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+          >
+            Start from an empty pipeline. Use this if you know how to create 
+          </p>
+        </div>
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root"
+        />
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Use Template
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

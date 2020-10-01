@@ -1,0 +1,230 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders dark without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root Styled(WithStyles(ForwardRef(Card)))-root MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <div
+            class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+          >
+            <div
+              class="MuiCardHeader-content"
+            >
+              <span
+                class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+              >
+                string
+              </span>
+              <span
+                class="MuiTypography-root MuiCardHeader-subheader MuiTypography-caption MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+              >
+                string
+              </span>
+            </div>
+          </div>
+          <p
+            class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+          >
+            string
+          </p>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiChip-root WithStyles(ForwardRef(Chip))-root WithStyles(ForwardRef(Chip))-root MuiChip-sizeSmall"
+            >
+              <span
+                class="MuiChip-label MuiChip-labelSmall"
+              >
+                tag
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders with partial information 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root Styled(WithStyles(ForwardRef(Card)))-root MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <div
+            class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+          >
+            <div
+              class="MuiCardHeader-content"
+            >
+              <span
+                class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+              >
+                Generic Vehicle
+              </span>
+              <span
+                class="MuiTypography-root MuiCardHeader-subheader MuiTypography-caption MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+              >
+                io.annot8.components.vehicles.processors.GenericVehicle
+              </span>
+            </div>
+          </div>
+          <p
+            class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+          >
+            Extracts vehicles (with descriptions) from text
+          </p>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders with selected 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root Styled(WithStyles(ForwardRef(Card)))-root MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        <button
+          class="MuiButtonBase-root MuiCardActionArea-root"
+          tabindex="0"
+          type="button"
+        >
+          <div
+            class="Component-root Component-root Styled(Component)-root Styled(Component)-root"
+          />
+          <div
+            class="Component-root Component-root"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+              />
+            </svg>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+            >
+              <div
+                class="MuiCardHeader-content"
+              >
+                <span
+                  class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                >
+                  Generic Vehicle
+                </span>
+                <span
+                  class="MuiTypography-root MuiCardHeader-subheader MuiTypography-caption MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                >
+                  io.annot8.components.vehicles.processors.GenericVehicle
+                </span>
+              </div>
+            </div>
+            <p
+              class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+            >
+              Extracts vehicles (with descriptions) from text
+            </p>
+            <div
+              class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+            />
+          </div>
+          <span
+            class="MuiCardActionArea-focusHighlight"
+          />
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root Styled(WithStyles(ForwardRef(Card)))-root MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        >
+          <div
+            class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+          >
+            <div
+              class="MuiCardHeader-content"
+            >
+              <span
+                class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+              >
+                string
+              </span>
+              <span
+                class="MuiTypography-root MuiCardHeader-subheader MuiTypography-caption MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+              >
+                string
+              </span>
+            </div>
+          </div>
+          <p
+            class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+          >
+            string
+          </p>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiChip-root WithStyles(ForwardRef(Chip))-root WithStyles(ForwardRef(Chip))-root MuiChip-sizeSmall"
+            >
+              <span
+                class="MuiChip-label MuiChip-labelSmall"
+              >
+                tag
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

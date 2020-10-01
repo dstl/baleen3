@@ -1,0 +1,1223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders dark without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+    >
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <div
+          class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root Styled(WithStyles(ForwardRef(Card)))-root MuiPaper-elevation1 MuiPaper-rounded"
+          tabindex="0"
+        >
+          <div
+            class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+          >
+            <div
+              class="MuiCardHeader-content"
+            >
+              <span
+                class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+              >
+                scalable optimal British Indian Ocean Territory (Chagos Archipelago) Versatile invoice
+              </span>
+            </div>
+            <div
+              class="MuiCardHeader-action"
+            >
+              <div
+                style="opacity: 0; visibility: hidden;"
+              >
+                <a
+                  class="Link-root"
+                  href="/view/scalable optimal British Indian Ocean Territory (Chagos Archipelago) Versatile invoice"
+                >
+                  <button
+                    aria-label="view"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="View"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <a
+                  class="Link-root"
+                  href="/edit/scalable optimal British Indian Ocean Territory (Chagos Archipelago) Versatile invoice"
+                >
+                  <button
+                    aria-label="edit"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="Edit"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <button
+                  aria-label="delete"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Delete"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 21h12V7H6v14zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root"
+          >
+            Non voluptatibus corporis accusantium. Velit saepe odio. Dolorum veritatis et natus est qui molestias. Culpa est veritatis quia explicabo. Quas sint in. Aliquid eos et eos ut eius ut animi reiciendis.
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <div
+          class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root Styled(WithStyles(ForwardRef(Card)))-root MuiPaper-elevation1 MuiPaper-rounded"
+          tabindex="0"
+        >
+          <div
+            class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+          >
+            <div
+              class="MuiCardHeader-content"
+            >
+              <span
+                class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+              >
+                interactive value-added deliver Denar Maryland
+              </span>
+            </div>
+            <div
+              class="MuiCardHeader-action"
+            >
+              <div
+                style="opacity: 0; visibility: hidden;"
+              >
+                <a
+                  class="Link-root"
+                  href="/view/interactive value-added deliver Denar Maryland"
+                >
+                  <button
+                    aria-label="view"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="View"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <a
+                  class="Link-root"
+                  href="/edit/interactive value-added deliver Denar Maryland"
+                >
+                  <button
+                    aria-label="edit"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="Edit"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <button
+                  aria-label="delete"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Delete"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 21h12V7H6v14zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root"
+          >
+            Totam fugiat velit. Maxime ab nisi et earum. Eos omnis consequuntur dolorem doloribus maiores at eius quia optio. Qui nostrum perspiciatis sunt aliquid odio.
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <div
+          class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root Styled(WithStyles(ForwardRef(Card)))-root MuiPaper-elevation1 MuiPaper-rounded"
+          tabindex="0"
+        >
+          <div
+            class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+          >
+            <div
+              class="MuiCardHeader-content"
+            >
+              <span
+                class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+              >
+                Delaware Checking Account Ergonomic Metal Table olive extensible
+              </span>
+            </div>
+            <div
+              class="MuiCardHeader-action"
+            >
+              <div
+                style="opacity: 0; visibility: hidden;"
+              >
+                <a
+                  class="Link-root"
+                  href="/view/Delaware Checking Account Ergonomic Metal Table olive extensible"
+                >
+                  <button
+                    aria-label="view"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="View"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <a
+                  class="Link-root"
+                  href="/edit/Delaware Checking Account Ergonomic Metal Table olive extensible"
+                >
+                  <button
+                    aria-label="edit"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="Edit"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <button
+                  aria-label="delete"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Delete"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 21h12V7H6v14zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root"
+          >
+            Hic vel hic. Voluptatum vel et inventore ut praesentium minus. Et ullam voluptates. Doloribus necessitatibus consequatur. Eum soluta alias dignissimos ad ab sed fugit. Natus beatae debitis amet et perferendis omnis.
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <div
+          class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root Styled(WithStyles(ForwardRef(Card)))-root MuiPaper-elevation1 MuiPaper-rounded"
+          tabindex="0"
+        >
+          <div
+            class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+          >
+            <div
+              class="MuiCardHeader-content"
+            >
+              <span
+                class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+              >
+                bi-directional Plastic quantify generating
+              </span>
+            </div>
+            <div
+              class="MuiCardHeader-action"
+            >
+              <div
+                style="opacity: 0; visibility: hidden;"
+              >
+                <a
+                  class="Link-root"
+                  href="/view/bi-directional Plastic quantify generating"
+                >
+                  <button
+                    aria-label="view"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="View"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <a
+                  class="Link-root"
+                  href="/edit/bi-directional Plastic quantify generating"
+                >
+                  <button
+                    aria-label="edit"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="Edit"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <button
+                  aria-label="delete"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Delete"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 21h12V7H6v14zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root"
+          >
+            Dolore non labore dolorem voluptatem officiis eveniet consequatur. Porro fuga est nihil. Est alias ut voluptas est. Facere voluptas quis velit est aliquid animi modi dolore. Non molestiae esse rerum recusandae. Reiciendis rem est est voluptatibus quia alias molestias aut.
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <div
+          class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root Styled(WithStyles(ForwardRef(Card)))-root MuiPaper-elevation1 MuiPaper-rounded"
+          tabindex="0"
+        >
+          <div
+            class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+          >
+            <div
+              class="MuiCardHeader-content"
+            >
+              <span
+                class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+              >
+                Pants forecast Crest
+              </span>
+            </div>
+            <div
+              class="MuiCardHeader-action"
+            >
+              <div
+                style="opacity: 0; visibility: hidden;"
+              >
+                <a
+                  class="Link-root"
+                  href="/view/Pants forecast Crest"
+                >
+                  <button
+                    aria-label="view"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="View"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <a
+                  class="Link-root"
+                  href="/edit/Pants forecast Crest"
+                >
+                  <button
+                    aria-label="edit"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="Edit"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <button
+                  aria-label="delete"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Delete"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 21h12V7H6v14zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root"
+          >
+            Nulla non quam ducimus omnis et voluptates. Dolor hic alias. Esse et omnis magnam rem vel ipsum. Est quo in sequi rerum quia ut.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+    >
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <div
+          class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root Styled(WithStyles(ForwardRef(Card)))-root MuiPaper-elevation1 MuiPaper-rounded"
+          tabindex="0"
+        >
+          <div
+            class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+          >
+            <div
+              class="MuiCardHeader-content"
+            >
+              <span
+                class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+              >
+                scalable optimal British Indian Ocean Territory (Chagos Archipelago) Versatile invoice
+              </span>
+            </div>
+            <div
+              class="MuiCardHeader-action"
+            >
+              <div
+                style="opacity: 0; visibility: hidden;"
+              >
+                <a
+                  class="Link-root"
+                  href="/view/scalable optimal British Indian Ocean Territory (Chagos Archipelago) Versatile invoice"
+                >
+                  <button
+                    aria-label="view"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="View"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <a
+                  class="Link-root"
+                  href="/edit/scalable optimal British Indian Ocean Territory (Chagos Archipelago) Versatile invoice"
+                >
+                  <button
+                    aria-label="edit"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="Edit"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <button
+                  aria-label="delete"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Delete"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 21h12V7H6v14zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root"
+          >
+            Non voluptatibus corporis accusantium. Velit saepe odio. Dolorum veritatis et natus est qui molestias. Culpa est veritatis quia explicabo. Quas sint in. Aliquid eos et eos ut eius ut animi reiciendis.
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <div
+          class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root Styled(WithStyles(ForwardRef(Card)))-root MuiPaper-elevation1 MuiPaper-rounded"
+          tabindex="0"
+        >
+          <div
+            class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+          >
+            <div
+              class="MuiCardHeader-content"
+            >
+              <span
+                class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+              >
+                interactive value-added deliver Denar Maryland
+              </span>
+            </div>
+            <div
+              class="MuiCardHeader-action"
+            >
+              <div
+                style="opacity: 0; visibility: hidden;"
+              >
+                <a
+                  class="Link-root"
+                  href="/view/interactive value-added deliver Denar Maryland"
+                >
+                  <button
+                    aria-label="view"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="View"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <a
+                  class="Link-root"
+                  href="/edit/interactive value-added deliver Denar Maryland"
+                >
+                  <button
+                    aria-label="edit"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="Edit"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <button
+                  aria-label="delete"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Delete"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 21h12V7H6v14zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root"
+          >
+            Totam fugiat velit. Maxime ab nisi et earum. Eos omnis consequuntur dolorem doloribus maiores at eius quia optio. Qui nostrum perspiciatis sunt aliquid odio.
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <div
+          class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root Styled(WithStyles(ForwardRef(Card)))-root MuiPaper-elevation1 MuiPaper-rounded"
+          tabindex="0"
+        >
+          <div
+            class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+          >
+            <div
+              class="MuiCardHeader-content"
+            >
+              <span
+                class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+              >
+                Delaware Checking Account Ergonomic Metal Table olive extensible
+              </span>
+            </div>
+            <div
+              class="MuiCardHeader-action"
+            >
+              <div
+                style="opacity: 0; visibility: hidden;"
+              >
+                <a
+                  class="Link-root"
+                  href="/view/Delaware Checking Account Ergonomic Metal Table olive extensible"
+                >
+                  <button
+                    aria-label="view"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="View"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <a
+                  class="Link-root"
+                  href="/edit/Delaware Checking Account Ergonomic Metal Table olive extensible"
+                >
+                  <button
+                    aria-label="edit"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="Edit"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <button
+                  aria-label="delete"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Delete"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 21h12V7H6v14zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root"
+          >
+            Hic vel hic. Voluptatum vel et inventore ut praesentium minus. Et ullam voluptates. Doloribus necessitatibus consequatur. Eum soluta alias dignissimos ad ab sed fugit. Natus beatae debitis amet et perferendis omnis.
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <div
+          class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root Styled(WithStyles(ForwardRef(Card)))-root MuiPaper-elevation1 MuiPaper-rounded"
+          tabindex="0"
+        >
+          <div
+            class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+          >
+            <div
+              class="MuiCardHeader-content"
+            >
+              <span
+                class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+              >
+                bi-directional Plastic quantify generating
+              </span>
+            </div>
+            <div
+              class="MuiCardHeader-action"
+            >
+              <div
+                style="opacity: 0; visibility: hidden;"
+              >
+                <a
+                  class="Link-root"
+                  href="/view/bi-directional Plastic quantify generating"
+                >
+                  <button
+                    aria-label="view"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="View"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <a
+                  class="Link-root"
+                  href="/edit/bi-directional Plastic quantify generating"
+                >
+                  <button
+                    aria-label="edit"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="Edit"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <button
+                  aria-label="delete"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Delete"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 21h12V7H6v14zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root"
+          >
+            Dolore non labore dolorem voluptatem officiis eveniet consequatur. Porro fuga est nihil. Est alias ut voluptas est. Facere voluptas quis velit est aliquid animi modi dolore. Non molestiae esse rerum recusandae. Reiciendis rem est est voluptatibus quia alias molestias aut.
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <div
+          class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root Styled(WithStyles(ForwardRef(Card)))-root MuiPaper-elevation1 MuiPaper-rounded"
+          tabindex="0"
+        >
+          <div
+            class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+          >
+            <div
+              class="MuiCardHeader-content"
+            >
+              <span
+                class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+              >
+                Pants forecast Crest
+              </span>
+            </div>
+            <div
+              class="MuiCardHeader-action"
+            >
+              <div
+                style="opacity: 0; visibility: hidden;"
+              >
+                <a
+                  class="Link-root"
+                  href="/view/Pants forecast Crest"
+                >
+                  <button
+                    aria-label="view"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="View"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <a
+                  class="Link-root"
+                  href="/edit/Pants forecast Crest"
+                >
+                  <button
+                    aria-label="edit"
+                    class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                    tabindex="0"
+                    title="Edit"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </a>
+                <button
+                  aria-label="delete"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Delete"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 21h12V7H6v14zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root"
+          >
+            Nulla non quam ducimus omnis et voluptates. Dolor hic alias. Esse et omnis magnam rem vel ipsum. Est quo in sequi rerum quia ut.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

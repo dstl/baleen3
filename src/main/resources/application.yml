@@ -1,0 +1,23 @@
+baleen:
+  version: @project.version@
+  persistence: pipelines
+  templates: templates
+  logging:
+    max: 1000
+  pipeline:
+    delay: 1000
+
+server:
+  port: 6413
+  error:
+    include-message: always
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api/v3/docs
+
+spring:
+  mvc:
+    converters:
+      preferred-json-mapper: jackson

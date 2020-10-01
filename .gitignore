@@ -1,0 +1,16 @@
+/pipelines/
+/templates/
+test-pipelines/
+test-templates/
+target/
+*.jar
+
+# IntelliJ
+.idea/
+*.iml
+
+# Eclipse/VSCode
+
+.settings/
+.project
+.classpath

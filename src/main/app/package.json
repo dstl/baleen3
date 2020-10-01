@@ -1,0 +1,114 @@
+{
+  "name": "baleen",
+  "version": "0.1.0",
+  "private": true,
+  "description": "This is the user interface for the Baleen server and provides a way to create and manage annot8 pipelines.",
+  "author": "Committed <contact@commmitted.io> (http://committed.io)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dstl/baleen3.git"
+  },
+  "dependencies": {
+    "@committed/components": "^3.2.0",
+    "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.54",
+    "@reach/router": "^1.3.3",
+    "@rjsf/core": "^2.0.1",
+    "@rjsf/material-ui": "^2.0.1",
+    "immer": "^7.0.0",
+    "react": "^16.13.1",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-dom": "^16.13.1",
+    "react-dropzone": "^11.0.1",
+    "react-error-boundary": "^2.2.3",
+    "react-hotkeys": "^2.0.0",
+    "react-scripts": "3.4.0",
+    "swr": "^0.2.3",
+    "typeface-inter": "^3.12.0",
+    "typescript": "^3.9.2",
+    "uuid": "^8.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:ci": "cross-env CI=true react-scripts test",
+    "test:coverage": "cross-env CI=true react-scripts test --coverage",
+    "lint": "cross-env NODE_OPTIONS=\"--max-old-space-size=4096\" eslint src -c ./.eslintrc.js --ext ts --ext tsx --ext js --cache",
+    "format": "prettier --config .prettierrc.yaml --write 'src/**/{*.js,*.ts,*.tsx,*.json,*.md,*.mdx}' './{*.js,*.ts,*.json,*.md}'",
+    "format:check": "prettier --check .prettierrc.yaml --write 'src/**/{*.js,*.ts,*.tsx,*.json,*.md,*.mdx}' './{*.js,*.ts,*.json,*.md}'",
+    "storybook": "start-storybook -p 9009 -s public",
+    "generate": "plop --plopfile ./generators/plopfile.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^5.3.18",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-docs": "^5.3.18",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/preset-create-react-app": "^2.1.2",
+    "@storybook/react": "^5.3.18",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/react-hooks": "^3.2.1",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/reach__router": "^1.3.5",
+    "@types/react": "^16.9.0",
+    "@types/react-beautiful-dnd": "^13.0.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-dropzone": "^5.1.0",
+    "@types/uuid": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.32.0",
+    "@typescript-eslint/parser": "^2.32.0",
+    "cross-env": "^7.0.2",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-flowtype": "^4.7.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "eslint-plugin-security": "^1.4.0",
+    "husky": "^4.2.5",
+    "lorem-ipsum": "^2.0.3",
+    "plop": "^2.7.1",
+    "prettier": "^2.0.5",
+    "react-test-renderer": "^16.13.1",
+    "storybook-dark-mode": "^0.4.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn format:check && yarn lint && yarn test:ci"
+    }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!<rootDir>/node_modules/",
+      "!src/**/*test.{ts,tsx}",
+      "!src/**/*stories.{ts,tsx}",
+      "!src/**/index.ts"
+    ]
+  },
+  "proxy": "http://localhost:6413"
+}

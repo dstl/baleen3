@@ -1,0 +1,286 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders dark without error 1`] = `
+<DocumentFragment>
+  <div>
+    <header
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary WithStyles(ForwardRef(AppBar))-root WithStyles(ForwardRef(AppBar))-root Styled(WithStyles(ForwardRef(AppBar)))-root Styled(WithStyles(ForwardRef(AppBar)))-root MuiPaper-elevation0"
+    >
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-regular Component-root Component-root MuiToolbar-gutters"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <a
+              aria-current="page"
+              class="Link-root"
+              href="/"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <svg
+                    class="ForwardRef(SvgBaleenHorizontal)-root ForwardRef(SvgBaleenHorizontal)-root"
+                  >
+                    Baleen_Horizontal.svg
+                  </svg>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </a>
+          </div>
+          <a
+            aria-label="components"
+            class="Link-root"
+            href="/components"
+          >
+            <button
+              class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+              tabindex="0"
+              title="Components"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12.09 2.91C10.08.9 7.07.49 4.65 1.67l4.34 4.34-3 3-4.34-4.34C.48 7.1.89 10.09 2.9 12.1c1.86 1.86 4.58 2.35 6.89 1.48l9.82 9.82 3.71-3.71-9.78-9.79c.92-2.34.44-5.1-1.45-6.99z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </a>
+          <a
+            aria-label="help"
+            class="Link-root"
+            href="/help"
+          >
+            <button
+              class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+              tabindex="0"
+              title="Help"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </a>
+          <button
+            aria-label="switch-theme"
+            class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root MuiIconButton-colorPrimary"
+            tabindex="0"
+            title="Use dark theme"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-color makeStyles-color"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 2c-1.05 0-2.05.16-3 .46 4.06 1.27 7 5.06 7 9.54s-2.94 8.27-7 9.54c.95.3 1.95.46 3 .46 5.52 0 10-4.48 10-10S14.52 2 9 2z"
+                />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Header renders without error 1`] = `
+<DocumentFragment>
+  <div>
+    <header
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary WithStyles(ForwardRef(AppBar))-root WithStyles(ForwardRef(AppBar))-root Styled(WithStyles(ForwardRef(AppBar)))-root Styled(WithStyles(ForwardRef(AppBar)))-root MuiPaper-elevation0"
+    >
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-regular Component-root Component-root MuiToolbar-gutters"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <a
+              aria-current="page"
+              class="Link-root"
+              href="/"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <svg
+                    class="ForwardRef(SvgBaleenHorizontal)-root ForwardRef(SvgBaleenHorizontal)-root"
+                  >
+                    Baleen_Horizontal.svg
+                  </svg>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </a>
+          </div>
+          <a
+            aria-label="components"
+            class="Link-root"
+            href="/components"
+          >
+            <button
+              class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+              tabindex="0"
+              title="Components"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12.09 2.91C10.08.9 7.07.49 4.65 1.67l4.34 4.34-3 3-4.34-4.34C.48 7.1.89 10.09 2.9 12.1c1.86 1.86 4.58 2.35 6.89 1.48l9.82 9.82 3.71-3.71-9.78-9.79c.92-2.34.44-5.1-1.45-6.99z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </a>
+          <a
+            aria-label="help"
+            class="Link-root"
+            href="/help"
+          >
+            <button
+              class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+              tabindex="0"
+              title="Help"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </a>
+          <button
+            aria-label="switch-theme"
+            class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root MuiIconButton-colorPrimary"
+            tabindex="0"
+            title="Use dark theme"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-color makeStyles-color"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 2c-1.05 0-2.05.16-3 .46 4.06 1.27 7 5.06 7 9.54s-2.94 8.27-7 9.54c.95.3 1.95.46 3 .46 5.52 0 10-4.48 10-10S14.52 2 9 2z"
+                />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MainAction renders without error 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        Action
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</DocumentFragment>
+`;

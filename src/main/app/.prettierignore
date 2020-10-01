@@ -1,0 +1,11 @@
+node_modules
+**/node_modules
+yarn-error.log
+.scannerwork
+out/
+*.code-workspace
+*.key
+**/*.key
+.vscode/
+coverage/
+dist/

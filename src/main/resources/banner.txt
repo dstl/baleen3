@@ -1,0 +1,11 @@
+
+
+${AnsiColor.BLUE}${AnsiStyle.BOLD}  ______         _                         ${AnsiStyle.NORMAL}${AnsiColor.GREEN} _____
+${AnsiColor.BLUE}${AnsiStyle.BOLD}  | ___ \       | |                        ${AnsiStyle.NORMAL}${AnsiColor.GREEN}|____ |
+${AnsiColor.BLUE}${AnsiStyle.BOLD}  | |_/ /  __ _ | |  ___   ___  _ __       ${AnsiStyle.NORMAL}${AnsiColor.GREEN}    / /
+${AnsiColor.BLUE}${AnsiStyle.BOLD}  | ___ \ / _` || | / _ \ / _ \| '_ \      ${AnsiStyle.NORMAL}${AnsiColor.GREEN}    \ \
+${AnsiColor.BLUE}${AnsiStyle.BOLD}  | |_/ /| (_| || ||  __/|  __/| | | |     ${AnsiStyle.NORMAL}${AnsiColor.GREEN}.___/ /
+${AnsiColor.BLUE}${AnsiStyle.BOLD}  \____/  \__,_||_| \___| \___||_| |_|     ${AnsiStyle.NORMAL}${AnsiColor.GREEN}\____/
+
+
+${AnsiColor.DEFAULT}
