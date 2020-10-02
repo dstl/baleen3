@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://committed.io">
+  <a href="https://github.com/dstl/baleen3">
     <img alt="Baleen" src="./Logo.svg" width="512" />
   </a>
 </h1>
