@@ -12,7 +12,7 @@
 
   <groupId>uk.gov.dstl</groupId>
   <artifactId>baleen</artifactId>
-  <version>3.0.1</version>
+  <version>3.0.2</version>
 
   <name>Baleen 3</name>
   <description>Baleen 3 is a tool for building and running pipelines using the Annot8 data processing framework</description>
