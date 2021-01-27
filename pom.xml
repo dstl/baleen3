@@ -7,7 +7,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.4.0</version>
+    <version>2.4.2</version>
   </parent>
 
   <groupId>uk.gov.dstl</groupId>
@@ -56,12 +56,12 @@
     <java.version>11</java.version>
 
     <annot8-api.version>1.0</annot8-api.version>
-    <annot8.version>1.0.1</annot8.version>
+    <annot8.version>1.0.2</annot8.version>
     <frontend-maven-plugin.version>1.10.0</frontend-maven-plugin.version>
     <frontend-src-dir>${project.basedir}/src/main/app</frontend-src-dir>
     <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
     <node.version>v12.3.1</node.version>
-    <typescript-generator-maven-plugin.version>2.27.744</typescript-generator-maven-plugin.version>
+    <typescript-generator-maven-plugin.version>2.28.785</typescript-generator-maven-plugin.version>
     <yarn.version>v1.22.4</yarn.version>
   </properties>
 
@@ -76,19 +76,19 @@
     <dependency>
       <groupId>org.springdoc</groupId>
       <artifactId>springdoc-openapi-ui</artifactId>
-      <version>1.5.0</version>
+      <version>1.5.3</version>
     </dependency>
 
     <!-- JSON -->
     <dependency>
       <groupId>com.github.victools</groupId>
       <artifactId>jsonschema-generator</artifactId>
-      <version>4.16.0</version>
+      <version>4.17.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.johnzon</groupId>
       <artifactId>johnzon-mapper</artifactId>
-      <version>1.2.8</version>
+      <version>1.2.10</version>
     </dependency>
 
     <!-- Annot8 -->
@@ -127,19 +127,19 @@
     <dependency>
       <groupId>io.annot8</groupId>
       <artifactId>annot8-conventions</artifactId>
-      <version>1.0.0</version>
+      <version>1.1.0</version>
     </dependency>
 
     <!-- Other -->
     <dependency>
       <groupId>io.github.classgraph</groupId>
       <artifactId>classgraph</artifactId>
-      <version>4.8.92</version>
+      <version>4.8.100</version>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>30.0-jre</version>
+      <version>30.1-jre</version>
     </dependency>
 
     <!-- Testing -->
@@ -164,13 +164,13 @@
     <dependency>
       <groupId>io.annot8</groupId>
       <artifactId>annot8-components-geo</artifactId>
-      <version>1.0.0</version>
+      <version>1.1.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>io.annot8</groupId>
       <artifactId>annot8-components-print</artifactId>
-      <version>1.0.0</version>
+      <version>1.1.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
