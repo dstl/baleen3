@@ -183,9 +183,9 @@ export const getPipelineMetrics = async (
   _fetchKey: string,
   name: string
 ): Promise<MetricsContainer> =>
-  Api.getMetrics$GET$api_v3_pipelines_name_metrics(name) as Promise<
-    MetricsContainer
-  >
+  Api.getMetrics$GET$api_v3_pipelines_name_metrics(
+    name
+  ) as Promise<MetricsContainer>
 
 export const getLogs = async (
   _fetchKey: string,

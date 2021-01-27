@@ -39,9 +39,9 @@ export const PipelineMetrics: React.FC<PipelineMetricsProps> = ({
   // At this time we just flatten the metrics from the different components (e.g. pipeline, RestApiSource)
   // this is currently safe to do as all are about the pipeline and the names do not overlap - this may change.
 
-  const measurements: MeasurementContainer = Object.keys(container).reduce<
-    MeasurementContainer
-  >((acc, key) => {
+  const measurements: MeasurementContainer = Object.keys(
+    container
+  ).reduce<MeasurementContainer>((acc, key) => {
     Object.assign(acc, container[`${key}`])
     return acc
   }, {})
