@@ -48,13 +48,16 @@ export const PipelineMetrics: React.FC<PipelineMetricsProps> = ({
 
   return (
     <CenteredRow>
-      {Object.keys(measurements).filter(key => key in metrics).map((key) => (
-        <MetricView
-          key={key}
-          name={key}
-          metadata={metrics[`${key}`]}
-          measurements={measurements[`${key}`]}
-        />
+      {Object.keys(measurements)
+        .filter(key => key in metrics)
+        .sort((a, b) => a.localeCompare(b))
+        .map((key) => (
+          <MetricView
+            key={key}
+            name={key}
+            metadata={metrics[`${key}`]}
+            measurements={measurements[`${key}`]}
+          />
       ))}
     </CenteredRow>
   )
