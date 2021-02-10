@@ -48,7 +48,7 @@ export const PipelineMetrics: React.FC<PipelineMetricsProps> = ({
 
   return (
     <CenteredRow>
-      {Object.keys(measurements).map((key) => (
+      {Object.keys(measurements).filter(key => key in metrics).map((key) => (
         <MetricView
           key={key}
           name={key}

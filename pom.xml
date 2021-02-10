@@ -12,7 +12,7 @@
 
   <groupId>uk.gov.dstl</groupId>
   <artifactId>baleen</artifactId>
-  <version>3.0.2</version>
+  <version>3.0.3-SNAPSHOT</version>
 
   <name>Baleen 3</name>
   <description>Baleen 3 is a tool for building and running pipelines using the Annot8 data processing framework</description>
@@ -56,12 +56,12 @@
     <java.version>11</java.version>
 
     <annot8-api.version>1.0</annot8-api.version>
-    <annot8.version>1.0.2</annot8.version>
+    <annot8.version>1.0.3</annot8.version>
     <frontend-maven-plugin.version>1.10.0</frontend-maven-plugin.version>
     <frontend-src-dir>${project.basedir}/src/main/app</frontend-src-dir>
     <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
     <node.version>v12.3.1</node.version>
-    <typescript-generator-maven-plugin.version>2.28.785</typescript-generator-maven-plugin.version>
+    <typescript-generator-maven-plugin.version>2.29.814</typescript-generator-maven-plugin.version>
     <yarn.version>v1.22.4</yarn.version>
   </properties>
 
@@ -134,7 +134,7 @@
     <dependency>
       <groupId>io.github.classgraph</groupId>
       <artifactId>classgraph</artifactId>
-      <version>4.8.100</version>
+      <version>4.8.102</version>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>
