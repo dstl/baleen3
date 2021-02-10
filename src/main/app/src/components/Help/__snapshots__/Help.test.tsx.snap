@@ -926,50 +926,6 @@ exports[`renders dark without error 1`] = `
                 <p
                   class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
                 >
-                  Processed
-                </p>
-                <p
-                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
-                >
-                  5
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
-          >
-            <div
-              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
-            >
-              <div
-                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
-              >
-                <p
-                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
-                >
-                  Runtime
-                </p>
-                <p
-                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
-                >
-                  8.175
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
-          >
-            <div
-              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
-            >
-              <div
-                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
-              >
-                <p
-                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
-                >
                   Processing Time
                 </p>
                 <p
@@ -998,6 +954,50 @@ exports[`renders dark without error 1`] = `
                   class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
                 >
                   5
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+              >
+                <p
+                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
+                >
+                  Processed
+                </p>
+                <p
+                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                >
+                  5
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+              >
+                <p
+                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
+                >
+                  Runtime
+                </p>
+                <p
+                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                >
+                  8.175
                 </p>
               </div>
             </div>
@@ -4271,50 +4271,6 @@ exports[`renders without error 1`] = `
                 <p
                   class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
                 >
-                  Processed
-                </p>
-                <p
-                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
-                >
-                  5
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
-          >
-            <div
-              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
-            >
-              <div
-                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
-              >
-                <p
-                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
-                >
-                  Runtime
-                </p>
-                <p
-                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
-                >
-                  8.175
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
-          >
-            <div
-              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
-            >
-              <div
-                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
-              >
-                <p
-                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
-                >
                   Processing Time
                 </p>
                 <p
@@ -4343,6 +4299,50 @@ exports[`renders without error 1`] = `
                   class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
                 >
                   5
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+              >
+                <p
+                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
+                >
+                  Processed
+                </p>
+                <p
+                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                >
+                  5
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+              >
+                <p
+                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
+                >
+                  Runtime
+                </p>
+                <p
+                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                >
+                  8.175
                 </p>
               </div>
             </div>
