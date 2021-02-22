@@ -43,4 +43,19 @@ export const metrics: { [key: string]: MetricMetadata } = {
     description: 'The number of items created',
     units: 'items',
   },
+  'itemsProcessed.ok': {
+    name: 'Processed (OK)',
+    description: 'The number of items that were successfully processed',
+    units: 'items',
+  },
+  'itemsProcessed.processorError': {
+    name: 'Processed (Processor Error)',
+    description: 'The number of items that failed to process successfully due to a Processor Error',
+    units: 'items',
+  },
+  'itemsProcessed.itemError': {
+    name: 'Processed (Item Error)',
+    description: 'The number of items that failed to process successfully due to an Item Error',
+    units: 'items',
+  },
 }
