@@ -25,6 +25,7 @@ import com.google.common.io.CharStreams;
 import io.annot8.api.pipelines.PipelineDescriptor;
 import io.annot8.conventions.PathUtils;
 import io.annot8.conventions.PropertyKeys;
+import io.annot8.implementations.pipeline.InMemoryPipelineRunner;
 import io.annot8.implementations.pipeline.SimplePipelineDescriptor;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -93,6 +94,23 @@ public class PipelineController {
           String name) {
 
     return pipelineService.getPipeline(name).getDescriptor();
+  }
+
+  @GetMapping(value = "/{name}/running", produces = MediaType.APPLICATION_JSON_VALUE)
+  @Operation(description = "Determine whether the pipeline is currently running")
+  @ApiResponses({
+    @ApiResponse(responseCode = "200", description = SUCCESS),
+    @ApiResponse(responseCode = "404", description = PIPELINE_NOT_FOUND)
+  })
+  public boolean getPipelineRunning(
+    @PathVariable("name") @Parameter(description = "Name of pipeline", required = true)
+      String name) {
+
+    try {
+      return ((InMemoryPipelineRunner)pipelineService.getPipeline(name).getPipelineRunner()).isRunning();
+    }catch (ClassCastException e){
+      return true;
+    }
   }
 
   @PostMapping(

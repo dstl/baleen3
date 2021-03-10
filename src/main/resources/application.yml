@@ -5,7 +5,7 @@ baleen:
   logging:
     max: 1000
   pipeline:
-    delay: 1000
+    delay: 0
 
 server:
   port: 6413

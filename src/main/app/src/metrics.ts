@@ -25,7 +25,7 @@ export const metrics: { [key: string]: MetricMetadata } = {
     name: 'Runtime',
     description: 'The time the pipeline has been running',
     units: 's',
-    transform: (v: number): number => v / 1000,
+    //transform: (v: number): number => v / 1000, // No need to convert into seconds from Annot8 1.0.3 onwards
   },
   itemsProcessed: {
     name: 'Processed',
@@ -35,8 +35,7 @@ export const metrics: { [key: string]: MetricMetadata } = {
   itemProcessingTime: {
     name: 'Processing Time',
     description: 'The average time taken to process an item',
-    units: 'seconds per item',
-    transform: (v: number): number => v / 1000,
+    units: 'seconds per item'
   },
   'items.created': {
     name: 'Created',

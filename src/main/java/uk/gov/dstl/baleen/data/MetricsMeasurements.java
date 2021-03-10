@@ -26,11 +26,11 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import javax.json.bind.annotation.JsonbTransient;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
+import java.util.TreeMap;
 
 @Schema(name = "Metrics Measurements", description = "The metrics measured for a specific class")
-public class MetricsMeasurements extends HashMap<String, List<Measurement>>{
+public class MetricsMeasurements extends TreeMap<String, List<Measurement>> {
 
   @JsonbTransient
   public List<Measurement> getMeasurements(String name) {

@@ -24,12 +24,12 @@ import io.micrometer.core.instrument.Measurement;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import javax.json.bind.annotation.JsonbTransient;
-import java.util.HashMap;
+import java.util.TreeMap;
 
 @Schema(
     name = "Metrics Container",
     description = "Holds all the classes that have metrics associated with them, and their associated measurements")
-public class MetricsContainer extends HashMap<String, MetricsMeasurements> {
+public class MetricsContainer extends TreeMap<String, MetricsMeasurements> {
 
   @JsonbTransient
   public MetricsMeasurements getMeasurements(String clazz) {
