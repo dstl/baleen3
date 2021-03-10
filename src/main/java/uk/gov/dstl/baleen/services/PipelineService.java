@@ -280,10 +280,10 @@ public class PipelineService {
 
   /**
    *
-   * @return list of the current pipelines metadata
+   * @return list of the current pipelines metadata (sorted by pipeline name)
    */
   public List<PipelineMetadata> getPipelinesMetadata() {
-    return pipelines.values().stream().map(PipelineMetadata::new).collect(Collectors.toList());
+    return pipelines.values().stream().map(PipelineMetadata::new).sorted(Comparator.comparing(PipelineMetadata::getName)).collect(Collectors.toList());
   }
 
   /**
