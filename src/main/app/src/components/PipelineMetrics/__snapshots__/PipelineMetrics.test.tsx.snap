@@ -23,7 +23,7 @@ exports[`renders dark without error 1`] = `
             <p
               class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
             >
-              33180
+              33180000
             </p>
           </div>
         </div>
@@ -56,7 +56,7 @@ exports[`renders without error 1`] = `
             <p
               class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
             >
-              33180
+              33180000
             </p>
           </div>
         </div>

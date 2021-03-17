@@ -931,7 +931,7 @@ exports[`renders dark without error 1`] = `
                 <p
                   class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
                 >
-                  0.00001297
+                  0.01297
                 </p>
               </div>
             </div>
@@ -997,7 +997,7 @@ exports[`renders dark without error 1`] = `
                 <p
                   class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
                 >
-                  8.175
+                  8175
                 </p>
               </div>
             </div>
@@ -4276,7 +4276,7 @@ exports[`renders without error 1`] = `
                 <p
                   class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
                 >
-                  0.00001297
+                  0.01297
                 </p>
               </div>
             </div>
@@ -4342,7 +4342,7 @@ exports[`renders without error 1`] = `
                 <p
                   class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
                 >
-                  8.175
+                  8175
                 </p>
               </div>
             </div>
