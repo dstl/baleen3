@@ -28,6 +28,7 @@ import io.annot8.api.pipelines.PipelineDescriptor;
 import io.annot8.api.pipelines.PipelineRunner;
 import io.annot8.common.components.logging.Logging;
 import io.annot8.common.components.metering.Metering;
+import io.annot8.implementations.pipeline.ErrorConfiguration;
 import io.annot8.implementations.pipeline.InMemoryPipelineRunner;
 import io.annot8.implementations.reference.factories.DefaultItemFactory;
 import io.annot8.implementations.support.context.SimpleContext;
@@ -72,6 +73,15 @@ public class PipelineService {
 
   @Value("${baleen.pipeline.delay}")
   private Long pipelineDelay;
+
+  @Value("${baleen.errors.source}")
+  private ErrorConfiguration.OnSourceError sourceError;
+
+  @Value("${baleen.errors.processor}")
+  private ErrorConfiguration.OnProcessingError processorError;
+
+  @Value("${baleen.errors.item}")
+  private ErrorConfiguration.OnProcessingError itemError;
 
   @Autowired
   private ObjectMapper objectMapper;
@@ -257,10 +267,40 @@ public class PipelineService {
       context = new SimpleContext(logging, metering);
     }
 
+    LOGGER.debug("Determining error configuration for pipeline {}", descriptor.getName());
+
+    //TODO: Add support for this through the UI
+    ErrorConfiguration errorConfiguration = null;
+    if(descriptor instanceof MutablePipelineDescriptor){
+      errorConfiguration = ((MutablePipelineDescriptor) descriptor).getErrorConfiguration();
+    }
+
+    if(errorConfiguration == null){
+      errorConfiguration = new ErrorConfiguration();
+      if (sourceError != null)
+        errorConfiguration.setOnSourceError(sourceError);
+      if (processorError != null)
+        errorConfiguration.setOnProcessorError(processorError);
+      if (itemError != null)
+        errorConfiguration.setOnItemError(itemError);
+    }
+
+    // Print information about error configuration
+    LOGGER.info("Error configuration for pipeline {} on source errors is {}", descriptor.getName(), errorConfiguration.getOnSourceError());
+    LOGGER.info("Error configuration for pipeline {} on processing errors is {}", descriptor.getName(), errorConfiguration.getOnProcessorError());
+    LOGGER.info("Error configuration for pipeline {} on item errors is {}", descriptor.getName(), errorConfiguration.getOnItemError());
+
     //Create runner and start it running on a new thread
     LOGGER.debug("Creating runner for pipeline {}", descriptor.getName());
 
-    PipelineRunner runner = new InMemoryPipelineRunner(descriptor, itemFactory, context, pipelineDelay);
+    PipelineRunner runner = new InMemoryPipelineRunner.Builder()
+      .withPipelineDescriptor(descriptor)
+      .withItemFactory(itemFactory)
+      .withContext(context)
+      .withDelay(pipelineDelay)
+      .withErrorConfiguration(errorConfiguration)
+      .build();
+
     holder.setPipelineRunner(runner);
 
     Thread t = new Thread(runner);

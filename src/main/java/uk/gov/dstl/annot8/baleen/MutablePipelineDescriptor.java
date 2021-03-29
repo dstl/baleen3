@@ -23,6 +23,7 @@ package uk.gov.dstl.annot8.baleen;
 import io.annot8.api.components.ProcessorDescriptor;
 import io.annot8.api.components.SourceDescriptor;
 import io.annot8.api.pipelines.PipelineDescriptor;
+import io.annot8.implementations.pipeline.ErrorConfiguration;
 
 import java.util.Collection;
 
@@ -37,6 +38,7 @@ public class MutablePipelineDescriptor implements PipelineDescriptor {
   private String description;
   private Collection<SourceDescriptor> sources;
   private Collection<ProcessorDescriptor> processors;
+  private ErrorConfiguration errorConfiguration = null;
 
   @Override
   public String getName() {
@@ -70,4 +72,10 @@ public class MutablePipelineDescriptor implements PipelineDescriptor {
     this.processors = processors;
   }
 
+  public ErrorConfiguration getErrorConfiguration() {
+    return errorConfiguration;
+  }
+  public void setErrorConfiguration(ErrorConfiguration errorConfiguration) {
+    this.errorConfiguration = errorConfiguration;
+  }
 }
