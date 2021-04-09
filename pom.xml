@@ -12,7 +12,7 @@
 
   <groupId>uk.gov.dstl</groupId>
   <artifactId>baleen</artifactId>
-  <version>3.0.3-SNAPSHOT</version>
+  <version>3.1.0-SNAPSHOT</version>
 
   <name>Baleen 3</name>
   <description>Baleen 3 is a tool for building and running pipelines using the Annot8 data processing framework</description>
@@ -55,7 +55,7 @@
   <properties>
     <java.version>11</java.version>
 
-    <annot8-api.version>1.0</annot8-api.version>
+    <annot8-api.version>1.1-SNAPSHOT</annot8-api.version>
     <annot8.version>1.1.0-SNAPSHOT</annot8.version>
     <frontend-maven-plugin.version>1.10.0</frontend-maven-plugin.version>
     <frontend-src-dir>${project.basedir}/src/main/app</frontend-src-dir>
@@ -86,9 +86,9 @@
       <version>4.18.0</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.johnzon</groupId>
-      <artifactId>johnzon-mapper</artifactId>
-      <version>1.2.10</version>
+      <groupId>org.eclipse</groupId>
+      <artifactId>yasson</artifactId>
+      <version>2.0.2</version>
     </dependency>
 
     <!-- Annot8 -->
@@ -295,7 +295,7 @@
           <installDirectory>${project.build.directory}</installDirectory>
         </configuration>
 
-        <executions>
+<!--        <executions>
           <execution>
             <id>install-frontend-tools</id>
             <goals>
@@ -345,7 +345,7 @@
               <arguments>build</arguments>
             </configuration>
           </execution>
-        </executions>
+        </executions> -->
       </plugin>
 
       <plugin>

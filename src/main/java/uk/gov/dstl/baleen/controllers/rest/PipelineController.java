@@ -22,6 +22,7 @@ package uk.gov.dstl.baleen.controllers.rest;
 
 import com.google.common.io.ByteStreams;
 import com.google.common.io.CharStreams;
+import io.annot8.api.pipelines.ErrorConfiguration;
 import io.annot8.api.pipelines.PipelineDescriptor;
 import io.annot8.conventions.PathUtils;
 import io.annot8.conventions.PropertyKeys;
@@ -39,13 +40,25 @@ import org.slf4j.event.Level;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestController;
 import uk.gov.dstl.annot8.baleen.SubmittedData;
 import uk.gov.dstl.baleen.data.MetricsContainer;
 import uk.gov.dstl.baleen.data.MetricsMeasurements;
 import uk.gov.dstl.baleen.data.PipelineComponents;
 import uk.gov.dstl.baleen.data.PipelineMetadata;
-import uk.gov.dstl.baleen.exceptions.*;
+import uk.gov.dstl.baleen.exceptions.AlreadyExistsException;
+import uk.gov.dstl.baleen.exceptions.BadRequestException;
+import uk.gov.dstl.baleen.exceptions.InternalServerErrorException;
+import uk.gov.dstl.baleen.exceptions.PipelineNotFoundException;
+import uk.gov.dstl.baleen.exceptions.UnsupportedMediaTypeException;
 import uk.gov.dstl.baleen.logging.BaleenLogEntry;
 import uk.gov.dstl.baleen.services.PipelineService;
 import uk.gov.dstl.baleen.utils.Annot8Utils;
@@ -125,13 +138,19 @@ public class PipelineController {
   })
   public void createPipeline(
       @PathVariable("name") @Parameter(description = "Name of pipeline", required = true)
-          String name,
+        String name,
       @RequestParam(value = "description", defaultValue = "") @Parameter(description = "Description of the pipeline")
-          String description,
+        String description,
       @RequestBody @Parameter(description = "Pipeline configuration", required = true)
-          PipelineComponents configuration,
+        PipelineComponents configuration,
       @RequestParam(value = "orderer", defaultValue = "io.annot8.api.pipelines.NoOpOrderer") @Parameter(description = "Class name of the pipeline orderer")
         String orderer,
+      @RequestParam(value = "onSourceError", required = false) @Parameter(description = "Action to take if a Source error occurs")
+        ErrorConfiguration.OnSourceError onSourceError,
+      @RequestParam(value = "onProcessorError", required = false) @Parameter(description = "Action to take if a Processor error occurs")
+        ErrorConfiguration.OnProcessingError onProcessorError,
+      @RequestParam(value = "onItemError", required = false) @Parameter(description = "Action to take if an Item error occurs")
+        ErrorConfiguration.OnProcessingError onItemError,
       @RequestParam(value = "persist", defaultValue = "true") @Parameter(description = "Persist the pipeline to disk")
           boolean persistPipeline) {
 
@@ -150,6 +169,15 @@ public class PipelineController {
 
     if(orderer != null)
       builder = builder.withOrderer(Annot8Utils.getOrderer(orderer));
+
+    ErrorConfiguration errorConfiguration = new ErrorConfiguration();
+    if(onSourceError != null)
+      errorConfiguration.setOnSourceError(onSourceError);
+    if(onProcessorError != null)
+      errorConfiguration.setOnProcessorError(onProcessorError);
+    if(onItemError != null)
+      errorConfiguration.setOnItemError(onItemError);
+    builder = builder.withErrorConfiguration(errorConfiguration);
 
     PipelineDescriptor descriptor = builder.build();
 

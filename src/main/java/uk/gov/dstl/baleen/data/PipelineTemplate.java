@@ -22,6 +22,7 @@ package uk.gov.dstl.baleen.data;
 
 import io.annot8.api.components.ProcessorDescriptor;
 import io.annot8.api.components.SourceDescriptor;
+import io.annot8.api.pipelines.ErrorConfiguration;
 import io.annot8.api.pipelines.PipelineDescriptor;
 
 import javax.annotation.Nullable;
@@ -55,6 +56,12 @@ public class PipelineTemplate implements PipelineDescriptor {
    */
   @Nullable
   private String orderer;
+
+  /**
+   * The error configuration to apply
+   */
+  @Nullable
+  private ErrorConfiguration errorConfiguration;
 
   /**
    * The source components of this template
@@ -103,6 +110,11 @@ public class PipelineTemplate implements PipelineDescriptor {
     return processors;
   }
 
+  @Override
+  public ErrorConfiguration getErrorConfiguration() {
+    return errorConfiguration;
+  }
+
   public void setDescription(String description) {
     this.description = description;
   }
@@ -113,5 +125,9 @@ public class PipelineTemplate implements PipelineDescriptor {
 
   public void setOrderer(@Nullable String orderer) {
     this.orderer = orderer;
+  }
+
+  public void setErrorConfiguration(@Nullable ErrorConfiguration errorConfiguration) {
+    this.errorConfiguration = errorConfiguration;
   }
 }

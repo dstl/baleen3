@@ -6,10 +6,6 @@ baleen:
     max: 1000
   pipeline:
     delay: 0
-  errors:
-    source: REMOVE_SOURCE
-    processor: REMOVE_PROCESSOR
-    item: DISCARD_ITEM
 
 server:
   port: 6413

@@ -24,11 +24,11 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.annot8.api.context.Context;
 import io.annot8.api.data.ItemFactory;
+import io.annot8.api.pipelines.ErrorConfiguration;
 import io.annot8.api.pipelines.PipelineDescriptor;
 import io.annot8.api.pipelines.PipelineRunner;
 import io.annot8.common.components.logging.Logging;
 import io.annot8.common.components.metering.Metering;
-import io.annot8.implementations.pipeline.ErrorConfiguration;
 import io.annot8.implementations.pipeline.InMemoryPipelineRunner;
 import io.annot8.implementations.reference.factories.DefaultItemFactory;
 import io.annot8.implementations.support.context.SimpleContext;
@@ -54,8 +54,20 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.*;
-import java.util.*;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardWatchEventKinds;
+import java.nio.file.WatchEvent;
+import java.nio.file.WatchKey;
+import java.nio.file.WatchService;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 /**
@@ -73,15 +85,6 @@ public class PipelineService {
 
   @Value("${baleen.pipeline.delay}")
   private Long pipelineDelay;
-
-  @Value("${baleen.errors.source}")
-  private ErrorConfiguration.OnSourceError sourceError;
-
-  @Value("${baleen.errors.processor}")
-  private ErrorConfiguration.OnProcessingError processorError;
-
-  @Value("${baleen.errors.item}")
-  private ErrorConfiguration.OnProcessingError itemError;
 
   @Autowired
   private ObjectMapper objectMapper;
@@ -270,19 +273,10 @@ public class PipelineService {
     LOGGER.debug("Determining error configuration for pipeline {}", descriptor.getName());
 
     //TODO: Add support for this through the UI
-    ErrorConfiguration errorConfiguration = null;
-    if(descriptor instanceof MutablePipelineDescriptor){
-      errorConfiguration = ((MutablePipelineDescriptor) descriptor).getErrorConfiguration();
-    }
+    ErrorConfiguration errorConfiguration = descriptor.getErrorConfiguration();
 
     if(errorConfiguration == null){
       errorConfiguration = new ErrorConfiguration();
-      if (sourceError != null)
-        errorConfiguration.setOnSourceError(sourceError);
-      if (processorError != null)
-        errorConfiguration.setOnProcessorError(processorError);
-      if (itemError != null)
-        errorConfiguration.setOnItemError(itemError);
     }
 
     // Print information about error configuration
