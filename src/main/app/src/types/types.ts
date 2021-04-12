@@ -25,6 +25,7 @@ import {
   SettingsSchema,
   WithDescription,
   WithName,
+  ErrorConfiguration,
 } from './server-types'
 
 /**
@@ -118,6 +119,7 @@ export interface PipelineViewDescriptor extends PipelineHeaderDescriptor {
   sourceOrder: string[]
   processorOrder: string[]
   components: Record<string, ComponentMetadata>
+  errorConfiguration: ErrorConfiguration
 }
 
 /**

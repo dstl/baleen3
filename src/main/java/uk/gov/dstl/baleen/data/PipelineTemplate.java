@@ -77,6 +77,7 @@ public class PipelineTemplate implements PipelineDescriptor {
     this.name = name;
     this.sources = sources;
     this.processors = processors;
+    this.errorConfiguration = new ErrorConfiguration();
   }
 
   @Override
@@ -126,7 +127,7 @@ public class PipelineTemplate implements PipelineDescriptor {
     this.orderer = orderer;
   }
 
-  public void setErrorConfiguration(@Nullable ErrorConfiguration errorConfiguration) {
+  public void setErrorConfiguration(ErrorConfiguration errorConfiguration) {
     this.errorConfiguration = errorConfiguration;
   }
 }

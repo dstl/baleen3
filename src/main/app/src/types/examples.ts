@@ -164,9 +164,9 @@ export const exampleEmptyPipeline: PipelineDescriptor = {
   sources: [],
   processors: [],
   errorConfiguration: {
-    onItemError: 'IGNORE',
-    onProcessorError: 'IGNORE',
-    onSourceError: 'IGNORE'
+    onItemError: 'DISCARD_ITEM',
+    onProcessorError: 'REMOVE_PROCESSOR',
+    onSourceError: 'REMOVE_SOURCE'
   }
 }
 
@@ -176,6 +176,11 @@ export const exampleEmptyPipelineView: PipelineViewDescriptor = {
   sourceOrder: [],
   processorOrder: [],
   components: {},
+  errorConfiguration: {
+    onItemError: 'DISCARD_ITEM',
+    onProcessorError: 'REMOVE_PROCESSOR',
+    onSourceError: 'REMOVE_SOURCE'
+  }
 }
 
 export const exampleEmptyPipelineEdit: PipelineEditDescriptor = {
@@ -284,6 +289,11 @@ export const examplePipelineView: PipelineViewDescriptor = {
   },
   sourceOrder: ['1'],
   processorOrder: ['2', '3'],
+  errorConfiguration: {
+    onItemError: 'DISCARD_ITEM',
+    onProcessorError: 'REMOVE_PROCESSOR',
+    onSourceError: 'REMOVE_SOURCE'
+  }
 }
 
 export const examplePipelineEdit: PipelineEditDescriptor = {
@@ -443,6 +453,11 @@ export const multipleSourcePipelineView: PipelineViewDescriptor = {
       valid: true,
     },
   },
+  errorConfiguration: {
+    onItemError: 'DISCARD_ITEM',
+    onProcessorError: 'REMOVE_PROCESSOR',
+    onSourceError: 'REMOVE_SOURCE'
+  }
 }
 
 export const multipleSourcePipelineEdit: PipelineEditDescriptor = {
@@ -949,11 +964,11 @@ export const exampleTemplates: PipelineTemplate[] = [
     orderer: NO_OP_ORDERER,
     sources: [],
     processors: [],
-      errorConfiguration: {
-        onItemError: 'DISCARD_ITEM',
-        onProcessorError: 'REMOVE_PROCESSOR',
-        onSourceError: 'REMOVE_SOURCE'
-      }
+    errorConfiguration: {
+      onItemError: 'DISCARD_ITEM',
+      onProcessorError: 'REMOVE_PROCESSOR',
+      onSourceError: 'REMOVE_SOURCE'
+    }
   },
   {
     name: 'NLP Base',

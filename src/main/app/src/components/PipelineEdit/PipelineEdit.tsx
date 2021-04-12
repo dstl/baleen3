@@ -29,7 +29,7 @@ import Backdrop from '@material-ui/core/Backdrop'
 import React from 'react'
 import { GlobalHotKeys, KeyMap } from 'react-hotkeys'
 import { useDialog, useServerDetails } from '../../hooks'
-import { ComponentInfo, PipelineEditDescriptor } from '../../types'
+import { ComponentInfo, PipelineEditDescriptor, ErrorConfiguration } from '../../types'
 import { DescriptionDialog } from '../DescriptionDialog'
 import { Divider } from '../Divider'
 import { ErrorNotifier } from '../ErrorNotifier'
@@ -38,6 +38,7 @@ import { Logo } from '../Logo'
 import { NameDialog } from '../NameDialog'
 import { Page } from '../Page'
 import { PipelineEditComponents } from '../PipelineEditComponents'
+import { PipelineEditErrorConfiguration } from '../PipelineEditErrorConfiguration'
 import { SelectComponentDialog } from '../SelectComponentDialog/SelectComponentDialog'
 import { PipelineEditOrderer } from './PipelineEditOrderer'
 
@@ -65,6 +66,7 @@ export interface PipelineEditProps {
   moveProcessor: (from: number, to: number) => void
   setComponentName: (id: string, key: string, name: string) => void
   setComponentSettings: (id: string, key: string, settings: object) => void
+  setErrorConfiguration: (errorConfiguration: ErrorConfiguration) => void
 }
 
 const Busy: React.ComponentType<{ open: boolean }> = styled(Backdrop)(
@@ -213,6 +215,7 @@ export const PipelineEdit: React.FC<PipelineEditProps> = ({
   moveProcessor,
   setComponentName,
   setComponentSettings,
+  setErrorConfiguration,
 }: PipelineEditProps) => {
   const {
     name,
@@ -338,6 +341,11 @@ export const PipelineEdit: React.FC<PipelineEditProps> = ({
           setComponentName={setComponentName}
           setComponentSettings={setComponentSettings}
         />
+        <Column p={2} alignItems="center">
+          <Divider />
+          <Heading.h3 my={2}>Error Configuration</Heading.h3>
+        </Column>
+        <PipelineEditErrorConfiguration errorConfiguration={pipeline.errorConfiguration} setErrorConfiguration={setErrorConfiguration} />
       </Page>
       <ErrorNotifier error={error} />
       <Busy open={busy}>

@@ -29,6 +29,7 @@ import {
   PipelineTemplate,
   ProcessorDescriptor,
   SourceDescriptor,
+  ErrorConfiguration,
 } from '../types'
 import {
   createComponent,
@@ -247,6 +248,15 @@ export const PipelineEditContainer: React.FC<PipelineEditContainerProps> = ({
     [modify]
   )
 
+  const setErrorConfiguration = useCallback(
+    (errorConfiguration: ErrorConfiguration) => {
+      modify((draft) => {
+        draft.errorConfiguration = errorConfiguration
+      })
+    },
+    [modify]
+  )
+
   const performSave = useCallback(async () => {
     setBusy(true)
     const {
@@ -256,6 +266,7 @@ export const PipelineEditContainer: React.FC<PipelineEditContainerProps> = ({
       processorOrder,
       components,
       orderer,
+      errorConfiguration
     } = pipeline
 
     const sources = sourceOrder.map((s) => components[`${s}`].descriptor)
@@ -266,12 +277,7 @@ export const PipelineEditContainer: React.FC<PipelineEditContainerProps> = ({
       description,
       sources,
       processors,
-      //TODO: Is this where we need to add in error configuration specified by user?
-      errorConfiguration: {
-        onItemError: 'DISCARD_ITEM',
-        onProcessorError: 'REMOVE_PROCESSOR',
-        onSourceError: 'REMOVE_SOURCE'
-      }
+      errorConfiguration
     }
     try {
       await onSave(createPipeline, orderer)
@@ -291,6 +297,7 @@ export const PipelineEditContainer: React.FC<PipelineEditContainerProps> = ({
       sourceOrder,
       processorOrder,
       components,
+      errorConfiguration
     } = pipeline
     const sources = sourceOrder.map((s) => components[`${s}`].descriptor)
     const processors = processorOrder.map((p) => components[`${p}`].descriptor)
@@ -300,12 +307,7 @@ export const PipelineEditContainer: React.FC<PipelineEditContainerProps> = ({
       description,
       sources,
       processors,
-      //TODO: Is this where we need to add in error configuration specified by user?
-      errorConfiguration: {
-        onItemError: 'DISCARD_ITEM',
-        onProcessorError: 'REMOVE_PROCESSOR',
-        onSourceError: 'REMOVE_SOURCE'
-      }
+      errorConfiguration
     }
     try {
       const {
@@ -317,15 +319,10 @@ export const PipelineEditContainer: React.FC<PipelineEditContainerProps> = ({
         const newOrderedPipeline: PipelineDescriptor = {
           name,
           description,
-//        orderer,
+//        orderer,  //TODO: Remove this?
           sources: orderedSources,
           processors: orderedProcessors,
-          //TODO: Is this where we need to add in error configuration specified by user?
-          errorConfiguration: {
-            onItemError: 'DISCARD_ITEM',
-            onProcessorError: 'REMOVE_PROCESSOR',
-            onSourceError: 'REMOVE_SOURCE'
-          }
+          errorConfiguration
         }
 
         const created = createPipelineEditDescriptor(
@@ -373,6 +370,7 @@ export const PipelineEditContainer: React.FC<PipelineEditContainerProps> = ({
       moveProcessor={moveProcessor}
       setComponentName={setComponentName}
       setComponentSettings={setComponentSettings}
+      setErrorConfiguration={setErrorConfiguration}
     />
   )
 }

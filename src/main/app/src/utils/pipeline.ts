@@ -171,6 +171,7 @@ export const createPipelineViewDescriptor = (
     sourceOrder,
     processorOrder,
     components,
+    errorConfiguration: pipeline.errorConfiguration
   }
 }
 

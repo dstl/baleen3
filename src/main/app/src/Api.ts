@@ -206,12 +206,17 @@ export const createPipeline = async (
   orderer: string = NO_OP_ORDERER,
   persist = true
 ): Promise<void> => {
-  const { name, description, sources, processors } = pipeline
+  const { name, description, sources, processors, errorConfiguration } = pipeline
+  const { onSourceError, onProcessorError, onItemError } = errorConfiguration
   const components: PipelineComponents = { sources, processors }
-  return Api.createPipeline(name, components, {
+  return Api.createPipeline(name, components,
+  {
     description,
     orderer,
     persist,
+    onSourceError,
+    onProcessorError,
+    onItemError
   })
 }
 

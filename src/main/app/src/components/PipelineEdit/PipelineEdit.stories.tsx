@@ -58,6 +58,7 @@ export const Default: React.FC = () => {
       moveProcessor={action('moveProcessor')}
       setComponentName={action('setComponentName')}
       setComponentSettings={action('setComponentSettings')}
+      setErrorConfiguration={action('setErrorConfiguration')}
     />
   )
 }
@@ -87,6 +88,7 @@ export const Populated: React.FC = () => {
       moveProcessor={action('moveProcessor')}
       setComponentName={action('setComponentName')}
       setComponentSettings={action('setComponentSettings')}
+      setErrorConfiguration={action('setErrorConfiguration')}
     />
   )
 }
@@ -116,6 +118,7 @@ export const Busy: React.FC = () => {
       moveProcessor={action('moveProcessor')}
       setComponentName={action('setComponentName')}
       setComponentSettings={action('setComponentSettings')}
+      setErrorConfiguration={action('setErrorConfiguration')}
     />
   )
 }
@@ -146,6 +149,7 @@ export const ServerError: React.FC = () => {
       moveProcessor={action('moveProcessor')}
       setComponentName={action('setComponentName')}
       setComponentSettings={action('setComponentSettings')}
+      setErrorConfiguration={action('setErrorConfiguration')}
     />
   )
 }
@@ -178,6 +182,7 @@ export const PipelineError: React.FC = () => {
       moveProcessor={action('moveProcessor')}
       setComponentName={action('setComponentName')}
       setComponentSettings={action('setComponentSettings')}
+      setErrorConfiguration={action('setErrorConfiguration')}
     />
   )
 }
@@ -211,6 +216,7 @@ export const NameError: React.FC = () => {
       moveProcessor={action('moveProcessor')}
       setComponentName={action('setComponentName')}
       setComponentSettings={action('setComponentSettings')}
+      setErrorConfiguration={action('setErrorConfiguration')}
     />
   )
 }
