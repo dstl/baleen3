@@ -105,13 +105,13 @@ export interface ComponentMetadata {
 }
 
 /**
- * Mapping of Pipeline descriptor to include extra metatdata
+ * Mapping of Pipeline descriptor to include extra metadata
  *
  */
 export interface PipelineHeaderDescriptor extends WithName, WithDescription {}
 
 /**
- * Mapping of Pipeline descriptor to include extra metatdata
+ * Mapping of Pipeline descriptor to include extra metadata
  *
  */
 export interface PipelineViewDescriptor extends PipelineHeaderDescriptor {

@@ -31,6 +31,7 @@ import { Header, MainAction, ToolbarAction } from '../Header'
 import { Page } from '../Page'
 import { PipelineViewStructure } from '../PipelineViewStructure'
 import { PipelineViewHeader } from '../PipelineViewHeader'
+import { PipelineViewErrorConfiguration } from '../PipelineViewErrorConfiguration'
 import { ErrorNotifier } from '../ErrorNotifier'
 import { PipelineMetricsContainer } from '../../containers/PipelineMetricsContainer'
 import { Divider } from '../Divider'
@@ -152,7 +153,11 @@ export const PipelineView = ({
           {showLogs ? (
             <PipelineViewLogsContainer name={descriptor.name} />
           ) : (
-            <PipelineViewStructure pipeline={descriptor} />
+            <>
+              <PipelineViewStructure pipeline={descriptor} />
+              <Divider />
+              <PipelineViewErrorConfiguration errorConfiguration={pipeline.errorConfiguration} />
+            </>
           )}
         </Column>
       </Page>
