@@ -83,6 +83,11 @@ const uploadTemplate: PipelineTemplate = {
   orderer: NO_OP_ORDERER,
   sources: [],
   processors: [],
+  errorConfiguration: {
+    onItemError: 'DISCARD_ITEM',
+    onProcessorError: 'REMOVE_PROCESSOR',
+    onSourceError: 'REMOVE_SOURCE'
+  }
 }
 
 const StyledCardContent: React.ComponentType<{ selected: boolean }> = styled(

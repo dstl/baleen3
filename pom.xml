@@ -295,7 +295,7 @@
           <installDirectory>${project.build.directory}</installDirectory>
         </configuration>
 
-<!--        <executions>
+        <executions>
           <execution>
             <id>install-frontend-tools</id>
             <goals>
@@ -345,7 +345,7 @@
               <arguments>build</arguments>
             </configuration>
           </execution>
-        </executions> -->
+        </executions>
       </plugin>
 
       <plugin>

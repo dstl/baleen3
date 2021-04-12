@@ -266,6 +266,12 @@ export const PipelineEditContainer: React.FC<PipelineEditContainerProps> = ({
       description,
       sources,
       processors,
+      //TODO: Is this where we need to add in error configuration specified by user?
+      errorConfiguration: {
+        onItemError: 'DISCARD_ITEM',
+        onProcessorError: 'REMOVE_PROCESSOR',
+        onSourceError: 'REMOVE_SOURCE'
+      }
     }
     try {
       await onSave(createPipeline, orderer)
@@ -294,6 +300,12 @@ export const PipelineEditContainer: React.FC<PipelineEditContainerProps> = ({
       description,
       sources,
       processors,
+      //TODO: Is this where we need to add in error configuration specified by user?
+      errorConfiguration: {
+        onItemError: 'DISCARD_ITEM',
+        onProcessorError: 'REMOVE_PROCESSOR',
+        onSourceError: 'REMOVE_SOURCE'
+      }
     }
     try {
       const {
@@ -302,12 +314,18 @@ export const PipelineEditContainer: React.FC<PipelineEditContainerProps> = ({
       } = await orderPipeline(toOrderPipeline, orderer)
 
       modify((draft: PipelineEditDescriptor): void => {
-        const newOrderedPipeline = {
+        const newOrderedPipeline: PipelineDescriptor = {
           name,
           description,
-          orderer,
+//        orderer,
           sources: orderedSources,
           processors: orderedProcessors,
+          //TODO: Is this where we need to add in error configuration specified by user?
+          errorConfiguration: {
+            onItemError: 'DISCARD_ITEM',
+            onProcessorError: 'REMOVE_PROCESSOR',
+            onSourceError: 'REMOVE_SOURCE'
+          }
         }
 
         const created = createPipelineEditDescriptor(

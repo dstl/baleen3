@@ -158,11 +158,16 @@ export const exampleOrderer = {
   artifact: 'orderer',
 }
 
-export const exampleEmptyPipeline = {
+export const exampleEmptyPipeline: PipelineDescriptor = {
   name: 'Empty',
   description: 'Empty pipeline',
   sources: [],
   processors: [],
+  errorConfiguration: {
+    onItemError: 'IGNORE',
+    onProcessorError: 'IGNORE',
+    onSourceError: 'IGNORE'
+  }
 }
 
 export const exampleEmptyPipelineView: PipelineViewDescriptor = {
@@ -206,6 +211,11 @@ export const examplePipeline: PipelineDescriptor = {
       },
     },
   ],
+  errorConfiguration: {
+    onItemError: 'DISCARD_ITEM',
+    onProcessorError: 'REMOVE_PROCESSOR',
+    onSourceError: 'REMOVE_SOURCE'
+  }
 }
 
 export const examplePipelineView: PipelineViewDescriptor = {
@@ -319,6 +329,11 @@ export const multipleSourcePipeline: PipelineDescriptor = {
       },
     },
   ],
+  errorConfiguration: {
+    onItemError: 'DISCARD_ITEM',
+    onProcessorError: 'REMOVE_PROCESSOR',
+    onSourceError: 'REMOVE_SOURCE'
+  }
 }
 
 export const multipleSourcePipelineView: PipelineViewDescriptor = {
@@ -934,6 +949,11 @@ export const exampleTemplates: PipelineTemplate[] = [
     orderer: NO_OP_ORDERER,
     sources: [],
     processors: [],
+      errorConfiguration: {
+        onItemError: 'DISCARD_ITEM',
+        onProcessorError: 'REMOVE_PROCESSOR',
+        onSourceError: 'REMOVE_SOURCE'
+      }
   },
   {
     name: 'NLP Base',
@@ -963,6 +983,11 @@ export const exampleTemplates: PipelineTemplate[] = [
         },
       },
     ],
+    errorConfiguration: {
+      onItemError: 'DISCARD_ITEM',
+      onProcessorError: 'REMOVE_PROCESSOR',
+      onSourceError: 'REMOVE_SOURCE'
+    }
   },
   {
     name: 'People',
@@ -972,6 +997,11 @@ export const exampleTemplates: PipelineTemplate[] = [
     orderer: NO_OP_ORDERER,
     sources: [],
     processors: [],
+    errorConfiguration: {
+      onItemError: 'DISCARD_ITEM',
+      onProcessorError: 'REMOVE_PROCESSOR',
+      onSourceError: 'REMOVE_SOURCE'
+    }
   },
   {
     name: 'Full',
@@ -980,5 +1010,10 @@ export const exampleTemplates: PipelineTemplate[] = [
     orderer: NO_OP_ORDERER,
     sources: [],
     processors: [],
+    errorConfiguration: {
+      onItemError: 'DISCARD_ITEM',
+      onProcessorError: 'REMOVE_PROCESSOR',
+      onSourceError: 'REMOVE_SOURCE'
+    }
   },
 ]

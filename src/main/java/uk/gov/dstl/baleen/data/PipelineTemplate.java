@@ -60,7 +60,6 @@ public class PipelineTemplate implements PipelineDescriptor {
   /**
    * The error configuration to apply
    */
-  @Nullable
   private ErrorConfiguration errorConfiguration;
 
   /**
