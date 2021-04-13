@@ -19,7 +19,7 @@
  */
 import React from 'react'
 import { CenteredRow } from '../CenteredRow'
-import { Box, Card, CardContent, CardHeader, Heading, Typography } from '@committed/components'
+import { Box, Card, CardContent, CardHeader, Typography } from '@committed/components'
 import { Select } from '@material-ui/core'
 import { ErrorConfiguration } from '../../types'
 

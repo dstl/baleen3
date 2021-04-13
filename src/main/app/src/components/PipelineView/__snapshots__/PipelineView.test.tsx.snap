@@ -329,6 +329,111 @@ exports[`renders dark without error 1`] = `
         >
           Processors
         </h3>
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
+        />
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3 MuiTypography-alignCenter"
+        >
+          Error Configuration
+        </h3>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root ForwardRef-root"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+              >
+                <div
+                  class="MuiCardHeader-content"
+                >
+                  <span
+                    class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                  >
+                    Source Error
+                  </span>
+                </div>
+              </div>
+              <p
+                class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                title="REMOVE_SOURCE"
+              >
+                If a source error occurs, then the source will be 
+                <strong>
+                  removed
+                </strong>
+                 from this pipeline.
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+              >
+                <div
+                  class="MuiCardHeader-content"
+                >
+                  <span
+                    class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                  >
+                    Processor Error
+                  </span>
+                </div>
+              </div>
+              <p
+                class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                title="REMOVE_PROCESSOR"
+              >
+                If a processor error occurs, then the processor will be 
+                <strong>
+                  removed
+                </strong>
+                 from this pipeline.
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+              >
+                <div
+                  class="MuiCardHeader-content"
+                >
+                  <span
+                    class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                  >
+                    Item Error
+                  </span>
+                </div>
+              </div>
+              <p
+                class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                title="DISCARD_ITEM"
+              >
+                If an item error occurs, then the item will be 
+                <strong>
+                  discarded
+                </strong>
+                 by this pipeline.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1060,6 +1165,111 @@ exports[`renders dark without error 2`] = `
             </div>
           </div>
         </div>
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
+        />
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3 MuiTypography-alignCenter"
+        >
+          Error Configuration
+        </h3>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root ForwardRef-root"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+              >
+                <div
+                  class="MuiCardHeader-content"
+                >
+                  <span
+                    class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                  >
+                    Source Error
+                  </span>
+                </div>
+              </div>
+              <p
+                class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                title="REMOVE_SOURCE"
+              >
+                If a source error occurs, then the source will be 
+                <strong>
+                  removed
+                </strong>
+                 from this pipeline.
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+              >
+                <div
+                  class="MuiCardHeader-content"
+                >
+                  <span
+                    class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                  >
+                    Processor Error
+                  </span>
+                </div>
+              </div>
+              <p
+                class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                title="REMOVE_PROCESSOR"
+              >
+                If a processor error occurs, then the processor will be 
+                <strong>
+                  removed
+                </strong>
+                 from this pipeline.
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+              >
+                <div
+                  class="MuiCardHeader-content"
+                >
+                  <span
+                    class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                  >
+                    Item Error
+                  </span>
+                </div>
+              </div>
+              <p
+                class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                title="DISCARD_ITEM"
+              >
+                If an item error occurs, then the item will be 
+                <strong>
+                  discarded
+                </strong>
+                 by this pipeline.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1395,6 +1605,111 @@ exports[`renders without error 1`] = `
         >
           Processors
         </h3>
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
+        />
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3 MuiTypography-alignCenter"
+        >
+          Error Configuration
+        </h3>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root ForwardRef-root"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+              >
+                <div
+                  class="MuiCardHeader-content"
+                >
+                  <span
+                    class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                  >
+                    Source Error
+                  </span>
+                </div>
+              </div>
+              <p
+                class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                title="REMOVE_SOURCE"
+              >
+                If a source error occurs, then the source will be 
+                <strong>
+                  removed
+                </strong>
+                 from this pipeline.
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+              >
+                <div
+                  class="MuiCardHeader-content"
+                >
+                  <span
+                    class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                  >
+                    Processor Error
+                  </span>
+                </div>
+              </div>
+              <p
+                class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                title="REMOVE_PROCESSOR"
+              >
+                If a processor error occurs, then the processor will be 
+                <strong>
+                  removed
+                </strong>
+                 from this pipeline.
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+              >
+                <div
+                  class="MuiCardHeader-content"
+                >
+                  <span
+                    class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                  >
+                    Item Error
+                  </span>
+                </div>
+              </div>
+              <p
+                class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                title="DISCARD_ITEM"
+              >
+                If an item error occurs, then the item will be 
+                <strong>
+                  discarded
+                </strong>
+                 by this pipeline.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -2123,6 +2438,111 @@ exports[`renders without error 2`] = `
                   />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
+        />
+        <h3
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3 MuiTypography-alignCenter"
+        >
+          Error Configuration
+        </h3>
+        <div
+          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root ForwardRef-root"
+        >
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+              >
+                <div
+                  class="MuiCardHeader-content"
+                >
+                  <span
+                    class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                  >
+                    Source Error
+                  </span>
+                </div>
+              </div>
+              <p
+                class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                title="REMOVE_SOURCE"
+              >
+                If a source error occurs, then the source will be 
+                <strong>
+                  removed
+                </strong>
+                 from this pipeline.
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+              >
+                <div
+                  class="MuiCardHeader-content"
+                >
+                  <span
+                    class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                  >
+                    Processor Error
+                  </span>
+                </div>
+              </div>
+              <p
+                class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                title="REMOVE_PROCESSOR"
+              >
+                If a processor error occurs, then the processor will be 
+                <strong>
+                  removed
+                </strong>
+                 from this pipeline.
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          >
+            <div
+              class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+            >
+              <div
+                class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+              >
+                <div
+                  class="MuiCardHeader-content"
+                >
+                  <span
+                    class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                  >
+                    Item Error
+                  </span>
+                </div>
+              </div>
+              <p
+                class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+                title="DISCARD_ITEM"
+              >
+                If an item error occurs, then the item will be 
+                <strong>
+                  discarded
+                </strong>
+                 by this pipeline.
+              </p>
             </div>
           </div>
         </div>

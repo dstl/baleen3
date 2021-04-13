@@ -1,0 +1,391 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders dark without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root ForwardRef-root"
+    >
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <div
+          class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+        >
+          <div
+            class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+          >
+            <div
+              class="MuiCardHeader-content"
+            >
+              <span
+                class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+              >
+                Source Error
+              </span>
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root"
+          >
+            <p
+              class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+            >
+              If a source error occurs, then the pipeline will take the following action:
+            </p>
+            <div
+              class="MuiInputBase-root MuiInput-root MuiInput-underline"
+            >
+              <select
+                class="MuiSelect-root MuiSelect-select MuiInputBase-input MuiInput-input"
+              >
+                <option
+                  value="IGNORE"
+                >
+                  Ignore error
+                </option>
+                <option
+                  value="REMOVE_SOURCE"
+                >
+                  Remove source
+                </option>
+              </select>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSelect-icon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <div
+          class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+        >
+          <div
+            class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+          >
+            <div
+              class="MuiCardHeader-content"
+            >
+              <span
+                class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+              >
+                Processor Error
+              </span>
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root"
+          >
+            <p
+              class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+            >
+              If a processor error occurs, then the pipeline will take the following action:
+            </p>
+            <div
+              class="MuiInputBase-root MuiInput-root MuiInput-underline"
+            >
+              <select
+                class="MuiSelect-root MuiSelect-select MuiInputBase-input MuiInput-input"
+              >
+                <option
+                  value="DISCARD_ITEM"
+                >
+                  Discard item
+                </option>
+                <option
+                  value="IGNORE"
+                >
+                  Ignore error
+                </option>
+                <option
+                  value="REMOVE_PROCESSOR"
+                >
+                  Remove processor
+                </option>
+              </select>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSelect-icon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <div
+          class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+        >
+          <div
+            class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+          >
+            <div
+              class="MuiCardHeader-content"
+            >
+              <span
+                class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+              >
+                Item Error
+              </span>
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root"
+          >
+            <p
+              class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+            >
+              If an item error occurs, then the pipeline will take the following action:
+            </p>
+            <div
+              class="MuiInputBase-root MuiInput-root MuiInput-underline"
+            >
+              <select
+                class="MuiSelect-root MuiSelect-select MuiInputBase-input MuiInput-input"
+              >
+                <option
+                  value="DISCARD_ITEM"
+                >
+                  Discard item
+                </option>
+                <option
+                  value="IGNORE"
+                >
+                  Ignore error
+                </option>
+                <option
+                  value="REMOVE_PROCESSOR"
+                >
+                  Remove processor
+                </option>
+              </select>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSelect-icon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders without error 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root ForwardRef-root"
+    >
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <div
+          class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+        >
+          <div
+            class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+          >
+            <div
+              class="MuiCardHeader-content"
+            >
+              <span
+                class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+              >
+                Source Error
+              </span>
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root"
+          >
+            <p
+              class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+            >
+              If a source error occurs, then the pipeline will take the following action:
+            </p>
+            <div
+              class="MuiInputBase-root MuiInput-root MuiInput-underline"
+            >
+              <select
+                class="MuiSelect-root MuiSelect-select MuiInputBase-input MuiInput-input"
+              >
+                <option
+                  value="IGNORE"
+                >
+                  Ignore error
+                </option>
+                <option
+                  value="REMOVE_SOURCE"
+                >
+                  Remove source
+                </option>
+              </select>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSelect-icon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <div
+          class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+        >
+          <div
+            class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+          >
+            <div
+              class="MuiCardHeader-content"
+            >
+              <span
+                class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+              >
+                Processor Error
+              </span>
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root"
+          >
+            <p
+              class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+            >
+              If a processor error occurs, then the pipeline will take the following action:
+            </p>
+            <div
+              class="MuiInputBase-root MuiInput-root MuiInput-underline"
+            >
+              <select
+                class="MuiSelect-root MuiSelect-select MuiInputBase-input MuiInput-input"
+              >
+                <option
+                  value="DISCARD_ITEM"
+                >
+                  Discard item
+                </option>
+                <option
+                  value="IGNORE"
+                >
+                  Ignore error
+                </option>
+                <option
+                  value="REMOVE_PROCESSOR"
+                >
+                  Remove processor
+                </option>
+              </select>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSelect-icon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+      >
+        <div
+          class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
+        >
+          <div
+            class="MuiCardHeader-root WithStyles(ForwardRef(CardHeader))-root WithStyles(ForwardRef(CardHeader))-root"
+          >
+            <div
+              class="MuiCardHeader-content"
+            >
+              <span
+                class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+              >
+                Item Error
+              </span>
+            </div>
+          </div>
+          <div
+            class="MuiCardContent-root"
+          >
+            <p
+              class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root WrappedTypography-root WrappedTypography-root MuiTypography-body1"
+            >
+              If an item error occurs, then the pipeline will take the following action:
+            </p>
+            <div
+              class="MuiInputBase-root MuiInput-root MuiInput-underline"
+            >
+              <select
+                class="MuiSelect-root MuiSelect-select MuiInputBase-input MuiInput-input"
+              >
+                <option
+                  value="DISCARD_ITEM"
+                >
+                  Discard item
+                </option>
+                <option
+                  value="IGNORE"
+                >
+                  Ignore error
+                </option>
+                <option
+                  value="REMOVE_PROCESSOR"
+                >
+                  Remove processor
+                </option>
+              </select>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSelect-icon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
