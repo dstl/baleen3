@@ -57,12 +57,12 @@
 
     <annot8-api.version>1.1-SNAPSHOT</annot8-api.version>
     <annot8.version>1.1.0-SNAPSHOT</annot8.version>
-    <frontend-maven-plugin.version>1.10.0</frontend-maven-plugin.version>
+    <frontend-maven-plugin.version>1.11.3</frontend-maven-plugin.version>
     <frontend-src-dir>${project.basedir}/src/main/app</frontend-src-dir>
-    <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
-    <node.version>v12.3.1</node.version>
+    <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
+    <node.version>v12.22.1</node.version>
     <typescript-generator-maven-plugin.version>2.30.840</typescript-generator-maven-plugin.version>
-    <yarn.version>v1.22.4</yarn.version>
+    <yarn.version>v1.22.5</yarn.version>
   </properties>
 
   <dependencies>
@@ -76,7 +76,7 @@
     <dependency>
       <groupId>org.springdoc</groupId>
       <artifactId>springdoc-openapi-ui</artifactId>
-      <version>1.5.6</version>
+      <version>1.5.7</version>
     </dependency>
 
     <!-- JSON -->
