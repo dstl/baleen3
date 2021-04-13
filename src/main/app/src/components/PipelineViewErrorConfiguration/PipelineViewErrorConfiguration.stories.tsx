@@ -19,6 +19,7 @@
  */
 import React from 'react'
 import { PipelineViewErrorConfiguration } from './PipelineViewErrorConfiguration'
+import { ErrorConfiguration } from '../../types'
 
 export default {
   title: 'Components|PipelineViewErrorConfiguration',
@@ -26,7 +27,7 @@ export default {
 }
 
 export const Default: React.FC = () => {
-  const errorConfiguration = {
+  const errorConfiguration: ErrorConfiguration = {
     onSourceError: 'REMOVE_SOURCE',
     onProcessorError: 'REMOVE_PROCESSOR',
     onItemError: 'DISCARD_ITEM'
@@ -40,7 +41,7 @@ export const Default: React.FC = () => {
 }
 
 export const Ignore: React.FC = () => {
-  const errorConfiguration = {
+  const errorConfiguration: ErrorConfiguration = {
     onSourceError: 'IGNORE',
     onProcessorError: 'IGNORE',
     onItemError: 'IGNORE'
@@ -54,7 +55,7 @@ export const Ignore: React.FC = () => {
 }
 
 export const Remove: React.FC = () => {
-  const errorConfiguration = {
+  const errorConfiguration: ErrorConfiguration = {
     onSourceError: 'REMOVE_SOURCE',
     onProcessorError: 'REMOVE_PROCESSOR',
     onItemError: 'REMOVE_PROCESSOR'
@@ -68,7 +69,7 @@ export const Remove: React.FC = () => {
 }
 
 export const Discard: React.FC = () => {
-  const errorConfiguration = {
+  const errorConfiguration: ErrorConfiguration = {
     onSourceError: 'REMOVE_SOURCE',
     onProcessorError: 'DISCARD_ITEM',
     onItemError: 'DISCARD_ITEM'

@@ -20,6 +20,7 @@
 import React from 'react'
 import { PipelineEditErrorConfiguration } from './PipelineEditErrorConfiguration'
 import { action } from '@storybook/addon-actions'
+import { ErrorConfiguration } from '../../types'
 
 export default {
   title: 'Components|PipelineEditErrorConfiguration',
@@ -27,7 +28,7 @@ export default {
 }
 
 export const Default: React.FC = () => {
-  const errorConfiguration = {
+  const errorConfiguration: ErrorConfiguration = {
     onSourceError: 'REMOVE_SOURCE',
     onProcessorError: 'REMOVE_PROCESSOR',
     onItemError: 'DISCARD_ITEM'

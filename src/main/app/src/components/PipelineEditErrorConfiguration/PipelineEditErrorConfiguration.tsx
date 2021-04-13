@@ -21,7 +21,7 @@ import React from 'react'
 import { CenteredRow } from '../CenteredRow'
 import { Box, Card, CardContent, CardHeader, Typography } from '@committed/components'
 import { Select } from '@material-ui/core'
-import { ErrorConfiguration } from '../../types'
+import { ErrorConfiguration, OnSourceError, OnProcessingError } from '../../types'
 
 export interface PipelineEditErrorConfigurationProps {
   errorConfiguration: ErrorConfiguration
@@ -33,12 +33,26 @@ export const PipelineEditErrorConfiguration: React.FC<PipelineEditErrorConfigura
     setErrorConfiguration
   }: PipelineEditErrorConfigurationProps) => {
 
-  const handleChange = (name: string, event: React.ChangeEvent<{value: unknown }>) => {
-      setErrorConfiguration({
-        ...errorConfiguration,
-        [name]: event.target.value,
-      });
-    };
+  const handleSourceChange = (event: React.ChangeEvent<{value: unknown }>): void => {
+    setErrorConfiguration({
+      ...errorConfiguration,
+      onSourceError: event.target.value as OnSourceError,
+    });
+  }
+
+  const handleProcessorChange = (event: React.ChangeEvent<{value: unknown }>): void => {
+    setErrorConfiguration({
+      ...errorConfiguration,
+      onProcessorError: event.target.value as OnProcessingError,
+    });
+  }
+
+  const handleItemChange = (event: React.ChangeEvent<{value: unknown }>): void => {
+    setErrorConfiguration({
+      ...errorConfiguration,
+      onItemError: event.target.value as OnProcessingError,
+    });
+  }
 
   return (
       <>
@@ -50,7 +64,7 @@ export const PipelineEditErrorConfiguration: React.FC<PipelineEditErrorConfigura
                 <Typography>
                   If a source error occurs, then the pipeline will take the following action:
                 </Typography>
-                <Select native value={errorConfiguration.onSourceError} onChange={(e) => handleChange('onSourceError', e)}>
+                <Select native value={errorConfiguration.onSourceError} onChange={handleSourceChange}>
                   <option value="IGNORE">Ignore error</option>
                   <option value="REMOVE_SOURCE">Remove source</option>
                 </Select>
@@ -64,7 +78,7 @@ export const PipelineEditErrorConfiguration: React.FC<PipelineEditErrorConfigura
                 <Typography>
                   If a processor error occurs, then the pipeline will take the following action:
                 </Typography>
-                <Select native value={errorConfiguration.onProcessorError} onChange={(e) => handleChange('onProcessorError', e)}>
+                <Select native value={errorConfiguration.onProcessorError} onChange={handleProcessorChange}>
                   <option value="DISCARD_ITEM">Discard item</option>
                   <option value="IGNORE">Ignore error</option>
                   <option value="REMOVE_PROCESSOR">Remove processor</option>
@@ -79,7 +93,7 @@ export const PipelineEditErrorConfiguration: React.FC<PipelineEditErrorConfigura
                 <Typography>
                   If an item error occurs, then the pipeline will take the following action:
                 </Typography>
-                <Select native value={errorConfiguration.onItemError} onChange={(e) => handleChange('onItemError', e)}>
+                <Select native value={errorConfiguration.onItemError} onChange={handleItemChange}>
                   <option value="DISCARD_ITEM">Discard item</option>
                   <option value="IGNORE">Ignore error</option>
                   <option value="REMOVE_PROCESSOR">Remove processor</option>

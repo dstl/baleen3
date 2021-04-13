@@ -20,8 +20,9 @@
 import React from 'react'
 import { PipelineEditErrorConfiguration } from './PipelineEditErrorConfiguration'
 import { render, renderDark } from '../../utils/test'
+import { ErrorConfiguration } from '../../types'
 
-const errorConfiguration = {
+const errorConfiguration: ErrorConfiguration = {
   onSourceError: 'REMOVE_SOURCE',
   onProcessorError: 'REMOVE_PROCESSOR',
   onItemError: 'DISCARD_ITEM'
