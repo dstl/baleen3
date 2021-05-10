@@ -7,7 +7,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.4.4</version>
+    <version>2.4.5</version>
   </parent>
 
   <groupId>uk.gov.dstl</groupId>
@@ -61,7 +61,7 @@
     <frontend-src-dir>${project.basedir}/src/main/app</frontend-src-dir>
     <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
     <node.version>v12.22.1</node.version>
-    <typescript-generator-maven-plugin.version>2.30.840</typescript-generator-maven-plugin.version>
+    <typescript-generator-maven-plugin.version>2.31.861</typescript-generator-maven-plugin.version>
     <yarn.version>v1.22.5</yarn.version>
   </properties>
 
@@ -76,7 +76,7 @@
     <dependency>
       <groupId>org.springdoc</groupId>
       <artifactId>springdoc-openapi-ui</artifactId>
-      <version>1.5.7</version>
+      <version>1.5.8</version>
     </dependency>
 
     <!-- JSON -->
@@ -133,7 +133,7 @@
     <dependency>
       <groupId>io.github.classgraph</groupId>
       <artifactId>classgraph</artifactId>
-      <version>4.8.104</version>
+      <version>4.8.105</version>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>

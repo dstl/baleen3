@@ -75,7 +75,7 @@ public class Annot8Controller {
   @Operation(description = "List of all available pipeline orderers")
   @ApiResponses({@ApiResponse(responseCode = "200", description = "Successful")})
   public Collection<String> getOrderers() {
-    return annot8Components.getOrderers().stream().map(Class::getName).collect(Collectors.toSet());
+    return annot8Components.getOrderers().stream().map(Class::getName).collect(Collectors.toList());
   }
 
 

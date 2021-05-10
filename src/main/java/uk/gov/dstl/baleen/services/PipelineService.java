@@ -272,7 +272,6 @@ public class PipelineService {
 
     LOGGER.debug("Determining error configuration for pipeline {}", descriptor.getName());
 
-    //TODO: Add support for this through the UI
     ErrorConfiguration errorConfiguration = descriptor.getErrorConfiguration();
 
     if(errorConfiguration == null){

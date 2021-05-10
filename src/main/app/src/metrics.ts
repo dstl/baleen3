@@ -37,7 +37,7 @@ export const metrics: { [key: string]: MetricMetadata } = {
     description: 'The average time taken to process an item',
     units: 'seconds per item'
   },
-  'items.created': {
+  itemsCreated: {
     name: 'Created',
     description: 'The number of items created',
     units: 'items',
