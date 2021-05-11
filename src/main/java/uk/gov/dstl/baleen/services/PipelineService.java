@@ -254,6 +254,58 @@ public class PipelineService {
     //Create a wrapper object for the pipeline
     PipelineHolder holder = new PipelineHolder(descriptor, loggingMax);
 
+    //Save reference to pipeline for future use
+    pipelines.put(descriptor.getName(), holder);
+
+    //Start pipeline
+    startPipeline(descriptor.getName());
+  }
+
+  /**
+   * Return the current list of pipelines (sorted by pipeline name)
+   */
+  public Set<String> getPipelineNames(){
+    return new TreeSet<>(pipelines.keySet());
+  }
+
+  /**
+   *
+   * @return list of the current pipelines metadata (sorted by pipeline name)
+   */
+  public List<PipelineMetadata> getPipelinesMetadata() {
+    return pipelines.values().stream().map(PipelineMetadata::new).sorted(Comparator.comparing(PipelineMetadata::getName)).collect(Collectors.toList());
+  }
+
+  /**
+   * Return a specific pipeline, or throw a {@link PipelineNotFoundException} if the pipeline doesn't exist
+   */
+  public PipelineHolder getPipeline(String pipelineName){
+    if(!pipelines.containsKey(pipelineName)){
+      throw new PipelineNotFoundException();
+    }
+
+    return pipelines.get(pipelineName);
+  }
+
+  /**
+   * Starts a pipeline, if it doesn't already have a runner associated with it
+   * Throws a {@link PipelineNotFoundException} if the pipeline doesn't exist.
+   */
+  public void startPipeline(String pipelineName){
+    //Check the pipeline exists
+    if(!pipelines.containsKey(pipelineName)){
+      throw new PipelineNotFoundException();
+    }
+
+    PipelineHolder holder = pipelines.get(pipelineName);
+
+    if(holder.isRunning())
+      return;
+
+    LOGGER.info("Starting pipeline {}", pipelineName);
+
+    PipelineDescriptor descriptor = holder.getDescriptor();
+
     //Create factories and resources (including a RestApiQueue if required), and add these to the context
     LOGGER.debug("Creating resources and context for pipeline {}", descriptor.getName());
 
@@ -299,52 +351,29 @@ public class PipelineService {
     Thread t = new Thread(runner);
     t.start();
 
-    //Save reference to pipeline for future use
-    pipelines.put(descriptor.getName(), holder);
-    LOGGER.info("Pipeline {} created on thread {}", descriptor.getName(), t.getName());
-  }
-
-  /**
-   * Return the current list of pipelines (sorted by pipeline name)
-   */
-  public Set<String> getPipelineNames(){
-    return new TreeSet<>(pipelines.keySet());
-  }
-
-  /**
-   *
-   * @return list of the current pipelines metadata (sorted by pipeline name)
-   */
-  public List<PipelineMetadata> getPipelinesMetadata() {
-    return pipelines.values().stream().map(PipelineMetadata::new).sorted(Comparator.comparing(PipelineMetadata::getName)).collect(Collectors.toList());
-  }
-
-  /**
-   * Return a specific pipeline, or throw a {@link PipelineNotFoundException} if the pipeline doesn't exist
-   */
-  public PipelineHolder getPipeline(String pipelineName){
-    if(!pipelines.containsKey(pipelineName)){
-      throw new PipelineNotFoundException();
-    }
-
-    return pipelines.get(pipelineName);
+    LOGGER.info("Pipeline {} started on thread {}", descriptor.getName(), t.getName());
   }
 
   /**
    * Stops a pipeline, without removing the persisted JSON file.
    * Throws a {@link PipelineNotFoundException} if the pipeline doesn't exist.
    */
-  private void stopPipeline(String pipelineName){
+  public void stopPipeline(String pipelineName){
     //Check the pipeline exists
     if(!pipelines.containsKey(pipelineName)){
       throw new PipelineNotFoundException();
     }
 
+    //Get the pipeline and check it is running
+    PipelineHolder holder = pipelines.get(pipelineName);
+    if(!holder.isRunning())
+      return;
+
     LOGGER.info("Stopping pipeline {}", pipelineName);
 
-    //Remove the pipeline and stop the thread running
-    PipelineHolder holder = pipelines.remove(pipelineName);
+    //Stop the thread running
     holder.getPipelineRunner().stop();
+    holder.setPipelineRunner(null);
 
     //Remove any REST API queue
     queues.remove(pipelineName);
@@ -359,8 +388,9 @@ public class PipelineService {
   public void deletePipeline(String pipelineName){
     LOGGER.info("Deleting pipeline {}", pipelineName);
 
-    //Stop pipeline
+    //Stop pipeline and remove it from service
     stopPipeline(pipelineName);
+    pipelines.remove(pipelineName);
 
     //Remove the persisted pipeline, if it exists
     if(persistedPipelines.containsKey(pipelineName)) {

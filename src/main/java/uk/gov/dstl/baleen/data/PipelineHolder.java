@@ -80,4 +80,8 @@ public class PipelineHolder {
   public void setPipelineRunner(PipelineRunner pipelineRunner) {
     this.pipelineRunner = pipelineRunner;
   }
+
+  public boolean isRunning(){
+    return pipelineRunner != null;
+  }
 }

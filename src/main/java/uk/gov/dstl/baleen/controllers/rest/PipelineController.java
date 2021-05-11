@@ -109,6 +109,23 @@ public class PipelineController {
     return pipelineService.getPipeline(name).getDescriptor();
   }
 
+  @GetMapping(value = "/{name}/finished", produces = MediaType.APPLICATION_JSON_VALUE)
+  @Operation(description = "Determine whether the pipeline has finished processing")
+  @ApiResponses({
+    @ApiResponse(responseCode = "200", description = SUCCESS),
+    @ApiResponse(responseCode = "404", description = PIPELINE_NOT_FOUND)
+  })
+  public boolean getPipelineFinished(
+    @PathVariable("name") @Parameter(description = "Name of pipeline", required = true)
+      String name) {
+
+    try {
+      return !((InMemoryPipelineRunner)pipelineService.getPipeline(name).getPipelineRunner()).isRunning();
+    }catch (ClassCastException e){
+      return false;
+    }
+  }
+
   @GetMapping(value = "/{name}/running", produces = MediaType.APPLICATION_JSON_VALUE)
   @Operation(description = "Determine whether the pipeline is currently running")
   @ApiResponses({
@@ -119,11 +136,7 @@ public class PipelineController {
     @PathVariable("name") @Parameter(description = "Name of pipeline", required = true)
       String name) {
 
-    try {
-      return ((InMemoryPipelineRunner)pipelineService.getPipeline(name).getPipelineRunner()).isRunning();
-    }catch (ClassCastException e){
-      return true;
-    }
+    return pipelineService.getPipeline(name).isRunning();
   }
 
   @PostMapping(
@@ -274,6 +287,46 @@ public class PipelineController {
 
       pipelineService.submitData(name, submittedData);
     }
+  }
+
+  @PostMapping("/{name}/start")
+  @ResponseStatus(HttpStatus.NO_CONTENT)
+  @Operation(description = "Starts a specific pipeline, if it's not already running")
+  @ApiResponses({
+    @ApiResponse(responseCode = "204", description = "Pipeline has been started"),
+    @ApiResponse(responseCode = "404", description = PIPELINE_NOT_FOUND)
+  })
+  public void startPipeline(
+    @PathVariable("name") @Parameter(description = "Name of pipeline", required = true)
+      String name) {
+    pipelineService.startPipeline(name);
+  }
+
+  @PostMapping("/{name}/stop")
+  @ResponseStatus(HttpStatus.NO_CONTENT)
+  @Operation(description = "Stops a specific pipeline")
+  @ApiResponses({
+    @ApiResponse(responseCode = "204", description = "Pipeline has been stopped"),
+    @ApiResponse(responseCode = "404", description = PIPELINE_NOT_FOUND)
+  })
+  public void stopPipeline(
+    @PathVariable("name") @Parameter(description = "Name of pipeline", required = true)
+      String name) {
+    pipelineService.stopPipeline(name);
+  }
+
+  @PostMapping("/{name}/restart")
+  @ResponseStatus(HttpStatus.NO_CONTENT)
+  @Operation(description = "Restarts a specific pipeline, first stopping it (if it is currently running) and then starting it")
+  @ApiResponses({
+    @ApiResponse(responseCode = "204", description = "Pipeline has been restarted"),
+    @ApiResponse(responseCode = "404", description = PIPELINE_NOT_FOUND)
+  })
+  public void restartPipeline(
+    @PathVariable("name") @Parameter(description = "Name of pipeline", required = true)
+      String name) {
+    pipelineService.stopPipeline(name);
+    pipelineService.startPipeline(name);
   }
 
   @DeleteMapping("/{name}")
