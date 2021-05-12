@@ -45,4 +45,8 @@ public class PipelineMetadata implements WithName, WithDescription {
     public String getDescription() {
         return pipelineHolder.getDescriptor().getDescription();
     }
+
+    public boolean getRunning() {
+        return pipelineHolder.isRunning();
+    }
 }

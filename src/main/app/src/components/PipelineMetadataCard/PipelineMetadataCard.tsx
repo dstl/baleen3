@@ -78,10 +78,13 @@ export const PipelineMetadataCard: React.FC<PipelineMetadataCardProps> = ({
   const handleCloseConfirmDelete = (): void => setShowConfirmDelete(false)
   const handleRequestDelete = (): void => setShowConfirmDelete(true)
 
+  const stopped = pipelineMetadata.running ? null : "This pipeline is currently stopped"
+
   return (
     <Card ref={ref} tabIndex={0}>
       <CardHeader
         title={pipelineMetadata.name}
+        subheader={stopped}
         action={
           <Fade in={isHovering || isFocused || showConfirmDelete || isDeleting}>
             <div>

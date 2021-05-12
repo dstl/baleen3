@@ -1,6 +1,7 @@
 baleen:
   version: @project.version@
   persistence: pipelines
+  stopped: .stopped
   templates: templates
   logging:
     max: 1000

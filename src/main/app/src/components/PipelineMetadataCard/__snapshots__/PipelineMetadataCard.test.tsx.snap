@@ -21,6 +21,11 @@ exports[`renders dark without error 1`] = `
             >
               Name
             </span>
+            <span
+              class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+            >
+              This pipeline is currently stopped
+            </span>
           </div>
           <div
             class="MuiCardHeader-action"
@@ -147,6 +152,11 @@ exports[`renders without error 1`] = `
               class="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
             >
               Name
+            </span>
+            <span
+              class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+            >
+              This pipeline is currently stopped
             </span>
           </div>
           <div

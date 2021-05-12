@@ -473,26 +473,31 @@ export const examplePipelinesMetadata: PipelineMetadata[] = [
       'Non voluptatibus corporis accusantium. Velit saepe odio. Dolorum veritatis et natus est qui molestias. Culpa est veritatis quia explicabo. Quas sint in. Aliquid eos et eos ut eius ut animi reiciendis.',
     name:
       'scalable optimal British Indian Ocean Territory (Chagos Archipelago) Versatile invoice',
+    running: true
   },
   {
     description:
       'Totam fugiat velit. Maxime ab nisi et earum. Eos omnis consequuntur dolorem doloribus maiores at eius quia optio. Qui nostrum perspiciatis sunt aliquid odio.',
     name: 'interactive value-added deliver Denar Maryland',
+    running: true
   },
   {
     description:
       'Hic vel hic. Voluptatum vel et inventore ut praesentium minus. Et ullam voluptates. Doloribus necessitatibus consequatur. Eum soluta alias dignissimos ad ab sed fugit. Natus beatae debitis amet et perferendis omnis.',
     name: 'Delaware Checking Account Ergonomic Metal Table olive extensible',
+    running: true
   },
   {
     description:
       'Dolore non labore dolorem voluptatem officiis eveniet consequatur. Porro fuga est nihil. Est alias ut voluptas est. Facere voluptas quis velit est aliquid animi modi dolore. Non molestiae esse rerum recusandae. Reiciendis rem est est voluptatibus quia alias molestias aut.',
     name: 'bi-directional Plastic quantify generating',
+    running: true
   },
   {
     description:
       'Nulla non quam ducimus omnis et voluptates. Dolor hic alias. Esse et omnis magnam rem vel ipsum. Est quo in sequi rerum quia ut.',
     name: 'Pants forecast Crest',
+    running: true
   },
 ]
 

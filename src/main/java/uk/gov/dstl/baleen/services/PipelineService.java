@@ -51,16 +51,19 @@ import uk.gov.dstl.baleen.logging.BaleenLoggerFactory;
 
 import javax.annotation.PostConstruct;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
 import java.nio.file.StandardWatchEventKinds;
 import java.nio.file.WatchEvent;
 import java.nio.file.WatchKey;
 import java.nio.file.WatchService;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
@@ -79,6 +82,9 @@ public class PipelineService {
 
   @Value("${baleen.persistence}")
   private File persistenceFolder;
+
+  @Value("${baleen.persistence}/${baleen.stopped}")
+  private File stoppedState;
 
   @Value("${baleen.logging.max}")
   private Integer loggingMax;
@@ -258,6 +264,11 @@ public class PipelineService {
     pipelines.put(descriptor.getName(), holder);
 
     //Start pipeline
+    if(getPipelineState().contains(descriptor.getName())) {
+      LOGGER.info("Pipeline {} was previously in stopped state, and will not be started", descriptor.getName());
+      return;
+    }
+
     startPipeline(descriptor.getName());
   }
 
@@ -352,6 +363,8 @@ public class PipelineService {
     t.start();
 
     LOGGER.info("Pipeline {} started on thread {}", descriptor.getName(), t.getName());
+
+    updatePipelineState();
   }
 
   /**
@@ -375,10 +388,16 @@ public class PipelineService {
     holder.getPipelineRunner().stop();
     holder.setPipelineRunner(null);
 
-    //Remove any REST API queue
+    // Remove any REST API queue
     queues.remove(pipelineName);
 
+    // Clear previous log and metrics
+    holder.getLogEntries().clear();
+    holder.getMeterRegistry().clear();
+
     LOGGER.info("Pipeline {} stopped", pipelineName);
+
+    updatePipelineState();
   }
 
   /**
@@ -400,9 +419,8 @@ public class PipelineService {
     }
 
     LOGGER.info("Pipeline {} deleted", pipelineName);
+    updatePipelineState();
   }
-
-
 
   /**
    * Returns true if a pipeline exists, and false otherwise
@@ -474,5 +492,29 @@ public class PipelineService {
     //Add data to queue
     LOGGER.debug("Data received via REST API for pipeline {}", pipelineName);
     queues.get(pipelineName).addToQueue(data);
+  }
+
+  private List<String> getPipelineState(){
+    try {
+      return Files.readAllLines(stoppedState.toPath());
+    } catch (FileNotFoundException fnfe) {
+      return Collections.emptyList();
+    } catch (IOException e) {
+      LOGGER.error("Could not read pipeline state from disk", e);
+      return Collections.emptyList();
+    }
+  }
+
+  private void updatePipelineState(){
+    List<String> stoppedPipelines = pipelines.entrySet().stream()
+      .filter(e -> !e.getValue().isRunning())
+      .map(Map.Entry::getKey)
+      .collect(Collectors.toList());
+
+    try {
+      Files.write(stoppedState.toPath(), stoppedPipelines, StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE);
+    } catch (IOException e) {
+      LOGGER.error("Unable to persist pipeline state to disk", e);
+    }
   }
 }

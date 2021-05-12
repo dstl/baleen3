@@ -32,7 +32,17 @@ const onDelete = async (): Promise<void> => Promise.resolve(deleteAction())
 export const Default: React.FC = () => {
   return (
     <PipelineMetadataCard
-      pipelineMetadata={{ name: 'Name', description: 'This is a description' }}
+      pipelineMetadata={{ name: 'Name', description: 'This is a description', running: true }}
+      isDeleting={false}
+      onDelete={onDelete}
+    />
+  )
+}
+
+export const Stopped: React.FC = () => {
+  return (
+    <PipelineMetadataCard
+      pipelineMetadata={{ name: 'Name', description: 'This is a description', running: false }}
       isDeleting={false}
       onDelete={onDelete}
     />
@@ -42,7 +52,7 @@ export const Default: React.FC = () => {
 export const Deleting: React.FC = () => {
   return (
     <PipelineMetadataCard
-      pipelineMetadata={{ name: 'Name', description: 'This is a description' }}
+      pipelineMetadata={{ name: 'Name', description: 'This is a description', running: true }}
       isDeleting={true}
       onDelete={onDelete}
     />
@@ -57,6 +67,7 @@ export const WithError: React.FC = () => {
       pipelineMetadata={{
         name: 'Name',
         description: 'Press delete to trigger error',
+        running: true
       }}
       isDeleting={false}
       error={error}
