@@ -494,6 +494,9 @@ public class PipelineService {
     queues.get(pipelineName).addToQueue(data);
   }
 
+  /**
+   * Returns list of stopped pipelines from the stoppedState file
+   */
   private List<String> getPipelineState(){
     try {
       return Files.readAllLines(stoppedState.toPath());
@@ -505,6 +508,9 @@ public class PipelineService {
     }
   }
 
+  /**
+   * Saves current list of stopped pipelines to the stoppedState file
+   */
   private void updatePipelineState(){
     List<String> stoppedPipelines = pipelines.entrySet().stream()
       .filter(e -> !e.getValue().isRunning())

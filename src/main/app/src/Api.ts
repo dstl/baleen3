@@ -179,6 +179,11 @@ export const getPipeline = async (
   name: string
 ): Promise<PipelineDescriptor> => Api.getPipeline(name)
 
+export const getPipelineRunning = async (
+  _fetchKey: string,
+  name: string
+): Promise<boolean> => Api.getPipelineRunning(name)
+
 export const getPipelineMetrics = async (
   _fetchKey: string,
   name: string
@@ -200,6 +205,12 @@ export const getLogs = async (
 
 export const deletePipeline = async (name: string): Promise<void> =>
   Api.deletePipeline(name)
+
+export const startPipeline = async (name: string): Promise<void> =>
+  Api.startPipeline(name)
+
+export const stopPipeline = async (name: string): Promise<void> =>
+  Api.stopPipeline(name)
 
 export const createPipeline = async (
   pipeline: PipelineDescriptor,

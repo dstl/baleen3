@@ -45,6 +45,7 @@ export const Default: React.FC = () => {
   return (
     <PipelineView
       pipeline={exampleEmptyPipeline}
+      running={true}
       descriptor={exampleEmptyPipelineView}
       showSubmit={true}
       navigate={navigate}
@@ -56,6 +57,19 @@ export const SimpleExample: React.FC = () => {
   return (
     <PipelineView
       pipeline={examplePipeline}
+      running={true}
+      descriptor={examplePipelineView}
+      showSubmit={true}
+      navigate={navigate}
+    />
+  )
+}
+
+export const SimpleExampleStopped: React.FC = () => {
+  return (
+    <PipelineView
+      pipeline={examplePipeline}
+      running={false}
       descriptor={examplePipelineView}
       showSubmit={true}
       navigate={navigate}
@@ -67,6 +81,7 @@ export const ManySourceExample: React.FC = () => {
   return (
     <PipelineView
       pipeline={multipleSourcePipeline}
+      running={true}
       descriptor={multipleSourcePipelineView}
       showSubmit={true}
       navigate={navigate}
@@ -78,6 +93,7 @@ export const NoSubmitExample: React.FC = () => {
   return (
     <PipelineView
       pipeline={exampleEmptyPipeline}
+      running={true}
       descriptor={exampleEmptyPipelineView}
       showSubmit={false}
       navigate={navigate}

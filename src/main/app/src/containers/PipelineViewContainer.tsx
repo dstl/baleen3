@@ -20,7 +20,7 @@
 import { NavigateFn } from '@reach/router'
 import React from 'react'
 import useSWR from 'swr'
-import { getPipeline, getPipelinesFetchKey } from '../Api'
+import { getPipeline, getPipelineRunning, getPipelinesFetchKey } from '../Api'
 import { FullError } from '../components/FullError'
 import { Header } from '../components/Header'
 import { Loading } from '../components/Loading'
@@ -58,6 +58,12 @@ export const PipelineViewContainer: React.FC<PipelineViewContainerProps> = ({
     { initialData: initialValue }
   )
 
+  const { data: running, error: runningError, mutate: runningMutate } = useSWR<boolean, Error>(
+    [getPipelinesFetchKey, name, "running"],
+    getPipelineRunning,
+    { refreshInterval: 10000 }
+  )
+
   if (error !== undefined) {
     return (
       <>
@@ -72,7 +78,7 @@ export const PipelineViewContainer: React.FC<PipelineViewContainerProps> = ({
     )
   }
 
-  if (pipeline === undefined) {
+  if (pipeline === undefined || running === undefined) {
     return (
       <>
         <Header />
@@ -94,6 +100,8 @@ export const PipelineViewContainer: React.FC<PipelineViewContainerProps> = ({
   return (
     <PipelineView
       pipeline={pipeline}
+      running={running === undefined ? true : running}
+      triggerRunningUpdate={runningMutate}
       descriptor={pipelineViewDescriptor}
       showSubmit={showSubmit}
       navigate={navigate}

@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-import { Icons, Column } from '@committed/components'
+import { Button, Icons, Column } from '@committed/components'
 import { NavigateFn } from '@reach/router'
 import React, { useState } from 'react'
 import { Api } from '../../Api'
@@ -42,6 +42,14 @@ export type PipelineViewProps = {
    */
   pipeline: PipelineDescriptor
   /**
+   * Whether the pipeline is currently running or not
+   */
+  running: boolean
+  /**
+   * Function to trigger an update of the running state
+   */
+  triggerRunningUpdate?: Function
+  /**
    * The decomposed pipeline descriptor to be shown
    */
   descriptor: PipelineViewDescriptor
@@ -62,6 +70,8 @@ export type PipelineViewProps = {
  */
 export const PipelineView = ({
   pipeline,
+  running,
+  triggerRunningUpdate,
   descriptor,
   showSubmit,
   navigate,
@@ -69,6 +79,7 @@ export const PipelineView = ({
   const [error, setError] = useState<Error>()
   const [showLogs, toggleLogs] = useToggle(false)
   const [showConfirmDelete, setShowConfirmDelete] = useState(false)
+  const [showConfirmStartStop, setShowConfirmStartStop] = useState(false)
 
   const { name } = descriptor
 
@@ -80,9 +91,37 @@ export const PipelineView = ({
       setError(error)
     }
   }
-
   const handleCloseConfirmDelete = (): void => setShowConfirmDelete(false)
   const handleRequestDelete = (): void => setShowConfirmDelete(true)
+
+  const onStart = async (): Promise<void> => {
+    try {
+      await Api.startPipeline(name)
+    } catch (error) {
+      setError(error)
+    }
+
+    if(triggerRunningUpdate !== undefined)
+      triggerRunningUpdate();
+  }
+  const onStop = async (): Promise<void> => {
+    try {
+      await Api.stopPipeline(name)
+    } catch (error) {
+      setError(error)
+    }
+
+    // Display structure view - no logs for a stopped pipeline
+    if(showLogs)
+      toggleLogs();
+
+    // Update running state
+    if(triggerRunningUpdate !== undefined)
+          triggerRunningUpdate();
+  }
+  const handleCloseConfirmStartStop = (): void => setShowConfirmStartStop(false)
+  const handleRequestStartStop = (): void => setShowConfirmStartStop(true)
+
   const handleEdit = async (): Promise<void> => navigate(`/edit/${name}`)
   const handleTemplate = async (): Promise<void> =>
     navigate('/new', { state: { template: pipeline } })
@@ -100,6 +139,7 @@ export const PipelineView = ({
           tools: [
             <ToolbarAction
               key="logs"
+              disabled={!running}
               icon={showLogs ? <Icons.CalendarViewDay /> : <Icons.Menu />}
               onClick={toggleLogs}
               title={
@@ -127,6 +167,16 @@ export const PipelineView = ({
               Template
             </ToolbarAction>,
             <ToolbarAction
+              key="startstop"
+              icon={running ? <Icons.Stop /> : <Icons.PlayArrow />}
+              onClick={handleRequestStartStop}
+              title={
+                running ? 'Stop the pipeline' : 'Start the pipeline'
+              }
+            >
+              {running ? 'Stop Pipeline' : 'Start Pipeline'}
+            </ToolbarAction>,
+            <ToolbarAction
               key="delete"
               aria-label="Delete"
               icon={<Icons.Delete />}
@@ -141,16 +191,25 @@ export const PipelineView = ({
       <Page>
         <Column p={2} alignItems="center">
           <PipelineViewHeader pipeline={descriptor} />
+          {!running && (
+            <Button size="large" color="primary" startIcon={<Icons.PlayArrow />} onClick={handleRequestStartStop}>
+              Start Pipeline
+            </Button>
+          )}
           <Divider />
-          <PipelineMetricsContainer name={descriptor.name} />
-          <Divider />
-          {showSubmit && (
+          {running && (
+            <>
+              <PipelineMetricsContainer name={descriptor.name} />
+              <Divider />
+            </>
+          )}
+          {showSubmit && running && (
             <>
               <SubmitContainer name={descriptor.name} />
               <Divider />
             </>
           )}
-          {showLogs ? (
+          {showLogs && running ? (
             <PipelineViewLogsContainer name={descriptor.name} />
           ) : (
             <>
@@ -168,6 +227,13 @@ export const PipelineView = ({
         onClose={handleCloseConfirmDelete}
         onConfirm={onDelete}
         confirmButtonText="Delete"
+      />
+      <ConfirmDialog
+        open={showConfirmStartStop}
+        title={running ? "Are you sure you want to stop this pipeline?" : "Are you sure you want to start this pipeline?"}
+        onClose={handleCloseConfirmStartStop}
+        onConfirm={running ? onStop : onStart}
+        confirmButtonText={running ? "Stop Pipeline" : "Start Pipeline"}
       />
     </>
   )

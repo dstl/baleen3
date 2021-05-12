@@ -172,8 +172,9 @@ exports[`renders dark without error 1`] = `
               class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
             />
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
-              tabindex="0"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall MuiButton-disabled MuiButtonBase-disabled"
+              disabled=""
+              tabindex="-1"
               title="Show the Logs view"
               type="button"
             >
@@ -196,9 +197,6 @@ exports[`renders dark without error 1`] = `
                 </span>
                 Logs
               </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
             </button>
             <button
               aria-label="Export"
@@ -261,6 +259,35 @@ exports[`renders dark without error 1`] = `
               />
             </button>
             <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              title="Start the pipeline"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M8 5v14l11-7L8 5z"
+                    />
+                  </svg>
+                </span>
+                Start Pipeline
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
               aria-label="Delete"
               class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
               tabindex="0"
@@ -310,9 +337,34 @@ exports[`renders dark without error 1`] = `
         >
           Empty pipeline
         </h3>
-        <hr
-          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
-        />
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeLarge"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 5v14l11-7L8 5z"
+                />
+              </svg>
+            </span>
+            Start Pipeline
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
         <hr
           class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
         />
@@ -612,8 +664,9 @@ exports[`renders dark without error 2`] = `
               class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
             />
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
-              tabindex="0"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall MuiButton-disabled MuiButtonBase-disabled"
+              disabled=""
+              tabindex="-1"
               title="Show the Logs view"
               type="button"
             >
@@ -636,9 +689,6 @@ exports[`renders dark without error 2`] = `
                 </span>
                 Logs
               </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
             </button>
             <button
               aria-label="Export"
@@ -701,6 +751,35 @@ exports[`renders dark without error 2`] = `
               />
             </button>
             <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              title="Start the pipeline"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M8 5v14l11-7L8 5z"
+                    />
+                  </svg>
+                </span>
+                Start Pipeline
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
               aria-label="Delete"
               class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
               tabindex="0"
@@ -750,136 +829,34 @@ exports[`renders dark without error 2`] = `
         >
           Empty pipeline
         </h3>
-        <hr
-          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
-        />
-        <hr
-          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
-        />
-        <div
-          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
+          tabindex="0"
+          type="button"
         >
-          <div
-            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          <span
+            class="MuiButton-label"
           >
-            <h3
-              class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3"
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeLarge"
             >
-              Submit data
-            </h3>
-            <div
-              class="div-root div-root"
-            >
-              <div
-                class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
               >
-                <label
-                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
-                  data-shrink="true"
-                >
-                  Type
-                </label>
-                <div
-                  class="MuiInputBase-root MuiFilledInput-root makeStyles-root MuiInputBase-fullWidth MuiInputBase-formControl"
-                >
-                  <div
-                    aria-haspopup="listbox"
-                    aria-label="Type"
-                    class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-filled MuiInputBase-input MuiFilledInput-input"
-                    role="button"
-                    tabindex="0"
-                  >
-                    Text
-                  </div>
-                  <input
-                    aria-hidden="true"
-                    class="MuiSelect-nativeInput"
-                    tabindex="-1"
-                    value="Text"
-                  />
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconFilled"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M7 10l5 5 5-5z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
-          >
-            <div
-              class="div-root div-root"
-            >
-              <div
-                class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
-              >
-                <label
-                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
-                  data-shrink="true"
-                >
-                  Submit Text
-                </label>
-                <div
-                  class="MuiInputBase-root MuiFilledInput-root makeStyles-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-multiline MuiFilledInput-multiline"
-                >
-                  <textarea
-                    aria-invalid="false"
-                    class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputMultiline MuiFilledInput-inputMultiline"
-                    rows="5"
-                  />
-                </div>
-                <p
-                  class="MuiFormHelperText-root MuiFormHelperText-contained"
-                >
-                  Enter text to be submitted to the pipeline
-                </p>
-              </div>
-            </div>
-            <div
-              class="MuiCardActions-root MuiCardActions-spacing"
-            >
-              <div
-                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
-              >
-                <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root"
-                  tabindex="0"
-                  type="button"
-                >
-                  <span
-                    class="MuiButton-label"
-                  >
-                    Clear
-                  </span>
-                  <span
-                    class="MuiTouchRipple-root"
-                  />
-                </button>
-                <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary"
-                  tabindex="0"
-                  type="submit"
-                >
-                  <span
-                    class="MuiButton-label"
-                  >
-                    Submit
-                  </span>
-                  <span
-                    class="MuiTouchRipple-root"
-                  />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+                <path
+                  d="M8 5v14l11-7L8 5z"
+                />
+              </svg>
+            </span>
+            Start Pipeline
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
         <hr
           class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
         />
@@ -1448,8 +1425,9 @@ exports[`renders without error 1`] = `
               class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
             />
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
-              tabindex="0"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall MuiButton-disabled MuiButtonBase-disabled"
+              disabled=""
+              tabindex="-1"
               title="Show the Logs view"
               type="button"
             >
@@ -1472,9 +1450,6 @@ exports[`renders without error 1`] = `
                 </span>
                 Logs
               </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
             </button>
             <button
               aria-label="Export"
@@ -1537,6 +1512,35 @@ exports[`renders without error 1`] = `
               />
             </button>
             <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              title="Start the pipeline"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M8 5v14l11-7L8 5z"
+                    />
+                  </svg>
+                </span>
+                Start Pipeline
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
               aria-label="Delete"
               class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
               tabindex="0"
@@ -1586,9 +1590,34 @@ exports[`renders without error 1`] = `
         >
           Empty pipeline
         </h3>
-        <hr
-          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
-        />
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeLarge"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 5v14l11-7L8 5z"
+                />
+              </svg>
+            </span>
+            Start Pipeline
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
         <hr
           class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
         />
@@ -1888,8 +1917,9 @@ exports[`renders without error 2`] = `
               class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
             />
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
-              tabindex="0"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall MuiButton-disabled MuiButtonBase-disabled"
+              disabled=""
+              tabindex="-1"
               title="Show the Logs view"
               type="button"
             >
@@ -1912,9 +1942,6 @@ exports[`renders without error 2`] = `
                 </span>
                 Logs
               </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
             </button>
             <button
               aria-label="Export"
@@ -1977,6 +2004,35 @@ exports[`renders without error 2`] = `
               />
             </button>
             <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
+              tabindex="0"
+              title="Start the pipeline"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M8 5v14l11-7L8 5z"
+                    />
+                  </svg>
+                </span>
+                Start Pipeline
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
               aria-label="Delete"
               class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root MuiButton-textSizeSmall MuiButton-sizeSmall"
               tabindex="0"
@@ -2026,136 +2082,34 @@ exports[`renders without error 2`] = `
         >
           Empty pipeline
         </h3>
-        <hr
-          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
-        />
-        <hr
-          class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
-        />
-        <div
-          class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
+          tabindex="0"
+          type="button"
         >
-          <div
-            class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
+          <span
+            class="MuiButton-label"
           >
-            <h3
-              class="MuiTypography-root WithStyles(ForwardRef(Typography))-root WithStyles(ForwardRef(Typography))-root Component-root Component-root MuiTypography-h3"
+            <span
+              class="MuiButton-startIcon MuiButton-iconSizeLarge"
             >
-              Submit data
-            </h3>
-            <div
-              class="div-root div-root"
-            >
-              <div
-                class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
               >
-                <label
-                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
-                  data-shrink="true"
-                >
-                  Type
-                </label>
-                <div
-                  class="MuiInputBase-root MuiFilledInput-root makeStyles-root MuiInputBase-fullWidth MuiInputBase-formControl"
-                >
-                  <div
-                    aria-haspopup="listbox"
-                    aria-label="Type"
-                    class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-filled MuiInputBase-input MuiFilledInput-input"
-                    role="button"
-                    tabindex="0"
-                  >
-                    Text
-                  </div>
-                  <input
-                    aria-hidden="true"
-                    class="MuiSelect-nativeInput"
-                    tabindex="-1"
-                    value="Text"
-                  />
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconFilled"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M7 10l5 5 5-5z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root WithStyles(ForwardRef(Card))-root MuiPaper-elevation1 MuiPaper-rounded"
-          >
-            <div
-              class="div-root div-root"
-            >
-              <div
-                class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
-              >
-                <label
-                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
-                  data-shrink="true"
-                >
-                  Submit Text
-                </label>
-                <div
-                  class="MuiInputBase-root MuiFilledInput-root makeStyles-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-multiline MuiFilledInput-multiline"
-                >
-                  <textarea
-                    aria-invalid="false"
-                    class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputMultiline MuiFilledInput-inputMultiline"
-                    rows="5"
-                  />
-                </div>
-                <p
-                  class="MuiFormHelperText-root MuiFormHelperText-contained"
-                >
-                  Enter text to be submitted to the pipeline
-                </p>
-              </div>
-            </div>
-            <div
-              class="MuiCardActions-root MuiCardActions-spacing"
-            >
-              <div
-                class="MuiBox-root MuiBox-root Styled(MuiBox)-root Styled(MuiBox)-root"
-              >
-                <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text WithNoOpener-root WithNoOpener-root"
-                  tabindex="0"
-                  type="button"
-                >
-                  <span
-                    class="MuiButton-label"
-                  >
-                    Clear
-                  </span>
-                  <span
-                    class="MuiTouchRipple-root"
-                  />
-                </button>
-                <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-contained WithNoOpener-root WithNoOpener-root MuiButton-containedPrimary"
-                  tabindex="0"
-                  type="submit"
-                >
-                  <span
-                    class="MuiButton-label"
-                  >
-                    Submit
-                  </span>
-                  <span
-                    class="MuiTouchRipple-root"
-                  />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+                <path
+                  d="M8 5v14l11-7L8 5z"
+                />
+              </svg>
+            </span>
+            Start Pipeline
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
         <hr
           class="MuiDivider-root WithStyles(ForwardRef(Divider))-root WithStyles(ForwardRef(Divider))-root Styled(WithStyles(ForwardRef(Divider)))-root Styled(WithStyles(ForwardRef(Divider)))-root"
         />
