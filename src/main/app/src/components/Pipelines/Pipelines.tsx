@@ -31,6 +31,14 @@ export interface PipelinesProps {
    * Delete the given pipeline
    */
   deletePipeline: (pipeline: PipelineMetadata) => Promise<void>
+  /**
+   * Start the given pipeline
+   */
+  startPipeline: (pipeline: PipelineMetadata) => Promise<void>
+  /**
+   * Stop the given pipeline
+   */
+  stopPipeline: (pipeline: PipelineMetadata) => Promise<void>
 }
 
 /**
@@ -39,6 +47,8 @@ export interface PipelinesProps {
 export const Pipelines: React.FC<PipelinesProps> = ({
   pipelines,
   deletePipeline,
+  startPipeline,
+  stopPipeline
 }: PipelinesProps) => (
   <Row flexWrap="wrap">
     {pipelines.map((pipeline) => (
@@ -46,6 +56,8 @@ export const Pipelines: React.FC<PipelinesProps> = ({
         key={pipeline.name}
         pipelineMetadata={pipeline}
         deletePipeline={deletePipeline}
+        startPipeline={startPipeline}
+        stopPipeline={stopPipeline}
       />
     ))}
   </Row>

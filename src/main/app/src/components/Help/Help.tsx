@@ -252,6 +252,8 @@ export const Help: React.FC = () => {
           }}
           isDeleting={false}
           onDelete={async (): Promise<void> => Promise.resolve()}
+          onStart={async (): Promise<void> => Promise.resolve()}
+          onStop={async (): Promise<void> => Promise.resolve()}
           helpMode
         />
       </Row>

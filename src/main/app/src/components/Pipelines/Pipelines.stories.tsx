@@ -34,6 +34,12 @@ export const Default: React.FC = () => {
       deletePipeline={async (): Promise<void> =>
         Promise.resolve(action('deletePipeline')())
       }
+      startPipeline={async (): Promise<void> =>
+        Promise.resolve(action('startPipeline')())
+      }
+      stopPipeline={async (): Promise<void> =>
+        Promise.resolve(action('stopPipeline')())
+      }
     />
   )
 }

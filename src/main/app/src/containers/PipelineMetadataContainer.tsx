@@ -30,11 +30,21 @@ export interface PipelineMetadataContainerProps {
    * Delete the pipeline
    */
   readonly deletePipeline: (pipeline: PipelineMetadata) => Promise<void>
+  /**
+   * Start the pipeline
+   */
+  readonly startPipeline: (pipeline: PipelineMetadata) => Promise<void>
+  /**
+   * Stop the pipeline
+   */
+  readonly stopPipeline: (pipeline: PipelineMetadata) => Promise<void>
 }
 
 export const PipelineMetadataContainer: React.FC<PipelineMetadataContainerProps> = ({
   pipelineMetadata,
   deletePipeline,
+  startPipeline,
+  stopPipeline
 }) => {
   const [error, setError] = useState<Error>()
   const [isDeleting, setDeleting] = useState(false)
@@ -49,10 +59,28 @@ export const PipelineMetadataContainer: React.FC<PipelineMetadataContainerProps>
     }
   }
 
+  const onStart = async (): Promise<void> => {
+    try {
+      await startPipeline(pipelineMetadata)
+    } catch (error) {
+      setError(error)
+    }
+  }
+
+  const onStop = async (): Promise<void> => {
+    try {
+      await stopPipeline(pipelineMetadata)
+    } catch (error) {
+      setError(error)
+    }
+  }
+
   return (
     <PipelineMetadataCard
       pipelineMetadata={pipelineMetadata}
       onDelete={onDelete}
+      onStart={onStart}
+      onStop={onStop}
       isDeleting={isDeleting}
       error={error}
     />

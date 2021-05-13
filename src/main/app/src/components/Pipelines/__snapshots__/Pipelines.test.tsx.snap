@@ -92,6 +92,31 @@ exports[`renders dark without error 1`] = `
                   </button>
                 </a>
                 <button
+                  aria-label="stop"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Stop Pipeline"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 6h12v12H6V6z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+                <button
                   aria-label="delete"
                   class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
                   tabindex="0"
@@ -211,6 +236,31 @@ exports[`renders dark without error 1`] = `
                     />
                   </button>
                 </a>
+                <button
+                  aria-label="stop"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Stop Pipeline"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 6h12v12H6V6z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
                 <button
                   aria-label="delete"
                   class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
@@ -332,6 +382,31 @@ exports[`renders dark without error 1`] = `
                   </button>
                 </a>
                 <button
+                  aria-label="stop"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Stop Pipeline"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 6h12v12H6V6z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+                <button
                   aria-label="delete"
                   class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
                   tabindex="0"
@@ -452,6 +527,31 @@ exports[`renders dark without error 1`] = `
                   </button>
                 </a>
                 <button
+                  aria-label="stop"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Stop Pipeline"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 6h12v12H6V6z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+                <button
                   aria-label="delete"
                   class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
                   tabindex="0"
@@ -571,6 +671,31 @@ exports[`renders dark without error 1`] = `
                     />
                   </button>
                 </a>
+                <button
+                  aria-label="stop"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Stop Pipeline"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 6h12v12H6V6z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
                 <button
                   aria-label="delete"
                   class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
@@ -703,6 +828,31 @@ exports[`renders without error 1`] = `
                   </button>
                 </a>
                 <button
+                  aria-label="stop"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Stop Pipeline"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 6h12v12H6V6z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+                <button
                   aria-label="delete"
                   class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
                   tabindex="0"
@@ -822,6 +972,31 @@ exports[`renders without error 1`] = `
                     />
                   </button>
                 </a>
+                <button
+                  aria-label="stop"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Stop Pipeline"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 6h12v12H6V6z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
                 <button
                   aria-label="delete"
                   class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
@@ -943,6 +1118,31 @@ exports[`renders without error 1`] = `
                   </button>
                 </a>
                 <button
+                  aria-label="stop"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Stop Pipeline"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 6h12v12H6V6z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+                <button
                   aria-label="delete"
                   class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
                   tabindex="0"
@@ -1063,6 +1263,31 @@ exports[`renders without error 1`] = `
                   </button>
                 </a>
                 <button
+                  aria-label="stop"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Stop Pipeline"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 6h12v12H6V6z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+                <button
                   aria-label="delete"
                   class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
                   tabindex="0"
@@ -1182,6 +1407,31 @@ exports[`renders without error 1`] = `
                     />
                   </button>
                 </a>
+                <button
+                  aria-label="stop"
+                  class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                  tabindex="0"
+                  title="Stop Pipeline"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 6h12v12H6V6z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
                 <button
                   aria-label="delete"
                   class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"

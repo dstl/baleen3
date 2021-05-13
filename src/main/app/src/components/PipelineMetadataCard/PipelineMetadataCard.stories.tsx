@@ -29,12 +29,20 @@ export default {
 const deleteAction = action('Delete')
 const onDelete = async (): Promise<void> => Promise.resolve(deleteAction())
 
+const startAction = action('Start')
+const onStart = async (): Promise<void> => Promise.resolve(startAction())
+
+const stopAction = action('Stop')
+const onStop = async (): Promise<void> => Promise.resolve(stopAction())
+
 export const Default: React.FC = () => {
   return (
     <PipelineMetadataCard
       pipelineMetadata={{ name: 'Name', description: 'This is a description', running: true }}
       isDeleting={false}
       onDelete={onDelete}
+      onStart={onStart}
+      onStop={onStop}
     />
   )
 }
@@ -45,6 +53,8 @@ export const Stopped: React.FC = () => {
       pipelineMetadata={{ name: 'Name', description: 'This is a description', running: false }}
       isDeleting={false}
       onDelete={onDelete}
+      onStart={onStart}
+      onStop={onStop}
     />
   )
 }
@@ -55,6 +65,8 @@ export const Deleting: React.FC = () => {
       pipelineMetadata={{ name: 'Name', description: 'This is a description', running: true }}
       isDeleting={true}
       onDelete={onDelete}
+      onStart={onStart}
+      onStop={onStop}
     />
   )
 }
@@ -76,6 +88,8 @@ export const WithError: React.FC = () => {
           setError(new Error(`Error on ${new Date().toString()}`))
         )
       }
+      onStart={onStart}
+      onStop={onStop}
     />
   )
 }

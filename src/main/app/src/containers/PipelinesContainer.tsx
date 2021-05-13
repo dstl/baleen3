@@ -56,5 +56,23 @@ export const PipelinesContainer: React.FC = () => {
     })
   }
 
-  return <Pipelines pipelines={pipelines} deletePipeline={deletePipeline} />
+  const startPipeline = async (pipeline: PipelineMetadata): Promise<void> => {
+    await mutate(async (pipelines) => {
+      await Api.startPipeline(pipeline.name)
+      return produce(pipelines, (draft) => {
+        draft.splice(pipelines.indexOf(pipeline), 1)
+      })
+    })
+  }
+
+  const stopPipeline = async (pipeline: PipelineMetadata): Promise<void> => {
+    await mutate(async (pipelines) => {
+      await Api.stopPipeline(pipeline.name)
+      return produce(pipelines, (draft) => {
+        draft.splice(pipelines.indexOf(pipeline), 1)
+      })
+    })
+  }
+
+  return <Pipelines pipelines={pipelines} deletePipeline={deletePipeline} startPipeline={startPipeline} stopPipeline={stopPipeline} />
 }

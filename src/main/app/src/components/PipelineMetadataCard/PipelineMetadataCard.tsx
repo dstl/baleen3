@@ -51,6 +51,14 @@ export interface PipelineMetadataCardProps {
    */
   readonly onDelete: () => Promise<void>
   /**
+   * Callback action when on start called
+   */
+  readonly onStart: () => Promise<void>
+  /**
+   * Callback action when on stop called
+   */
+  readonly onStop: () => Promise<void>
+  /**
    * We disable the links in help more, so as not to cause unexpected navigation
    */
   readonly helpMode?: boolean
@@ -68,9 +76,12 @@ export const PipelineMetadataCard: React.FC<PipelineMetadataCardProps> = ({
   isDeleting,
   error,
   onDelete,
+  onStart,
+  onStop,
   helpMode = false,
 }: PipelineMetadataCardProps) => {
   const [showConfirmDelete, setShowConfirmDelete] = useState(false)
+  const [showConfirmStartStop, setShowConfirmStartStop] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
   const [isHovering] = useHover<HTMLDivElement>(ref)
   const [isFocused] = useFocus<HTMLDivElement>(ref)
@@ -78,13 +89,14 @@ export const PipelineMetadataCard: React.FC<PipelineMetadataCardProps> = ({
   const handleCloseConfirmDelete = (): void => setShowConfirmDelete(false)
   const handleRequestDelete = (): void => setShowConfirmDelete(true)
 
-  const stopped = pipelineMetadata.running ? null : "This pipeline is currently stopped"
+  const handleCloseConfirmStartStop = (): void => setShowConfirmStartStop(false)
+  const handleRequestStartStop = (): void => setShowConfirmStartStop(true)
 
   return (
     <Card ref={ref} tabIndex={0}>
       <CardHeader
         title={pipelineMetadata.name}
-        subheader={stopped}
+        subheader={pipelineMetadata.running ? null : "This pipeline is currently stopped"}
         action={
           <Fade in={isHovering || isFocused || showConfirmDelete || isDeleting}>
             <div>
@@ -106,6 +118,14 @@ export const PipelineMetadataCard: React.FC<PipelineMetadataCardProps> = ({
                   <Icons.Edit />
                 </IconButton>
               </Link>
+              <IconButton
+                title={pipelineMetadata.running ? "Stop Pipeline" : "Start Pipeline"}
+                aria-label={pipelineMetadata.running ? "stop" : "start"}
+                onClick={handleRequestStartStop}
+                disabled={isDeleting}
+              >
+                {pipelineMetadata.running ? (<Icons.Stop />) : (<Icons.PlayArrow />)}
+              </IconButton>
               <IconButton
                 title="Delete"
                 aria-label="delete"
@@ -136,6 +156,13 @@ export const PipelineMetadataCard: React.FC<PipelineMetadataCardProps> = ({
         onClose={handleCloseConfirmDelete}
         onConfirm={onDelete}
         confirmButtonText="Delete"
+      />
+      <ConfirmDialog
+        open={showConfirmStartStop}
+        title={pipelineMetadata.running ? "Are you sure you want to stop this pipeline?" : "Are you sure you want to start this pipeline?"}
+        onClose={handleCloseConfirmStartStop}
+        onConfirm={pipelineMetadata.running ? onStop : onStart}
+        confirmButtonText={pipelineMetadata.running ? "Stop Pipeline" : "Start Pipeline"}
       />
     </Card>
   )

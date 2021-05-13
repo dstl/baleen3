@@ -94,6 +94,31 @@ exports[`renders dark without error 1`] = `
                 </button>
               </a>
               <button
+                aria-label="start"
+                class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                tabindex="0"
+                title="Start Pipeline"
+                type="button"
+              >
+                <span
+                  class="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M8 5v14l11-7L8 5z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+              <button
                 aria-label="delete"
                 class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
                 tabindex="0"
@@ -225,6 +250,31 @@ exports[`renders without error 1`] = `
                   />
                 </button>
               </a>
+              <button
+                aria-label="start"
+                class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
+                tabindex="0"
+                title="Start Pipeline"
+                type="button"
+              >
+                <span
+                  class="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M8 5v14l11-7L8 5z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
               <button
                 aria-label="delete"
                 class="MuiButtonBase-root MuiIconButton-root WithNoOpener-root WithNoOpener-root"
