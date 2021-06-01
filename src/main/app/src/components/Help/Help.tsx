@@ -248,7 +248,7 @@ export const Help: React.FC = () => {
             name: 'Pipeline Name',
             description:
               'A helpful description of the Pipeline to remind you of its purpose.',
-            running: true
+            running: true,
           }}
           isDeleting={false}
           onDelete={async (): Promise<void> => Promise.resolve()}

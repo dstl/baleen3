@@ -31,7 +31,7 @@ export const Default: React.FC = () => {
   const errorConfiguration: ErrorConfiguration = {
     onSourceError: 'REMOVE_SOURCE',
     onProcessorError: 'REMOVE_PROCESSOR',
-    onItemError: 'DISCARD_ITEM'
+    onItemError: 'DISCARD_ITEM',
   }
 
   return (

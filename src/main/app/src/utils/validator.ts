@@ -50,19 +50,19 @@ const validate = ajv.compile({
         onItemError: {
           enum: ['DISCARD_ITEM', 'REMOVE_PROCESSOR', 'IGNORE'],
           title: 'Item Error',
-          description: 'What to do on an Item error'
+          description: 'What to do on an Item error',
         },
         onProcessorError: {
           enum: ['DISCARD_ITEM', 'REMOVE_PROCESSOR', 'IGNORE'],
           title: 'Processor Error',
-          description: 'What to do on a Processor error'
+          description: 'What to do on a Processor error',
         },
         onSourceError: {
           enum: ['REMOVE_SOURCE', 'IGNORE'],
           title: 'Source Error',
-          description: 'What to do on a Source error'
-        }
-      }
+          description: 'What to do on a Source error',
+        },
+      },
     },
     sources: {
       type: 'array',

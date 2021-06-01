@@ -30,9 +30,7 @@ export interface Initializer<T> {
   (): T
 }
 
-export function useStateTracking<T>(
-  initialState: T
-): {
+export function useStateTracking<T>(initialState: T): {
   current: T
   modify: (mutator: Mutator<T>) => void
   initialize: (initializer: Initializer<T>) => void

@@ -25,7 +25,7 @@ import { ErrorConfiguration } from '../../types'
 const errorConfiguration: ErrorConfiguration = {
   onSourceError: 'REMOVE_SOURCE',
   onProcessorError: 'REMOVE_PROCESSOR',
-  onItemError: 'DISCARD_ITEM'
+  onItemError: 'DISCARD_ITEM',
 }
 
 it('renders without error', () => {

@@ -114,34 +114,32 @@ export const isPipelineValid = (
   return errors
 }
 
-export const createComponent = (
-  settings: SettingsMap,
-  types: ComponentMap,
-  configured = true
-) => (descriptor: Annot8ComponentDescriptor): ComponentMetadata => {
-  const id = uuid()
-  const type = Object.keys(descriptor)[0]
-  const info: ComponentInfo | undefined = types[`${type}`]
-  const schema: SettingsSchema | undefined =
-    info !== undefined && info.settingsClass !== undefined
-      ? settings[info.settingsClass]
-      : undefined
+export const createComponent =
+  (settings: SettingsMap, types: ComponentMap, configured = true) =>
+  (descriptor: Annot8ComponentDescriptor): ComponentMetadata => {
+    const id = uuid()
+    const type = Object.keys(descriptor)[0]
+    const info: ComponentInfo | undefined = types[`${type}`]
+    const schema: SettingsSchema | undefined =
+      info !== undefined && info.settingsClass !== undefined
+        ? settings[info.settingsClass]
+        : undefined
 
-  if (schema !== undefined && descriptor[`${type}`].settings === undefined) {
-    descriptor[`${type}`].settings = defaultSettings(schema)
-  }
+    if (schema !== undefined && descriptor[`${type}`].settings === undefined) {
+      descriptor[`${type}`].settings = defaultSettings(schema)
+    }
 
-  return {
-    id,
-    descriptor,
-    info,
-    schema,
-    valid:
-      info !== undefined &&
-      isSettingsValid(schema, descriptor[`${type}`].settings),
-    configured,
+    return {
+      id,
+      descriptor,
+      info,
+      schema,
+      valid:
+        info !== undefined &&
+        isSettingsValid(schema, descriptor[`${type}`].settings),
+      configured,
+    }
   }
-}
 
 export const createPipelineViewDescriptor = (
   pipeline: PipelineDescriptor,
@@ -171,7 +169,7 @@ export const createPipelineViewDescriptor = (
     sourceOrder,
     processorOrder,
     components,
-    errorConfiguration: pipeline.errorConfiguration
+    errorConfiguration: pipeline.errorConfiguration,
   }
 }
 

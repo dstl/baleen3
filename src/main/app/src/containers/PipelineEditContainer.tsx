@@ -266,7 +266,7 @@ export const PipelineEditContainer: React.FC<PipelineEditContainerProps> = ({
       processorOrder,
       components,
       orderer,
-      errorConfiguration
+      errorConfiguration,
     } = pipeline
 
     const sources = sourceOrder.map((s) => components[`${s}`].descriptor)
@@ -277,7 +277,7 @@ export const PipelineEditContainer: React.FC<PipelineEditContainerProps> = ({
       description,
       sources,
       processors,
-      errorConfiguration
+      errorConfiguration,
     }
     try {
       await onSave(createPipeline, orderer)
@@ -297,7 +297,7 @@ export const PipelineEditContainer: React.FC<PipelineEditContainerProps> = ({
       sourceOrder,
       processorOrder,
       components,
-      errorConfiguration
+      errorConfiguration,
     } = pipeline
     const sources = sourceOrder.map((s) => components[`${s}`].descriptor)
     const processors = processorOrder.map((p) => components[`${p}`].descriptor)
@@ -307,22 +307,20 @@ export const PipelineEditContainer: React.FC<PipelineEditContainerProps> = ({
       description,
       sources,
       processors,
-      errorConfiguration
+      errorConfiguration,
     }
     try {
-      const {
-        sources: orderedSources,
-        processors: orderedProcessors,
-      } = await orderPipeline(toOrderPipeline, orderer)
+      const { sources: orderedSources, processors: orderedProcessors } =
+        await orderPipeline(toOrderPipeline, orderer)
 
       modify((draft: PipelineEditDescriptor): void => {
         const newOrderedPipeline: PipelineDescriptor = {
           name,
           description,
-//        orderer,  //TODO: Remove this?
+          //        orderer,  //TODO: Remove this?
           sources: orderedSources,
           processors: orderedProcessors,
-          errorConfiguration
+          errorConfiguration,
         }
 
         const created = createPipelineEditDescriptor(

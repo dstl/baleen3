@@ -101,8 +101,7 @@ export const PipelineView = ({
       setError(error)
     }
 
-    if(triggerRunningUpdate !== undefined)
-      triggerRunningUpdate();
+    if (triggerRunningUpdate !== undefined) triggerRunningUpdate()
   }
   const onStop = async (): Promise<void> => {
     try {
@@ -112,12 +111,10 @@ export const PipelineView = ({
     }
 
     // Display structure view - no logs for a stopped pipeline
-    if(showLogs)
-      toggleLogs();
+    if (showLogs) toggleLogs()
 
     // Update running state
-    if(triggerRunningUpdate !== undefined)
-          triggerRunningUpdate();
+    if (triggerRunningUpdate !== undefined) triggerRunningUpdate()
   }
   const handleCloseConfirmStartStop = (): void => setShowConfirmStartStop(false)
   const handleRequestStartStop = (): void => setShowConfirmStartStop(true)
@@ -170,9 +167,7 @@ export const PipelineView = ({
               key="startstop"
               icon={running ? <Icons.Stop /> : <Icons.PlayArrow />}
               onClick={handleRequestStartStop}
-              title={
-                running ? 'Stop the pipeline' : 'Start the pipeline'
-              }
+              title={running ? 'Stop the pipeline' : 'Start the pipeline'}
             >
               {running ? 'Stop Pipeline' : 'Start Pipeline'}
             </ToolbarAction>,
@@ -192,7 +187,12 @@ export const PipelineView = ({
         <Column p={2} alignItems="center">
           <PipelineViewHeader pipeline={descriptor} />
           {!running && (
-            <Button size="large" color="primary" startIcon={<Icons.PlayArrow />} onClick={handleRequestStartStop}>
+            <Button
+              size="large"
+              color="primary"
+              startIcon={<Icons.PlayArrow />}
+              onClick={handleRequestStartStop}
+            >
               Start Pipeline
             </Button>
           )}
@@ -215,7 +215,9 @@ export const PipelineView = ({
             <>
               <PipelineViewStructure pipeline={descriptor} />
               <Divider />
-              <PipelineViewErrorConfiguration errorConfiguration={pipeline.errorConfiguration} />
+              <PipelineViewErrorConfiguration
+                errorConfiguration={pipeline.errorConfiguration}
+              />
             </>
           )}
         </Column>
@@ -230,10 +232,14 @@ export const PipelineView = ({
       />
       <ConfirmDialog
         open={showConfirmStartStop}
-        title={running ? "Are you sure you want to stop this pipeline?" : "Are you sure you want to start this pipeline?"}
+        title={
+          running
+            ? 'Are you sure you want to stop this pipeline?'
+            : 'Are you sure you want to start this pipeline?'
+        }
         onClose={handleCloseConfirmStartStop}
         onConfirm={running ? onStop : onStart}
-        confirmButtonText={running ? "Stop Pipeline" : "Start Pipeline"}
+        confirmButtonText={running ? 'Stop Pipeline' : 'Start Pipeline'}
       />
     </>
   )

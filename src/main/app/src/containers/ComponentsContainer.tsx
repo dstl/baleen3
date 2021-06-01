@@ -23,12 +23,8 @@ import { useServerDetails } from '../hooks'
 import { ServerDetails } from '../types'
 
 export const ComponentsContainer: React.FC = () => {
-  const {
-    orderers,
-    sources,
-    processors,
-    settings,
-  }: ServerDetails = useServerDetails()
+  const { orderers, sources, processors, settings }: ServerDetails =
+    useServerDetails()
   return (
     <Components
       orderers={orderers}

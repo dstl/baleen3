@@ -45,71 +45,69 @@ interface PipelineTemplateContainerProps {
   navigate: NavigateFn
 }
 
-export const PipelineTemplateContainer: React.FC<PipelineTemplateContainerProps> = ({
-  template: provided,
-  navigate,
-}: PipelineTemplateContainerProps) => {
-  const { data: pipelines } = useSWR<PipelineMetadata[]>(
-    getPipelinesFetchKey,
-    getPipelines,
-    { refreshInterval: 5000 }
-  )
-
-  const usedNames = pipelines?.map((p) => p.name) ?? []
-
-  const templates = useTemplates()
-  const [template, setTemplate] = useState<PipelineTemplate>()
-
-  useEffect(() => {
-    setTemplate(provided)
-  }, [provided])
-
-  const onSave = async (
-    pipeline: PipelineDescriptor,
-    // Not currently used, see below
-    _orderer: string
-  ): Promise<void> => {
-    // We do not apply the orderer, leaving the ordering to the use in the UI
-    // In future we may want to ask the use if they have a non-no-op order selected and haven't applied it
-    // if they want to send it
-    await createPipeline(pipeline)
-    await navigate(`/view/${pipeline.name}`, {
-      state: { initialValue: pipeline },
-    })
-  }
-
-  if (pipelines === undefined) {
-    return (
-      <>
-        <Header />
-        <Loading />
-      </>
+export const PipelineTemplateContainer: React.FC<PipelineTemplateContainerProps> =
+  ({ template: provided, navigate }: PipelineTemplateContainerProps) => {
+    const { data: pipelines } = useSWR<PipelineMetadata[]>(
+      getPipelinesFetchKey,
+      getPipelines,
+      { refreshInterval: 5000 }
     )
-  }
 
-  if (template === undefined) {
-    return (
-      <>
-        <Header />
-        <Page data-testid="PipelineNew">
-          <ChooseTemplate
-            templates={templates}
-            onCreate={setTemplate}
-            validateUpload={validatePipelineFile}
+    const usedNames = pipelines?.map((p) => p.name) ?? []
+
+    const templates = useTemplates()
+    const [template, setTemplate] = useState<PipelineTemplate>()
+
+    useEffect(() => {
+      setTemplate(provided)
+    }, [provided])
+
+    const onSave = async (
+      pipeline: PipelineDescriptor,
+      // Not currently used, see below
+      _orderer: string
+    ): Promise<void> => {
+      // We do not apply the orderer, leaving the ordering to the use in the UI
+      // In future we may want to ask the use if they have a non-no-op order selected and haven't applied it
+      // if they want to send it
+      await createPipeline(pipeline)
+      await navigate(`/view/${pipeline.name}`, {
+        state: { initialValue: pipeline },
+      })
+    }
+
+    if (pipelines === undefined) {
+      return (
+        <>
+          <Header />
+          <Loading />
+        </>
+      )
+    }
+
+    if (template === undefined) {
+      return (
+        <>
+          <Header />
+          <Page data-testid="PipelineNew">
+            <ChooseTemplate
+              templates={templates}
+              onCreate={setTemplate}
+              validateUpload={validatePipelineFile}
+            />
+          </Page>
+        </>
+      )
+    } else {
+      return (
+        <div data-testid="PipelineNew">
+          <PipelineEditContainer
+            template={template}
+            saveLabel="Save Pipeline"
+            onSave={onSave}
+            usedNames={usedNames}
           />
-        </Page>
-      </>
-    )
-  } else {
-    return (
-      <div data-testid="PipelineNew">
-        <PipelineEditContainer
-          template={template}
-          saveLabel="Save Pipeline"
-          onSave={onSave}
-          usedNames={usedNames}
-        />
-      </div>
-    )
+        </div>
+      )
+    }
   }
-}

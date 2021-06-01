@@ -32,42 +32,45 @@ interface PipelineMetricsContainerProps {
   name: string
 }
 
-export const PipelineMetricsContainer: React.FC<PipelineMetricsContainerProps> = ({
-  name,
-}: PipelineMetricsContainerProps) => {
-  const { data: metrics, error, mutate } = useSWR<MetricsContainer, Error>(
-    ['api/v3/pipelines/{name}/metrics', name],
-    getPipelineMetrics,
-    { refreshInterval: 5000 }
-  )
-
-  if (error !== undefined) {
-    return (
-      <Box p={3} width={1 / 2}>
-        <Alert
-          severity="error"
-          action={
-            <Button
-              color="inherit"
-              size="small"
-              variant="text"
-              onClick={async (): Promise<void> => {
-                await mutate()
-              }}
-            >
-              Retry
-            </Button>
-          }
-        >
-          Error loading metrics
-        </Alert>
-      </Box>
+export const PipelineMetricsContainer: React.FC<PipelineMetricsContainerProps> =
+  ({ name }: PipelineMetricsContainerProps) => {
+    const {
+      data: metrics,
+      error,
+      mutate,
+    } = useSWR<MetricsContainer, Error>(
+      ['api/v3/pipelines/{name}/metrics', name],
+      getPipelineMetrics,
+      { refreshInterval: 5000 }
     )
-  }
 
-  if (metrics === undefined) {
-    return <Heading.h4 align="center">Loading metrics...</Heading.h4>
-  } else {
-    return <PipelineMetrics container={metrics} />
+    if (error !== undefined) {
+      return (
+        <Box p={3} width={1 / 2}>
+          <Alert
+            severity="error"
+            action={
+              <Button
+                color="inherit"
+                size="small"
+                variant="text"
+                onClick={async (): Promise<void> => {
+                  await mutate()
+                }}
+              >
+                Retry
+              </Button>
+            }
+          >
+            Error loading metrics
+          </Alert>
+        </Box>
+      )
+    }
+
+    if (metrics === undefined) {
+      return <Heading.h4 align="center">Loading metrics...</Heading.h4>
+    } else {
+      return <PipelineMetrics container={metrics} />
+    }
   }
-}

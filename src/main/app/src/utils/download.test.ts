@@ -23,13 +23,13 @@ import { downloadJson } from './download'
 
 describe('downloadJson', () => {
   it('will download and write json', () => {
-    const anchorMocked: HTMLAnchorElement = ({
+    const anchorMocked: HTMLAnchorElement = {
       href: '',
       download: '',
       click: jest.fn(),
       remove: jest.fn(),
       setAttribute: jest.fn(),
-    } as unknown) as HTMLAnchorElement
+    } as unknown as HTMLAnchorElement
     anchorMocked.setAttribute = (
       key: 'href' | 'download',
       value: string

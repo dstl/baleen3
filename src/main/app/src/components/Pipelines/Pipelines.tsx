@@ -48,7 +48,7 @@ export const Pipelines: React.FC<PipelinesProps> = ({
   pipelines,
   deletePipeline,
   startPipeline,
-  stopPipeline
+  stopPipeline,
 }: PipelinesProps) => (
   <Row flexWrap="wrap">
     {pipelines.map((pipeline) => (

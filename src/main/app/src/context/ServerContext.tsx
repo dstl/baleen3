@@ -54,15 +54,13 @@ function byName(a: { name: string }, b: { name: string }): number {
 
 function toComponentMap(components: Annot8ComponentInfo[]): ComponentMap {
   return components
-    .map(
-      (s: Annot8ComponentInfo): ComponentInfo => {
-        if (s.name === undefined) {
-          return { ...s, name: javaToReadable(s.componentClass) }
-        } else {
-          return s as ComponentInfo
-        }
+    .map((s: Annot8ComponentInfo): ComponentInfo => {
+      if (s.name === undefined) {
+        return { ...s, name: javaToReadable(s.componentClass) }
+      } else {
+        return s as ComponentInfo
       }
-    )
+    })
     .sort(byName)
     .reduce<ComponentMap>((acc, s) => {
       acc[s.componentClass] = s
@@ -96,9 +94,8 @@ export const ServerProvider: React.FC = ({ children }) => {
   const [sources, setSources] = useLocalState<ComponentMap>('sources')
   const [settings, setSettings] = useLocalState<SettingsMap>('settings')
   const [orderers, setOrderers] = useLocalState<ComponentMap>('orderers')
-  const [templates, setTemplates] = useLocalState<PipelineTemplate[]>(
-    'templates'
-  )
+  const [templates, setTemplates] =
+    useLocalState<PipelineTemplate[]>('templates')
   const [error, setError] = useState<Error>()
 
   useEffect(() => {

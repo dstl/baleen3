@@ -96,7 +96,9 @@ export const PipelineMetadataCard: React.FC<PipelineMetadataCardProps> = ({
     <Card ref={ref} tabIndex={0}>
       <CardHeader
         title={pipelineMetadata.name}
-        subheader={pipelineMetadata.running ? null : "This pipeline is currently stopped"}
+        subheader={
+          pipelineMetadata.running ? null : 'This pipeline is currently stopped'
+        }
         action={
           <Fade in={isHovering || isFocused || showConfirmDelete || isDeleting}>
             <div>
@@ -119,12 +121,18 @@ export const PipelineMetadataCard: React.FC<PipelineMetadataCardProps> = ({
                 </IconButton>
               </Link>
               <IconButton
-                title={pipelineMetadata.running ? "Stop Pipeline" : "Start Pipeline"}
-                aria-label={pipelineMetadata.running ? "stop" : "start"}
+                title={
+                  pipelineMetadata.running ? 'Stop Pipeline' : 'Start Pipeline'
+                }
+                aria-label={pipelineMetadata.running ? 'stop' : 'start'}
                 onClick={handleRequestStartStop}
                 disabled={isDeleting}
               >
-                {pipelineMetadata.running ? (<Icons.Stop />) : (<Icons.PlayArrow />)}
+                {pipelineMetadata.running ? (
+                  <Icons.Stop />
+                ) : (
+                  <Icons.PlayArrow />
+                )}
               </IconButton>
               <IconButton
                 title="Delete"
@@ -159,10 +167,16 @@ export const PipelineMetadataCard: React.FC<PipelineMetadataCardProps> = ({
       />
       <ConfirmDialog
         open={showConfirmStartStop}
-        title={pipelineMetadata.running ? "Are you sure you want to stop this pipeline?" : "Are you sure you want to start this pipeline?"}
+        title={
+          pipelineMetadata.running
+            ? 'Are you sure you want to stop this pipeline?'
+            : 'Are you sure you want to start this pipeline?'
+        }
         onClose={handleCloseConfirmStartStop}
         onConfirm={pipelineMetadata.running ? onStop : onStart}
-        confirmButtonText={pipelineMetadata.running ? "Stop Pipeline" : "Start Pipeline"}
+        confirmButtonText={
+          pipelineMetadata.running ? 'Stop Pipeline' : 'Start Pipeline'
+        }
       />
     </Card>
   )

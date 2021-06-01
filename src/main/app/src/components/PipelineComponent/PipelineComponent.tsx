@@ -207,11 +207,8 @@ export const PipelineComponent = React.forwardRef<
   if (componentClassName === undefined) {
     throw Error('Pipeline component does not define a type')
   }
-  const [
-    showSettingsDialog,
-    openSettingsDialog,
-    closeSettingsDialog,
-  ] = useDialog()
+  const [showSettingsDialog, openSettingsDialog, closeSettingsDialog] =
+    useDialog()
   const [showNameDialog, openNameDialog, closeNameDialog] = useDialog()
   const innerRef = useRef<HTMLDivElement>(null)
   const [isHovering] = useHover<HTMLDivElement>(innerRef)

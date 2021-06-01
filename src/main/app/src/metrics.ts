@@ -35,7 +35,7 @@ export const metrics: { [key: string]: MetricMetadata } = {
   itemProcessingTime: {
     name: 'Processing Time',
     description: 'The average time taken to process an item',
-    units: 'seconds per item'
+    units: 'seconds per item',
   },
   itemsCreated: {
     name: 'Created',
@@ -49,12 +49,14 @@ export const metrics: { [key: string]: MetricMetadata } = {
   },
   'itemsProcessed.processorError': {
     name: 'Processed (Processor Error)',
-    description: 'The number of items that failed to process successfully due to a Processor Error',
+    description:
+      'The number of items that failed to process successfully due to a Processor Error',
     units: 'items',
   },
   'itemsProcessed.itemError': {
     name: 'Processed (Item Error)',
-    description: 'The number of items that failed to process successfully due to an Item Error',
+    description:
+      'The number of items that failed to process successfully due to an Item Error',
     units: 'items',
   },
 }

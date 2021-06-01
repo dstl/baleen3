@@ -51,8 +51,8 @@ export interface ComponentsInfoCardProps
 /**
  * This is the contents of the component info card.
  */
-const ComponentsInfoCardContent: React.FC<ComponentsInfoCardContentProps> = memo(
-  ({ info }: ComponentsInfoCardContentProps) => {
+const ComponentsInfoCardContent: React.FC<ComponentsInfoCardContentProps> =
+  memo(({ info }: ComponentsInfoCardContentProps) => {
     const { componentClass, description, name, tags } = info
     return (
       <Column height="100%">
@@ -73,8 +73,7 @@ const ComponentsInfoCardContent: React.FC<ComponentsInfoCardContentProps> = memo
         </Row>
       </Column>
     )
-  }
-)
+  })
 
 /**
  * This component is to display the different server components

@@ -29,7 +29,11 @@ import Backdrop from '@material-ui/core/Backdrop'
 import React from 'react'
 import { GlobalHotKeys, KeyMap } from 'react-hotkeys'
 import { useDialog, useServerDetails } from '../../hooks'
-import { ComponentInfo, PipelineEditDescriptor, ErrorConfiguration } from '../../types'
+import {
+  ComponentInfo,
+  PipelineEditDescriptor,
+  ErrorConfiguration,
+} from '../../types'
 import { DescriptionDialog } from '../DescriptionDialog'
 import { Divider } from '../Divider'
 import { ErrorNotifier } from '../ErrorNotifier'
@@ -345,7 +349,10 @@ export const PipelineEdit: React.FC<PipelineEditProps> = ({
           <Divider />
           <Heading.h3 my={2}>Error Configuration</Heading.h3>
         </Column>
-        <PipelineEditErrorConfiguration errorConfiguration={pipeline.errorConfiguration} setErrorConfiguration={setErrorConfiguration} />
+        <PipelineEditErrorConfiguration
+          errorConfiguration={pipeline.errorConfiguration}
+          setErrorConfiguration={setErrorConfiguration}
+        />
       </Page>
       <ErrorNotifier error={error} />
       <Busy open={busy}>

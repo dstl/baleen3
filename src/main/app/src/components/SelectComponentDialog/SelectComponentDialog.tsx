@@ -74,10 +74,10 @@ export const SelectComponentDialog: React.FC<SelectComponentDialogProps> = ({
   const [selected, setSelected] = useState<ComponentInfo[]>([])
   const [search, setSearch] = useState('')
 
-  const filtered = useMemo(() => filterComponents(components, search), [
-    components,
-    search,
-  ])
+  const filtered = useMemo(
+    () => filterComponents(components, search),
+    [components, search]
+  )
 
   useEffect(() => {
     if (open) {

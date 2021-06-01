@@ -36,7 +36,8 @@ const sources: ComponentMap = {
 }
 const settings: SettingsMap = {
   [exampleComponentInfo1.settingsClass as string]: exampleSettingsSchema,
-  'io.annot8.components.files.sources.FileSystemSourceSettings': exampleSettingSchemaComplex,
+  'io.annot8.components.files.sources.FileSystemSourceSettings':
+    exampleSettingSchemaComplex,
 }
 const orderers = {
   NO_OP_ORDERER: {

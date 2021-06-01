@@ -57,12 +57,12 @@ jest.mock('./containers/PipelineTemplateContainer', () => {
 
 test('full app rendering/navigating', async () => {
   // Just to check no requests are being made
-  const fetchSpy = jest.spyOn(global, 'fetch').mockImplementation(
-    async (...args): Promise<Response> => {
+  const fetchSpy = jest
+    .spyOn(global, 'fetch')
+    .mockImplementation(async (...args): Promise<Response> => {
       console.error(...args)
       return Promise.resolve({} as Response)
-    }
-  )
+    })
 
   try {
     const {

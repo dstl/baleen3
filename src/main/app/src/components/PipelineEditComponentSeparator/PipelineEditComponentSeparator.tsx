@@ -44,53 +44,50 @@ export interface PipelineEditComponentSeparatorProps {
 /**
  * PipelineEditComponentSeparator component
  */
-export const PipelineEditComponentSeparator: React.FC<PipelineEditComponentSeparatorProps> = ({
-  onInsert,
-  isDragging,
-  type,
-}: PipelineEditComponentSeparatorProps) => {
-  const serverDetails = useServerDetails()
-  const [showDialog, openDialog, closeDialog] = useDialog()
-  const innerRef = useRef<HTMLButtonElement>(null)
-  const [isHovering] = useHover(innerRef)
-  const [isFocused] = useFocus(innerRef)
+export const PipelineEditComponentSeparator: React.FC<PipelineEditComponentSeparatorProps> =
+  ({ onInsert, isDragging, type }: PipelineEditComponentSeparatorProps) => {
+    const serverDetails = useServerDetails()
+    const [showDialog, openDialog, closeDialog] = useDialog()
+    const innerRef = useRef<HTMLButtonElement>(null)
+    const [isHovering] = useHover(innerRef)
+    const [isFocused] = useFocus(innerRef)
 
-  if (isDragging) {
-    return null
+    if (isDragging) {
+      return null
+    }
+    return (
+      <>
+        <ButtonBase
+          ref={innerRef}
+          focusRipple
+          aria-label={
+            type === 'Processor' ? 'Insert Processors' : 'Insert Source'
+          }
+          title={type === 'Processor' ? 'Insert Processors' : 'Insert Source'}
+          onClick={openDialog}
+        >
+          <PipelineViewComponentSeparator />
+          <Fade in={isHovering || isFocused}>
+            <Box
+              position="absolute"
+              color="background.paper"
+              top="calc(50% - 14px)"
+            >
+              <Icons.Add />
+            </Box>
+          </Fade>
+        </ButtonBase>
+        <SelectComponentDialog
+          type={type}
+          components={
+            type === 'Processor'
+              ? serverDetails.processors
+              : serverDetails.sources
+          }
+          open={showDialog}
+          onClose={closeDialog}
+          onSelect={onInsert}
+        />
+      </>
+    )
   }
-  return (
-    <>
-      <ButtonBase
-        ref={innerRef}
-        focusRipple
-        aria-label={
-          type === 'Processor' ? 'Insert Processors' : 'Insert Source'
-        }
-        title={type === 'Processor' ? 'Insert Processors' : 'Insert Source'}
-        onClick={openDialog}
-      >
-        <PipelineViewComponentSeparator />
-        <Fade in={isHovering || isFocused}>
-          <Box
-            position="absolute"
-            color="background.paper"
-            top="calc(50% - 14px)"
-          >
-            <Icons.Add />
-          </Box>
-        </Fade>
-      </ButtonBase>
-      <SelectComponentDialog
-        type={type}
-        components={
-          type === 'Processor'
-            ? serverDetails.processors
-            : serverDetails.sources
-        }
-        open={showDialog}
-        onClose={closeDialog}
-        onSelect={onInsert}
-      />
-    </>
-  )
-}

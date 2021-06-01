@@ -49,7 +49,7 @@ export const PipelineMetrics: React.FC<PipelineMetricsProps> = ({
   return (
     <CenteredRow>
       {Object.keys(measurements)
-        .filter(key => key in metrics)
+        .filter((key) => key in metrics)
         .sort((a, b) => a.localeCompare(b))
         .map((key) => (
           <MetricView
@@ -58,7 +58,7 @@ export const PipelineMetrics: React.FC<PipelineMetricsProps> = ({
             metadata={metrics[`${key}`]}
             measurements={measurements[`${key}`]}
           />
-      ))}
+        ))}
     </CenteredRow>
   )
 }

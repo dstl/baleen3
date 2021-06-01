@@ -99,10 +99,14 @@ export const MetricView: React.FC<MetricViewProps> = ({
   measurements,
 }: MetricViewProps) => {
   const transform = metadata?.transform ?? identity
-  const computedValue = computeValue(measurements);
+  const computedValue = computeValue(measurements)
 
-  if(computedValue === undefined || typeof computedValue !== "number" || Number.isNaN(computedValue))
-    return null;
+  if (
+    computedValue === undefined ||
+    typeof computedValue !== 'number' ||
+    Number.isNaN(computedValue)
+  )
+    return null
 
   const value = transform(computedValue)
   const displayName = metadata?.name ?? javaNameToReadable(name)

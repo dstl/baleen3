@@ -52,14 +52,18 @@ export const PipelineViewContainer: React.FC<PipelineViewContainerProps> = ({
   initialValue,
 }: PipelineViewContainerProps) => {
   const serverDetails = useServerDetails()
-  const { data: pipeline, error, mutate } = useSWR<PipelineDescriptor, Error>(
+  const {
+    data: pipeline,
+    error,
+    mutate,
+  } = useSWR<PipelineDescriptor, Error>(
     [getPipelinesFetchKey, name],
     getPipeline,
     { initialData: initialValue }
   )
 
   const { data: running, mutate: runningMutate } = useSWR<boolean, Error>(
-    [getPipelinesFetchKey, name, "running"],
+    [getPipelinesFetchKey, name, 'running'],
     getPipelineRunning,
     { refreshInterval: 10000 }
   )

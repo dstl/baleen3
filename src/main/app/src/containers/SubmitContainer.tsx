@@ -60,12 +60,12 @@ const readFile = async (file: File): Promise<string | ArrayBuffer> => {
   })
 }
 
-const submitFile = (name: string): ((file: File) => Promise<void>) => async (
-  file: File
-): Promise<void> =>
-  readFile(file).then(async (binaryStr) =>
-    Api.submitStreamData(name, binaryStr)
-  )
+const submitFile =
+  (name: string): ((file: File) => Promise<void>) =>
+  async (file: File): Promise<void> =>
+    readFile(file).then(async (binaryStr) =>
+      Api.submitStreamData(name, binaryStr)
+    )
 
 export const SubmitContainer: React.FC<SubmitContainerProps> = ({
   name,

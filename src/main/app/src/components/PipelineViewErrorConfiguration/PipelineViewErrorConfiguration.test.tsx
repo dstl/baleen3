@@ -24,23 +24,19 @@ import { render, renderDark } from '../../utils/test'
 const errorConfiguration = {
   onSourceError: 'REMOVE_SOURCE',
   onProcessorError: 'REMOVE_PROCESSOR',
-  onItemError: 'DISCARD_ITEM'
+  onItemError: 'DISCARD_ITEM',
 }
 
 it('renders without error', () => {
   const { asFragment } = render(
-    <PipelineViewErrorConfiguration
-      errorConfiguration={errorConfiguration}
-    />
+    <PipelineViewErrorConfiguration errorConfiguration={errorConfiguration} />
   )
   expect(asFragment()).toMatchSnapshot()
 })
 
 it('renders dark without error', () => {
   const { asFragment } = renderDark(
-    <PipelineViewErrorConfiguration
-      errorConfiguration={errorConfiguration}
-    />
+    <PipelineViewErrorConfiguration errorConfiguration={errorConfiguration} />
   )
   expect(asFragment()).toMatchSnapshot()
 })

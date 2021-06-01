@@ -40,49 +40,45 @@ export interface PipelineMetadataContainerProps {
   readonly stopPipeline: (pipeline: PipelineMetadata) => Promise<void>
 }
 
-export const PipelineMetadataContainer: React.FC<PipelineMetadataContainerProps> = ({
-  pipelineMetadata,
-  deletePipeline,
-  startPipeline,
-  stopPipeline
-}) => {
-  const [error, setError] = useState<Error>()
-  const [isDeleting, setDeleting] = useState(false)
+export const PipelineMetadataContainer: React.FC<PipelineMetadataContainerProps> =
+  ({ pipelineMetadata, deletePipeline, startPipeline, stopPipeline }) => {
+    const [error, setError] = useState<Error>()
+    const [isDeleting, setDeleting] = useState(false)
 
-  const onDelete = async (): Promise<void> => {
-    setDeleting(true)
-    try {
-      await deletePipeline(pipelineMetadata)
-    } catch (error) {
-      setDeleting(false)
-      setError(error)
+    const onDelete = async (): Promise<void> => {
+      setDeleting(true)
+      try {
+        await deletePipeline(pipelineMetadata)
+      } catch (error) {
+        setDeleting(false)
+        setError(error)
+      }
     }
-  }
 
-  const onStart = async (): Promise<void> => {
-    try {
-      await startPipeline(pipelineMetadata)
-    } catch (error) {
-      setError(error)
+    const onStart = async (): Promise<void> => {
+      try {
+        await startPipeline(pipelineMetadata)
+      } catch (error) {
+        setError(error)
+      }
     }
-  }
 
-  const onStop = async (): Promise<void> => {
-    try {
-      await stopPipeline(pipelineMetadata)
-    } catch (error) {
-      setError(error)
+    const onStop = async (): Promise<void> => {
+      try {
+        await stopPipeline(pipelineMetadata)
+      } catch (error) {
+        setError(error)
+      }
     }
-  }
 
-  return (
-    <PipelineMetadataCard
-      pipelineMetadata={pipelineMetadata}
-      onDelete={onDelete}
-      onStart={onStart}
-      onStop={onStop}
-      isDeleting={isDeleting}
-      error={error}
-    />
-  )
-}
+    return (
+      <PipelineMetadataCard
+        pipelineMetadata={pipelineMetadata}
+        onDelete={onDelete}
+        onStart={onStart}
+        onStop={onStop}
+        isDeleting={isDeleting}
+        error={error}
+      />
+    )
+  }

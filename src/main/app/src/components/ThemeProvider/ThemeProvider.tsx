@@ -67,27 +67,29 @@ const darkText: TextPalette = {
   hint: secondaryDarkTextColour,
 }
 
-export const createLightPalette: () => () => PaletteOptions = () => (): PaletteOptions => ({
-  ...createCommittedLightPaletteOptions(),
-  primary: { main: primaryColour },
-  brand: { main: brandLightColour },
-  secondary: { main: secondaryColour },
-  info: { main: infoColour },
-  warning: { main: warnColour },
-  error: { main: errorColour },
-  text: lightText,
-})
+export const createLightPalette: () => () => PaletteOptions =
+  () => (): PaletteOptions => ({
+    ...createCommittedLightPaletteOptions(),
+    primary: { main: primaryColour },
+    brand: { main: brandLightColour },
+    secondary: { main: secondaryColour },
+    info: { main: infoColour },
+    warning: { main: warnColour },
+    error: { main: errorColour },
+    text: lightText,
+  })
 
-export const createDarkPalette: () => () => PaletteOptions = () => (): PaletteOptions => ({
-  ...createCommittedDarkPaletteOptions(),
-  primary: { main: primaryColour },
-  brand: { main: brandDarkColour },
-  secondary: { main: secondaryColour },
-  info: { main: infoColour },
-  warning: { main: warnColour },
-  error: { main: errorColour },
-  text: darkText,
-})
+export const createDarkPalette: () => () => PaletteOptions =
+  () => (): PaletteOptions => ({
+    ...createCommittedDarkPaletteOptions(),
+    primary: { main: primaryColour },
+    brand: { main: brandDarkColour },
+    secondary: { main: secondaryColour },
+    info: { main: infoColour },
+    warning: { main: warnColour },
+    error: { main: errorColour },
+    text: darkText,
+  })
 
 const fontFamily = 'Inter, Helvetica, Arial, sans-serif'
 const headingFontWeight = 700

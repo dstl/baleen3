@@ -27,75 +27,83 @@ export interface PipelineViewErrorConfigurationProps {
   readonly errorConfiguration: ErrorConfiguration
 }
 
-export const PipelineViewErrorConfiguration: React.FC<PipelineViewErrorConfigurationProps> = ({
-    errorConfiguration,
-  }: PipelineViewErrorConfigurationProps) => {
+export const PipelineViewErrorConfiguration: React.FC<PipelineViewErrorConfigurationProps> =
+  ({ errorConfiguration }: PipelineViewErrorConfigurationProps) => {
+    let sourceError,
+      processorError,
+      itemError = null
+    switch (errorConfiguration.onSourceError) {
+      case 'IGNORE':
+        sourceError = (
+          <Typography p={3} title={errorConfiguration.onSourceError}>
+            If a source error occurs, then the error will be{' '}
+            <strong>ignored</strong> by this pipeline.
+          </Typography>
+        )
+        break
+      case 'REMOVE_SOURCE':
+        sourceError = (
+          <Typography p={3} title={errorConfiguration.onSourceError}>
+            If a source error occurs, then the source will be{' '}
+            <strong>removed</strong> from this pipeline.
+          </Typography>
+        )
+        break
+    }
+    switch (errorConfiguration.onProcessorError) {
+      case 'IGNORE':
+        processorError = (
+          <Typography p={3} title={errorConfiguration.onProcessorError}>
+            If a processor error occurs, then the error will be{' '}
+            <strong>ignored</strong> by this pipeline.
+          </Typography>
+        )
+        break
+      case 'REMOVE_PROCESSOR':
+        processorError = (
+          <Typography p={3} title={errorConfiguration.onProcessorError}>
+            If a processor error occurs, then the processor will be{' '}
+            <strong>removed</strong> from this pipeline.
+          </Typography>
+        )
+        break
+      case 'DISCARD_ITEM':
+        processorError = (
+          <Typography p={3} title={errorConfiguration.onProcessorError}>
+            If a processor error occurs, then the item will be{' '}
+            <strong>discarded</strong> by this pipeline.
+          </Typography>
+        )
+        break
+    }
+    switch (errorConfiguration.onItemError) {
+      case 'IGNORE':
+        itemError = (
+          <Typography p={3} title={errorConfiguration.onItemError}>
+            If an item error occurs, then the error will be{' '}
+            <strong>ignored</strong> by this pipeline.
+          </Typography>
+        )
+        break
+      case 'REMOVE_PROCESSOR':
+        itemError = (
+          <Typography p={3} title={errorConfiguration.onItemError}>
+            If an item error occurs, then the processor will be{' '}
+            <strong>removed</strong> from this pipeline.
+          </Typography>
+        )
+        break
+      case 'DISCARD_ITEM':
+        itemError = (
+          <Typography p={3} title={errorConfiguration.onItemError}>
+            If an item error occurs, then the item will be{' '}
+            <strong>discarded</strong> by this pipeline.
+          </Typography>
+        )
+        break
+    }
 
-   let sourceError, processorError, itemError = null;
-   switch ( errorConfiguration.onSourceError ) {
-    case 'IGNORE':
-      sourceError = (
-        <Typography p={3} title={errorConfiguration.onSourceError}>
-          If a source error occurs, then the error will be <strong>ignored</strong> by this pipeline.
-        </Typography>
-      )
-      break;
-    case 'REMOVE_SOURCE':
-      sourceError = (
-        <Typography p={3} title={errorConfiguration.onSourceError}>
-          If a source error occurs, then the source will be <strong>removed</strong> from this pipeline.
-        </Typography>
-      )
-      break;
-   }
-   switch ( errorConfiguration.onProcessorError ) {
-    case 'IGNORE':
-      processorError = (
-        <Typography p={3} title={errorConfiguration.onProcessorError}>
-          If a processor error occurs, then the error will be <strong>ignored</strong> by this pipeline.
-        </Typography>
-      )
-      break;
-    case 'REMOVE_PROCESSOR':
-      processorError = (
-        <Typography p={3} title={errorConfiguration.onProcessorError}>
-          If a processor error occurs, then the processor will be <strong>removed</strong> from this pipeline.
-        </Typography>
-      )
-      break;
-    case 'DISCARD_ITEM':
-      processorError = (
-        <Typography p={3} title={errorConfiguration.onProcessorError}>
-          If a processor error occurs, then the item will be <strong>discarded</strong> by this pipeline.
-        </Typography>
-      )
-      break;
-   }
-   switch ( errorConfiguration.onItemError ) {
-    case 'IGNORE':
-      itemError = (
-        <Typography p={3} title={errorConfiguration.onItemError}>
-          If an item error occurs, then the error will be <strong>ignored</strong> by this pipeline.
-        </Typography>
-      )
-      break;
-    case 'REMOVE_PROCESSOR':
-      itemError = (
-        <Typography p={3} title={errorConfiguration.onItemError}>
-          If an item error occurs, then the processor will be <strong>removed</strong> from this pipeline.
-        </Typography>
-      )
-      break;
-    case 'DISCARD_ITEM':
-      itemError = (
-        <Typography p={3} title={errorConfiguration.onItemError}>
-          If an item error occurs, then the item will be <strong>discarded</strong> by this pipeline.
-        </Typography>
-      )
-      break;
-   }
-
-   return (
+    return (
       <>
         <Heading.h3 align="center" p={3}>
           Error Configuration
@@ -122,4 +130,4 @@ export const PipelineViewErrorConfiguration: React.FC<PipelineViewErrorConfigura
         </CenteredRow>
       </>
     )
-}
+  }

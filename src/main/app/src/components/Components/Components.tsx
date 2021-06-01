@@ -43,15 +43,15 @@ export const Components: React.FC<ComponentsProps> = ({
 
   const elevation = trigger ? 4 : 0
 
-  const filteredOrderers = useMemo(() => filterComponents(orderers, search), [
-    orderers,
-    search,
-  ])
+  const filteredOrderers = useMemo(
+    () => filterComponents(orderers, search),
+    [orderers, search]
+  )
 
-  const filteredSources = useMemo(() => filterComponents(sources, search), [
-    sources,
-    search,
-  ])
+  const filteredSources = useMemo(
+    () => filterComponents(sources, search),
+    [sources, search]
+  )
 
   const filteredProcessors = useMemo(
     () => filterComponents(processors, search),

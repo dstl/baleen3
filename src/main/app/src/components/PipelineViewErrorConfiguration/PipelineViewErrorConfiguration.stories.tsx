@@ -30,13 +30,11 @@ export const Default: React.FC = () => {
   const errorConfiguration: ErrorConfiguration = {
     onSourceError: 'REMOVE_SOURCE',
     onProcessorError: 'REMOVE_PROCESSOR',
-    onItemError: 'DISCARD_ITEM'
+    onItemError: 'DISCARD_ITEM',
   }
 
   return (
-    <PipelineViewErrorConfiguration
-      errorConfiguration={errorConfiguration}
-    />
+    <PipelineViewErrorConfiguration errorConfiguration={errorConfiguration} />
   )
 }
 
@@ -44,13 +42,11 @@ export const Ignore: React.FC = () => {
   const errorConfiguration: ErrorConfiguration = {
     onSourceError: 'IGNORE',
     onProcessorError: 'IGNORE',
-    onItemError: 'IGNORE'
+    onItemError: 'IGNORE',
   }
 
   return (
-    <PipelineViewErrorConfiguration
-      errorConfiguration={errorConfiguration}
-    />
+    <PipelineViewErrorConfiguration errorConfiguration={errorConfiguration} />
   )
 }
 
@@ -58,13 +54,11 @@ export const Remove: React.FC = () => {
   const errorConfiguration: ErrorConfiguration = {
     onSourceError: 'REMOVE_SOURCE',
     onProcessorError: 'REMOVE_PROCESSOR',
-    onItemError: 'REMOVE_PROCESSOR'
+    onItemError: 'REMOVE_PROCESSOR',
   }
 
   return (
-    <PipelineViewErrorConfiguration
-      errorConfiguration={errorConfiguration}
-    />
+    <PipelineViewErrorConfiguration errorConfiguration={errorConfiguration} />
   )
 }
 
@@ -72,12 +66,10 @@ export const Discard: React.FC = () => {
   const errorConfiguration: ErrorConfiguration = {
     onSourceError: 'REMOVE_SOURCE',
     onProcessorError: 'DISCARD_ITEM',
-    onItemError: 'DISCARD_ITEM'
+    onItemError: 'DISCARD_ITEM',
   }
 
   return (
-    <PipelineViewErrorConfiguration
-      errorConfiguration={errorConfiguration}
-    />
+    <PipelineViewErrorConfiguration errorConfiguration={errorConfiguration} />
   )
 }

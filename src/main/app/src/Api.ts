@@ -89,7 +89,7 @@ const client: ExtendedHttpClient = {
         return response.json() as Promise<R>
       } else {
         // When not 200 R should be void, so this is valid
-        return (undefined as unknown) as R
+        return undefined as unknown as R
       }
     })
   },
@@ -166,9 +166,8 @@ export class ExtendedRestApplicationClient extends RestApplicationClient {
   }
 }
 
-export const Api: ExtendedRestApplicationClient = new ExtendedRestApplicationClient(
-  client
-)
+export const Api: ExtendedRestApplicationClient =
+  new ExtendedRestApplicationClient(client)
 
 export const getPipelines = async (
   _fetchKey: string
@@ -217,17 +216,17 @@ export const createPipeline = async (
   orderer: string = NO_OP_ORDERER,
   persist = true
 ): Promise<void> => {
-  const { name, description, sources, processors, errorConfiguration } = pipeline
+  const { name, description, sources, processors, errorConfiguration } =
+    pipeline
   const { onSourceError, onProcessorError, onItemError } = errorConfiguration
   const components: PipelineComponents = { sources, processors }
-  return Api.createPipeline(name, components,
-  {
+  return Api.createPipeline(name, components, {
     description,
     orderer,
     persist,
     onSourceError,
     onProcessorError,
-    onItemError
+    onItemError,
   })
 }
 

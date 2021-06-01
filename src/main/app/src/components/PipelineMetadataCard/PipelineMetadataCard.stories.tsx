@@ -38,7 +38,11 @@ const onStop = async (): Promise<void> => Promise.resolve(stopAction())
 export const Default: React.FC = () => {
   return (
     <PipelineMetadataCard
-      pipelineMetadata={{ name: 'Name', description: 'This is a description', running: true }}
+      pipelineMetadata={{
+        name: 'Name',
+        description: 'This is a description',
+        running: true,
+      }}
       isDeleting={false}
       onDelete={onDelete}
       onStart={onStart}
@@ -50,7 +54,11 @@ export const Default: React.FC = () => {
 export const Stopped: React.FC = () => {
   return (
     <PipelineMetadataCard
-      pipelineMetadata={{ name: 'Name', description: 'This is a description', running: false }}
+      pipelineMetadata={{
+        name: 'Name',
+        description: 'This is a description',
+        running: false,
+      }}
       isDeleting={false}
       onDelete={onDelete}
       onStart={onStart}
@@ -62,7 +70,11 @@ export const Stopped: React.FC = () => {
 export const Deleting: React.FC = () => {
   return (
     <PipelineMetadataCard
-      pipelineMetadata={{ name: 'Name', description: 'This is a description', running: true }}
+      pipelineMetadata={{
+        name: 'Name',
+        description: 'This is a description',
+        running: true,
+      }}
       isDeleting={true}
       onDelete={onDelete}
       onStart={onStart}
@@ -79,7 +91,7 @@ export const WithError: React.FC = () => {
       pipelineMetadata={{
         name: 'Name',
         description: 'Press delete to trigger error',
-        running: true
+        running: true,
       }}
       isDeleting={false}
       error={error}

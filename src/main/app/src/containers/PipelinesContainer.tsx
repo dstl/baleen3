@@ -28,11 +28,13 @@ import { Pipelines } from '../components/Pipelines'
 import { PipelineMetadata } from '../types'
 
 export const PipelinesContainer: React.FC = () => {
-  const { data: pipelines, error, mutate } = useSWR<PipelineMetadata[], Error>(
-    getPipelinesFetchKey,
-    getPipelines,
-    { refreshInterval: 5000 }
-  )
+  const {
+    data: pipelines,
+    error,
+    mutate,
+  } = useSWR<PipelineMetadata[], Error>(getPipelinesFetchKey, getPipelines, {
+    refreshInterval: 5000,
+  })
 
   if (error !== undefined) {
     return <FullError error={error} action={mutate} />
@@ -74,5 +76,12 @@ export const PipelinesContainer: React.FC = () => {
     })
   }
 
-  return <Pipelines pipelines={pipelines} deletePipeline={deletePipeline} startPipeline={startPipeline} stopPipeline={stopPipeline} />
+  return (
+    <Pipelines
+      pipelines={pipelines}
+      deletePipeline={deletePipeline}
+      startPipeline={startPipeline}
+      stopPipeline={stopPipeline}
+    />
+  )
 }

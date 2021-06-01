@@ -62,9 +62,10 @@ const Overview: React.FC = () => {
     multiline: 'Controlled',
     currency: 'EUR',
   })
-  const handleChange = (name: string) => (
-    event: React.ChangeEvent<HTMLInputElement>
-  ): void => setForm({ ...form, [name]: event.target.value })
+  const handleChange =
+    (name: string) =>
+    (event: React.ChangeEvent<HTMLInputElement>): void =>
+      setForm({ ...form, [name]: event.target.value })
 
   const [checked, setChecked] = useState(true)
 
