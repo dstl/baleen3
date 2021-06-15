@@ -76,6 +76,7 @@ export const PipelineView = ({
   showSubmit,
   navigate,
 }: PipelineViewProps): React.ReactElement => {
+  const [errorPrefix, setErrorPrefix] = useState("Error")
   const [error, setError] = useState<Error>()
   const [showLogs, toggleLogs] = useToggle(false)
   const [showConfirmDelete, setShowConfirmDelete] = useState(false)
@@ -88,6 +89,7 @@ export const PipelineView = ({
       await Api.deletePipeline(name)
       await navigate('/')
     } catch (error) {
+      setErrorPrefix("Error deleting pipeline: ")
       setError(error)
     }
   }
@@ -98,6 +100,7 @@ export const PipelineView = ({
     try {
       await Api.startPipeline(name)
     } catch (error) {
+      setErrorPrefix("Error starting pipeline: ")
       setError(error)
     }
 
@@ -107,6 +110,7 @@ export const PipelineView = ({
     try {
       await Api.stopPipeline(name)
     } catch (error) {
+      setErrorPrefix("Error stopping pipeline: ")
       setError(error)
     }
 
@@ -222,7 +226,7 @@ export const PipelineView = ({
           )}
         </Column>
       </Page>
-      <ErrorNotifier error={error} prefix="Delete error" />
+      <ErrorNotifier error={error} prefix={errorPrefix} />
       <ConfirmDialog
         open={showConfirmDelete}
         title="Are you sure you want to delete?"

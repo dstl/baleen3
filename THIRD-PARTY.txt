@@ -41,7 +41,7 @@ Lists of 117 third-party dependencies.
      (Apache Software License 2.0) Annot8 Pipeline Implementation (io.annot8:annot8-pipeline-implementation:1.1.0 - http://annot8.io/annot8-implementations/annot8-pipeline-implementation)
      (Apache Software License 2.0) Annot8 Reference Implementations (io.annot8:annot8-reference-implementation:1.1.0 - http://annot8.io/annot8-implementations/annot8-reference-implementation)
      (Apache Software License 2.0) Annot8 Text Utilities (io.annot8:annot8-utils-text:1.2.0 - http://annot8.io/annot8-utils-text)
-     (The MIT License (MIT)) ClassGraph (io.github.classgraph:classgraph:4.8.105 - https://github.com/classgraph/classgraph)
+     (The MIT License (MIT)) ClassGraph (io.github.classgraph:classgraph:4.8.106 - https://github.com/classgraph/classgraph)
      (The Apache Software License, Version 2.0) micrometer-core (io.micrometer:micrometer-core:1.7.0 - https://github.com/micrometer-metrics/micrometer)
      (Apache License 2.0) swagger-annotations (io.swagger.core.v3:swagger-annotations:2.1.9 - https://github.com/swagger-api/swagger-core/modules/swagger-annotations)
      (Apache License 2.0) swagger-core (io.swagger.core.v3:swagger-core:2.1.9 - https://github.com/swagger-api/swagger-core/modules/swagger-core)
