@@ -18,10 +18,10 @@ Baleen 3 is built on top of the [Annot8](https://github.com/annot8) data process
 First, we need to download a copy of Baleen 3.
 
 The easiest way to do this is to download a pre-built version from the [Releases](https://github.com/dstl/baleen3/releases) page.
-You should download the file called `baleen-3.0.2.jar`, as this is the main JAR file (i.e. application) for Baleen 3.
+You should download the file called `baleen-3.1.1.jar`, as this is the main JAR file (i.e. application) for Baleen 3.
 
 1. Navigate to the [GitHub Releases page for Baleen 3](https://github.com/dstl/baleen3/releases)
-2. Download `baleen-3.0.2.jar` from the Assets section
+2. Download `baleen-3.1.1.jar` from the Assets section
 3. Create a new folder, which we will refer to as `$BALEEN_HOME` and save the downloaded JAR file to it
 
 Alternatively, you could build Baleen 3 yourself from source.
@@ -40,7 +40,7 @@ Each provider may make their components available for download through different
 For this example, we will download the *Annot8 Cyber Components* and *Annot8 Print Components* JARs from Maven Central, which is where the official Annot8 components are released.
 
 1. Navigate to the [GitHub Releases page for Annot8 Components](https://github.com/annot8/annot8-components/releases)
-2. Download the JAR files for Annot8 Cyber Components (`annot8-components-cyber-1.1.0-plugin.jar`) and Annot8 Print Components (`annot8-components-print-1.1.0-plugin.jar`)
+2. Download the JAR files for Annot8 Cyber Components (`annot8-components-cyber-1.2.0-plugin.jar`) and Annot8 Print Components (`annot8-components-print-1.2.0-plugin.jar`)
 3. Place the JAR files you just downloaded in `$BALEEN_HOME/components/` (you will need to create this directory)
 
 ## Running Baleen 3
@@ -48,7 +48,7 @@ For this example, we will download the *Annot8 Cyber Components* and *Annot8 Pri
 Baleen 3 runs as a background server. We start it via the Terminal or Command Prompt, but then interact with it via a web browser.
 Baleen 3 has been developed with modern web browsers in mind, so we recommend using a recent version of Chrome.
 
-1. Open a terminal and run the following command from the `$BALEEN_HOME` directory: `java -jar baleen-3.0.2.jar`
+1. Open a terminal and run the following command from the `$BALEEN_HOME` directory: `java -jar baleen-3.1.1.jar`
 2. Open a web browser, and navigate to [http://localhost:6413](http://localhost:6413)
 
 ## Building a Pipeline

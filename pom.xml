@@ -7,12 +7,12 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.5.1</version>
+    <version>2.5.2</version>
   </parent>
 
   <groupId>uk.gov.dstl</groupId>
   <artifactId>baleen</artifactId>
-  <version>3.1.1-SNAPSHOT</version>
+  <version>3.1.1</version>
 
   <name>Baleen 3</name>
   <description>Baleen 3 is a tool for building and running pipelines using the Annot8 data processing framework</description>
