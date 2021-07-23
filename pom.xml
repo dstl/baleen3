@@ -7,12 +7,12 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.5.2</version>
+    <version>2.5.3</version>
   </parent>
 
   <groupId>uk.gov.dstl</groupId>
   <artifactId>baleen</artifactId>
-  <version>3.1.1</version>
+  <version>3.1.2-SNAPSHOT</version>
 
   <name>Baleen 3</name>
   <description>Baleen 3 is a tool for building and running pipelines using the Annot8 data processing framework</description>
@@ -56,7 +56,7 @@
     <java.version>11</java.version>
 
     <annot8-api.version>1.1</annot8-api.version>
-    <annot8.version>1.1.0</annot8.version>
+    <annot8.version>1.1.1-SNAPSHOT</annot8.version>
     <frontend-maven-plugin.version>1.11.3</frontend-maven-plugin.version>
     <frontend-src-dir>${project.basedir}/src/main/app</frontend-src-dir>
     <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
@@ -133,7 +133,7 @@
     <dependency>
       <groupId>io.github.classgraph</groupId>
       <artifactId>classgraph</artifactId>
-      <version>4.8.108</version>
+      <version>4.8.110</version>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>
