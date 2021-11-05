@@ -54,6 +54,8 @@ public class RestApiSource extends AbstractSource {
     while(opt.isPresent()){
       SubmittedData submittedData = opt.get();
 
+      //TODO: Use submittedData.getId() to set Item ID if it's been set
+
       //Parse content into supported content types, or warn and skip
       Content.Builder<?, ?> builder;
       if (submittedData.getData() instanceof String) {

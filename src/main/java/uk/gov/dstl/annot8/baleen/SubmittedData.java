@@ -22,6 +22,7 @@ package uk.gov.dstl.annot8.baleen;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 /**
  * POJO to hold data submitted via REST API. Both data and properties (metadata) can be held
@@ -29,12 +30,27 @@ import java.util.Map;
 public class SubmittedData {
   private final Object data;
   private final Map<String, Object> properties = new HashMap<>();
+  private final Optional<String> id;
 
   /**
    * Create a new instance, with the provided data
    */
   public SubmittedData(Object data) {
     this.data = data;
+    this.id = Optional.empty();
+  }
+
+  /**
+   * Create a new instance, with the provided data and a user-defined ID
+   */
+  public SubmittedData(Object data, String id) {
+    this.data = data;
+
+    if(id == null || id.isBlank()){
+      this.id = Optional.empty();
+    }else{
+      this.id = Optional.of(id);
+    }
   }
 
   /**
@@ -56,5 +72,12 @@ public class SubmittedData {
    */
   public Map<String, Object> getProperties() {
     return properties;
+  }
+
+  /**
+   * Get the ID for this object, if one has been set
+   */
+  public Optional<String> getId() {
+    return id;
   }
 }

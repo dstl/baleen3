@@ -85,7 +85,7 @@ public class PipelineControllerTest {
     request.setContent("Hello world".getBytes(StandardCharsets.UTF_8));
     request.addHeader("Test Header", "Foobar");
 
-    controller.submitData("My pipeline", request);
+    controller.submitData("My pipeline", null, request);
     ArgumentCaptor<SubmittedData> argument = ArgumentCaptor.forClass(SubmittedData.class);
 
     verify(pipelineService, times(1)).submitData(eq("My pipeline"), argument.capture());
@@ -107,7 +107,7 @@ public class PipelineControllerTest {
     request.setContent(expectedContent);
     request.addHeader("Test Header", "Foobar");
 
-    controller.submitData("My pipeline", request);
+    controller.submitData("My pipeline", null, request);
     ArgumentCaptor<SubmittedData> argument = ArgumentCaptor.forClass(SubmittedData.class);
 
     verify(pipelineService, times(1)).submitData(eq("My pipeline"), argument.capture());
@@ -131,7 +131,7 @@ public class PipelineControllerTest {
         "http://www.gov.uk/dstl\nhttp://github.com/dstl\n\n".getBytes(StandardCharsets.UTF_8));
     request.addHeader("Test Header", "Foobar");
 
-    controller.submitData("My pipeline", request);
+    controller.submitData("My pipeline", null, request);
     ArgumentCaptor<SubmittedData> argument = ArgumentCaptor.forClass(SubmittedData.class);
 
     verify(pipelineService, times(2)).submitData(eq("My pipeline"), argument.capture());
@@ -155,14 +155,14 @@ public class PipelineControllerTest {
     MockHttpServletRequest request = new MockHttpServletRequest();
     request.setContentType("not/real");
 
-    assertThrows(UnsupportedMediaTypeException.class, () -> controller.submitData("My pipeline", request));
+    assertThrows(UnsupportedMediaTypeException.class, () -> controller.submitData("My pipeline", null, request));
   }
 
   @Test
   public void testSubmitDataMissingPipeline() {
     when(pipelineService.pipelineExists(anyString())).thenReturn(false);
 
-    assertThrows(PipelineNotFoundException.class, () -> controller.submitData("Missing pipeline", new MockHttpServletRequest()));
+    assertThrows(PipelineNotFoundException.class, () -> controller.submitData("Missing pipeline", null, new MockHttpServletRequest()));
   }
 
   @Test

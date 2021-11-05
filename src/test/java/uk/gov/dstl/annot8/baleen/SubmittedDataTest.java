@@ -23,8 +23,7 @@ package uk.gov.dstl.annot8.baleen;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class SubmittedDataTest {
   @Test
@@ -38,5 +37,48 @@ public class SubmittedDataTest {
 
     sd.addProperty("Hello", "World");
     assertEquals("World", sd.getProperties().get("Hello"));
+
+    assertFalse(sd.getId().isPresent());
+  }
+
+  @Test
+  public void testNullId() {
+    Object o = Mockito.mock(Object.class);
+
+    SubmittedData sd = new SubmittedData(o, null);
+    assertEquals(o, sd.getData());
+
+    assertFalse(sd.getId().isPresent());
+  }
+
+  @Test
+  public void testEmptyId() {
+    Object o = Mockito.mock(Object.class);
+
+    SubmittedData sd = new SubmittedData(o, "");
+    assertEquals(o, sd.getData());
+
+    assertFalse(sd.getId().isPresent());
+  }
+
+  @Test
+  public void testBlankId() {
+    Object o = Mockito.mock(Object.class);
+
+    SubmittedData sd = new SubmittedData(o, " ");
+    assertEquals(o, sd.getData());
+
+    assertFalse(sd.getId().isPresent());
+  }
+
+  @Test
+  public void testId() {
+    Object o = Mockito.mock(Object.class);
+
+    SubmittedData sd = new SubmittedData(o, "my-id");
+    assertEquals(o, sd.getData());
+
+    assertTrue(sd.getId().isPresent());
+    assertEquals("my-id", sd.getId().get());
   }
 }

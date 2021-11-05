@@ -233,6 +233,8 @@ public class PipelineController {
   public void submitData(
       @PathVariable("name") @Parameter(description = "Name of pipeline", required = true)
           String name,
+      @RequestParam(value = "id", required = false) @Parameter(description = "User defined ID of item")
+          String id,
       HttpServletRequest request) {
     // To save unnecessary processing, explicitly check rather than rely on PipelineService
     if (!pipelineService.pipelineExists(name))
@@ -276,7 +278,7 @@ public class PipelineController {
 
     Instant time = Instant.now();
     for (Object data : dataList) {
-      SubmittedData submittedData = new SubmittedData(data);
+      SubmittedData submittedData = new SubmittedData(data, id);
       request
           .getHeaderNames()
           .asIterator()
