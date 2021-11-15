@@ -54,23 +54,23 @@ public class RestApiSource extends AbstractSource {
     while(opt.isPresent()){
       SubmittedData submittedData = opt.get();
 
-      //TODO: Use submittedData.getId() to set Item ID if it's been set
+      String id = submittedData.getId().orElse(null);
 
       //Parse content into supported content types, or warn and skip
       Content.Builder<?, ?> builder;
       if (submittedData.getData() instanceof String) {
         log().debug("Creating Text content for string data");
         builder =
-            itemFactory.create().createContent(Text.class).withData((String) submittedData.getData());
+            itemFactory.create(id).createContent(Text.class).withData((String) submittedData.getData());
       } else if (submittedData.getData() instanceof URI) {
         log().debug("Creating URI content for URI data");
         builder =
-            itemFactory.create().createContent(UriContent.class).withData((URI) submittedData.getData());
+            itemFactory.create(id).createContent(UriContent.class).withData((URI) submittedData.getData());
       } else if (submittedData.getData() instanceof byte[]) {
         log().debug("Creating InputStream content for byte array data");
         builder =
             itemFactory
-                .create()
+                .create(id)
                 .createContent(InputStreamContent.class)
                 .withData(() -> new ByteArrayInputStream((byte[]) submittedData.getData()));
       } else {

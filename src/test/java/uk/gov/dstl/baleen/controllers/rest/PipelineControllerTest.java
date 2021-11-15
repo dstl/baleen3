@@ -85,8 +85,10 @@ public class PipelineControllerTest {
     request.setContent("Hello world".getBytes(StandardCharsets.UTF_8));
     request.addHeader("Test Header", "Foobar");
 
-    controller.submitData("My pipeline", null, request);
+    List<String> ids = controller.submitData("My pipeline", null, request);
     ArgumentCaptor<SubmittedData> argument = ArgumentCaptor.forClass(SubmittedData.class);
+
+    assertEquals(1, ids.size());
 
     verify(pipelineService, times(1)).submitData(eq("My pipeline"), argument.capture());
     assertEquals("Hello world", argument.getValue().getData());
@@ -95,6 +97,32 @@ public class PipelineControllerTest {
     assertNotNull(argument.getValue().getProperties().get(PropertyKeys.PROPERTY_KEY_ACCESSEDAT));
     assertEquals(
         "Foobar", argument.getValue().getProperties().get(PathUtils.join("http", "Test Header")));
+  }
+
+  @Test
+  public void testSubmitDataPlainTextWithId() {
+    when(pipelineService.pipelineExists(anyString())).thenReturn(true);
+
+    MockHttpServletRequest request = new MockHttpServletRequest();
+    request.setContentType(MediaType.TEXT_PLAIN_VALUE);
+    request.setCharacterEncoding(StandardCharsets.UTF_8.name());
+    request.setContent("Hello world".getBytes(StandardCharsets.UTF_8));
+    request.addHeader("Test Header", "Foobar");
+
+    List<String> ids = controller.submitData("My pipeline", "my-id", request);
+    ArgumentCaptor<SubmittedData> argument = ArgumentCaptor.forClass(SubmittedData.class);
+
+    assertEquals(1, ids.size());
+    assertEquals(List.of("my-id"), ids);
+
+    verify(pipelineService, times(1)).submitData(eq("My pipeline"), argument.capture());
+    assertEquals("Hello world", argument.getValue().getData());
+    assertEquals("my-id", argument.getValue().getId().orElseThrow());
+
+    assertNotNull(argument.getValue().getProperties().get(PropertyKeys.PROPERTY_KEY_SOURCE));
+    assertNotNull(argument.getValue().getProperties().get(PropertyKeys.PROPERTY_KEY_ACCESSEDAT));
+    assertEquals(
+      "Foobar", argument.getValue().getProperties().get(PathUtils.join("http", "Test Header")));
   }
 
   @Test
@@ -107,8 +135,10 @@ public class PipelineControllerTest {
     request.setContent(expectedContent);
     request.addHeader("Test Header", "Foobar");
 
-    controller.submitData("My pipeline", null, request);
+    List<String> ids = controller.submitData("My pipeline", null, request);
     ArgumentCaptor<SubmittedData> argument = ArgumentCaptor.forClass(SubmittedData.class);
+
+    assertEquals(1, ids.size());
 
     verify(pipelineService, times(1)).submitData(eq("My pipeline"), argument.capture());
     byte[] content = (byte[]) argument.getValue().getData();
@@ -131,8 +161,42 @@ public class PipelineControllerTest {
         "http://www.gov.uk/dstl\nhttp://github.com/dstl\n\n".getBytes(StandardCharsets.UTF_8));
     request.addHeader("Test Header", "Foobar");
 
-    controller.submitData("My pipeline", null, request);
+    List<String> ids = controller.submitData("My pipeline", null, request);
     ArgumentCaptor<SubmittedData> argument = ArgumentCaptor.forClass(SubmittedData.class);
+
+    assertEquals(2, ids.size());
+
+    verify(pipelineService, times(2)).submitData(eq("My pipeline"), argument.capture());
+    List<SubmittedData> values = argument.getAllValues();
+    assertEquals(2, values.size());
+
+    assertEquals(URI.create("http://www.gov.uk/dstl"), values.get(0).getData());
+    assertEquals(URI.create("http://github.com/dstl"), values.get(1).getData());
+
+    for (SubmittedData sd : values) {
+      assertNotNull(sd.getProperties().get(PropertyKeys.PROPERTY_KEY_SOURCE));
+      assertNotNull(sd.getProperties().get(PropertyKeys.PROPERTY_KEY_ACCESSEDAT));
+      assertEquals("Foobar", sd.getProperties().get(PathUtils.join("http", "Test Header")));
+    }
+  }
+
+  @Test
+  public void testSubmitDataUrlListWithId() {
+    when(pipelineService.pipelineExists(anyString())).thenReturn(true);
+
+    MockHttpServletRequest request = new MockHttpServletRequest();
+    request.setContentType("text/uri-list");
+    request.setCharacterEncoding(StandardCharsets.UTF_8.name());
+    request.setContent(
+      "http://www.gov.uk/dstl\nhttp://github.com/dstl\n\n".getBytes(StandardCharsets.UTF_8));
+    request.addHeader("Test Header", "Foobar");
+
+    List<String> ids = controller.submitData("My pipeline", "my-id", request);
+    ArgumentCaptor<SubmittedData> argument = ArgumentCaptor.forClass(SubmittedData.class);
+
+    assertEquals(2, ids.size());
+    assertEquals("my-id", ids.get(0));
+    assertNotEquals("my-id", ids.get(1));
 
     verify(pipelineService, times(2)).submitData(eq("My pipeline"), argument.capture());
     List<SubmittedData> values = argument.getAllValues();

@@ -72,6 +72,11 @@ public class RestApiSourceTest {
   }
 
   @Test
+  public void testStringWithId(){
+    test("Hello world!", Collections.emptyMap(), Text.class, "my-own-id");
+  }
+
+  @Test
   public void testUri(){
     test(URI.create("http://www.dstl.gov.uk"), Collections.emptyMap(), UriContent.class);
   }
@@ -92,6 +97,7 @@ public class RestApiSourceTest {
     Content.Builder mockBuilder = Mockito.mock(Content.Builder.class);
 
     when(mockFactory.create()).thenReturn(mockItem);
+    when(mockFactory.create(nullable(String.class))).thenReturn(mockItem);
     when(mockItem.createContent(any())).thenReturn(mockBuilder);
     when(mockBuilder.withData(any(Supplier.class))).thenReturn(mockBuilder);
     when(mockBuilder.withDescription(anyString())).thenReturn(mockBuilder);
@@ -101,7 +107,7 @@ public class RestApiSourceTest {
 
     assertEquals(SourceResponse.ok(), src.read(mockFactory));
 
-    verify(mockFactory).create();
+    verify(mockFactory).create((String)null);
     verify(mockItem).createContent(InputStreamContent.class);
     verify(mockBuilder).withData(any(Supplier.class));
     verify(mockBuilder).withDescription(anyString());
@@ -128,7 +134,11 @@ public class RestApiSourceTest {
   }
 
   private void test(Object data, Map<String, Object> properties, Class<? extends Content> contentClass){
-    SubmittedData submittedData = new SubmittedData(data);
+    test(data, properties, contentClass, null);
+  }
+
+  private void test(Object data, Map<String, Object> properties, Class<? extends Content> contentClass, String id){
+    SubmittedData submittedData = new SubmittedData(data, id);
     properties.forEach(submittedData::addProperty);
 
     RestApiQueue mockQueue = Mockito.mock(RestApiQueue.class);
@@ -140,6 +150,7 @@ public class RestApiSourceTest {
     Content.Builder mockBuilder = Mockito.mock(Content.Builder.class);
 
     when(mockFactory.create()).thenReturn(mockItem);
+    when(mockFactory.create(nullable(String.class))).thenReturn(mockItem);
     when(mockItem.createContent(any())).thenReturn(mockBuilder);
     when(mockBuilder.withData(any(Object.class))).thenReturn(mockBuilder);
     when(mockBuilder.withDescription(anyString())).thenReturn(mockBuilder);
@@ -149,7 +160,7 @@ public class RestApiSourceTest {
 
     assertEquals(SourceResponse.ok(), src.read(mockFactory));
 
-    verify(mockFactory).create();
+    verify(mockFactory).create(id);
     verify(mockItem).createContent(contentClass);
     verify(mockBuilder).withData(data);
     verify(mockBuilder).withDescription(anyString());

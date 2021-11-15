@@ -72,6 +72,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -230,7 +231,7 @@ public class PipelineController {
       @Content(mediaType = MediaType.APPLICATION_OCTET_STREAM_VALUE),
       @Content(mediaType = MIME_TEXT_URI_LIST)
   })
-  public void submitData(
+  public List<String> submitData(
       @PathVariable("name") @Parameter(description = "Name of pipeline", required = true)
           String name,
       @RequestParam(value = "id", required = false) @Parameter(description = "User defined ID of item")
@@ -276,9 +277,18 @@ public class PipelineController {
       throw new BadRequestException("Unable to read request body", e);
     }
 
+    List<String> ids = new ArrayList<>(dataList.size());
+    ids.add(id == null ? UUID.randomUUID().toString() : id);
+    for(int i = 1; i < dataList.size(); i++){
+      ids.add(UUID.randomUUID().toString());
+    }
+
     Instant time = Instant.now();
-    for (Object data : dataList) {
-      SubmittedData submittedData = new SubmittedData(data, id);
+    for(int i = 0; i < dataList.size(); i++){
+      Object data = dataList.get(i);
+      String itemId = ids.get(i);
+
+      SubmittedData submittedData = new SubmittedData(data, itemId);
       request
           .getHeaderNames()
           .asIterator()
@@ -289,6 +299,8 @@ public class PipelineController {
 
       pipelineService.submitData(name, submittedData);
     }
+
+    return ids;
   }
 
   @PostMapping("/{name}/start")
