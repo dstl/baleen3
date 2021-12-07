@@ -63,14 +63,7 @@ development see the app [README.md](./src/main/app/README.md)
 
 ## Importing
 
-Baleen 3 is not available on maven central. If you would like to extend the capabilities of Baleen you need to create a standard, importable, jar instead of the executable jar that is created by default.
-To do this run:
-
-```shell
-mvn clean install -P importable
-```
-
-Then an importable jar will be installed in the local maven repository and can be added to your pom dependencies as:
+If you would like to extend the capabilities of Baleen you can add the dependency to your pom:
 
 ```xml
   <dependency>
@@ -80,18 +73,17 @@ Then an importable jar will be installed in the local maven repository and can b
   </dependency>
 ```
 
-and then add the `Baleen.class` to the Spring Boot Application, for example:
+and then add the `Baleen.class` to the your Spring Boot Application, for example:
 
 ```java
 package org.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.scheduling.annotation.EnableScheduling;
 
 import uk.gov.dstl.baleen.Baleen;
 
-@EnableScheduling
+// Add other classes as required
 @SpringBootApplication(scanBasePackageClasses = { Baleen.class })
 public class BaleenExtended {
 
@@ -100,6 +92,15 @@ public class BaleenExtended {
   }
 }
 ```
+
+This uses an importable jar instead of the executable jar that is built by default. This is available on maven central. 
+To build this dependency manually run with the `importable` profile:
+
+```shell
+mvn clean install -P importable
+```
+
+Then an importable jar will be installed in the local maven repository and can be added to your pom dependencies as above.
 
 ## Licence
 
