@@ -61,6 +61,47 @@ The `./baleen-dev.sh` script can be used to run the jar straight from the target
 The app has all the usual typescript development support scripts within the app folder. For more information on the UI 
 development see the app [README.md](./src/main/app/README.md)
 
+## Importing
+
+If you would like to extend the capabilities of Baleen you can add the dependency to your pom:
+
+```xml
+  <dependency>
+    <groupId>uk.gov.dstl</groupId>
+    <artifactId>baleen</artifactId>
+    <version>${baleen.version}</version>
+  </dependency>
+```
+
+and then add the `Baleen.class` to the your Spring Boot Application, for example:
+
+```java
+package org.example;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import uk.gov.dstl.baleen.Baleen;
+
+// Add other classes as required
+@SpringBootApplication(scanBasePackageClasses = { Baleen.class })
+public class BaleenExtended {
+
+  public static void main(String[] args) {
+    SpringApplication.run(BaleenExtended.class, args);
+  }
+}
+```
+
+This uses an importable jar instead of the executable jar that is built by default. This is available on maven central. 
+To build this dependency manually run with the `importable` profile:
+
+```shell
+mvn clean install -P importable
+```
+
+Then an importable jar will be installed in the local maven repository and can be added to your pom dependencies as above.
+
 ## Licence
 
 Dstl (c) Crown Copyright 2020
