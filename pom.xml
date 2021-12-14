@@ -7,7 +7,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.5.6</version>
+    <version>2.6.1</version>
   </parent>
 
   <groupId>uk.gov.dstl</groupId>
@@ -61,7 +61,7 @@
     <frontend-src-dir>${project.basedir}/src/main/app</frontend-src-dir>
     <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
     <node.version>v12.22.1</node.version>
-    <typescript-generator-maven-plugin.version>2.32.889</typescript-generator-maven-plugin.version>
+    <typescript-generator-maven-plugin.version>2.34.976</typescript-generator-maven-plugin.version>
     <yarn.version>v1.22.5</yarn.version>
   </properties>
 
@@ -76,19 +76,19 @@
     <dependency>
       <groupId>org.springdoc</groupId>
       <artifactId>springdoc-openapi-ui</artifactId>
-      <version>1.5.12</version>
+      <version>1.6.0</version>
     </dependency>
 
     <!-- JSON -->
     <dependency>
       <groupId>com.github.victools</groupId>
       <artifactId>jsonschema-generator</artifactId>
-      <version>4.20.0</version>
+      <version>4.21.0</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse</groupId>
       <artifactId>yasson</artifactId>
-      <version>2.0.2</version>
+      <version>2.0.3</version>
     </dependency>
 
     <!-- Annot8 -->
@@ -133,7 +133,7 @@
     <dependency>
       <groupId>io.github.classgraph</groupId>
       <artifactId>classgraph</artifactId>
-      <version>4.8.128</version>
+      <version>4.8.138</version>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>
