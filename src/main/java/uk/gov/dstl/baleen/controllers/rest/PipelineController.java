@@ -71,7 +71,9 @@ import java.net.URISyntaxException;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -301,6 +303,28 @@ public class PipelineController {
     }
 
     return ids;
+  }
+
+  @GetMapping(
+    value = "/{name}/status/{id}",
+    produces = MediaType.APPLICATION_JSON_VALUE
+  )
+  @Operation(
+    description = "Check on the status of an item submitted via the REST API")
+  @ApiResponses({
+    @ApiResponse(responseCode = "200", description = SUCCESS),
+    @ApiResponse(responseCode = "404", description = PIPELINE_NOT_FOUND),
+  })
+  public Map<String, Object> getItemStatus(@PathVariable("name") @Parameter(description = "Name of pipeline", required = true)
+                              String name,
+                                           @PathVariable("id") @Parameter(description = "ID of Item", required = true)
+                              String id){
+
+    Map<String, Object> m = new HashMap<>();
+    m.put("id", id);
+    m.put("status", pipelineService.getItemStatus(name, id));
+
+    return m;
   }
 
   @PostMapping("/{name}/start")

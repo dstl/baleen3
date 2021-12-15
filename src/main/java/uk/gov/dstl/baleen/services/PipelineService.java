@@ -42,6 +42,7 @@ import uk.gov.dstl.annot8.baleen.MutablePipelineDescriptor;
 import uk.gov.dstl.annot8.baleen.RestApi;
 import uk.gov.dstl.annot8.baleen.RestApiQueue;
 import uk.gov.dstl.annot8.baleen.SubmittedData;
+import uk.gov.dstl.baleen.data.ItemStatus;
 import uk.gov.dstl.baleen.data.PipelineHolder;
 import uk.gov.dstl.baleen.data.PipelineMetadata;
 import uk.gov.dstl.baleen.exceptions.AlreadyExistsException;
@@ -68,6 +69,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.UUID;
@@ -355,6 +357,7 @@ public class PipelineService {
       .withContext(context)
       .withDelay(pipelineDelay)
       .withErrorConfiguration(errorConfiguration)
+      .withItemState(holder.getPipelineItemState())
       .build();
 
     holder.setPipelineRunner(runner);
@@ -492,6 +495,37 @@ public class PipelineService {
     //Add data to queue
     LOGGER.debug("Data received via REST API for pipeline {}", pipelineName);
     queues.get(pipelineName).addToQueue(data);
+  }
+
+  /**
+   * Get the status of an item
+   */
+  public ItemStatus getItemStatus(String pipelineName, String id){
+    //Check the pipeline exists, and that it has a queue
+    if(!pipelines.containsKey(pipelineName))
+      throw new PipelineNotFoundException();
+
+    if(queues.containsKey(pipelineName) && queues.get(pipelineName).inQueue(id))
+      return ItemStatus.QUEUED;
+
+    Optional<io.annot8.api.pipelines.ItemStatus> status = pipelines.get(pipelineName).getPipelineItemState().getItemStatus(id);
+
+    if(status.isPresent()){
+      switch (status.get()){
+        case PROCESSING:
+          return ItemStatus.PROCESSING;
+        case PROCESSED_OK:
+          return ItemStatus.PROCESSED_OK;
+        case PROCESSED_ITEM_ERROR:
+          return ItemStatus.PROCESSED_ITEM_ERROR;
+        case PROCESSED_PROCESSOR_ERROR:
+          return ItemStatus.PROCESSED_PROCESSOR_ERROR;
+      }
+    }else{
+      return ItemStatus.NOT_FOUND;
+    }
+
+    return ItemStatus.UNKNOWN;
   }
 
   /**

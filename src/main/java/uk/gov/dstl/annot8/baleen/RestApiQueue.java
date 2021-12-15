@@ -54,4 +54,15 @@ public class RestApiQueue implements Resource{
   public boolean isEmpty(){
     return queue.isEmpty();
   }
+
+  /**
+   * Returns true if the specified ID is present in the queue
+   */
+  public boolean inQueue(String id) {
+    if(id == null)
+      return false;
+
+    return queue.stream()
+      .anyMatch(sd -> sd.getId().filter(s -> s.equals(id)).isPresent());
+  }
 }

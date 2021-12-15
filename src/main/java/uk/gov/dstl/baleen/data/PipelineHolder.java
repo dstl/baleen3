@@ -22,7 +22,9 @@ package uk.gov.dstl.baleen.data;
 
 import com.google.common.collect.EvictingQueue;
 import io.annot8.api.pipelines.PipelineDescriptor;
+import io.annot8.api.pipelines.PipelineItemState;
 import io.annot8.api.pipelines.PipelineRunner;
+import io.annot8.implementations.pipeline.SimplePipelineItemState;
 import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.simple.SimpleMeterRegistry;
 import uk.gov.dstl.baleen.logging.BaleenLogEntry;
@@ -38,6 +40,7 @@ public class PipelineHolder {
   private Collection<BaleenLogEntry> logEntries;
   private MeterRegistry meterRegistry;
   private PipelineRunner pipelineRunner;
+  private PipelineItemState pipelineItemState;
 
   /**
    * Create a new instance with the specified descriptor and log entries.
@@ -49,6 +52,7 @@ public class PipelineHolder {
     this.descriptor = descriptor;
     this.logEntries = EvictingQueue.create(maxLoggingEntries);
     this.meterRegistry = new SimpleMeterRegistry();
+    this.pipelineItemState = new SimplePipelineItemState();
   }
 
   public PipelineDescriptor getDescriptor() {
@@ -83,5 +87,13 @@ public class PipelineHolder {
 
   public boolean isRunning(){
     return pipelineRunner != null;
+  }
+
+  public PipelineItemState getPipelineItemState() {
+    return pipelineItemState;
+  }
+
+  public void setPipelineItemState(PipelineItemState pipelineItemState) {
+    this.pipelineItemState = pipelineItemState;
   }
 }
