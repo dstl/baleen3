@@ -65,7 +65,7 @@ const ComponentsInfoCardContent: React.FC<ComponentsInfoCardContentProps> =
           {description === undefined ? 'No description' : description}
         </Typography>
         <Row flexWrap="wrap" px={3} pb={2}>
-          {tags === undefined
+          {tags == null
             ? null
             : tags.map((tag) => (
                 <Chip mr={1} mb={1} key={tag} size="small" label={tag} />
