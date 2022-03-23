@@ -44,85 +44,86 @@ interface PipelineEditFetchContainerProps {
   navigate: NavigateFn
 }
 
-export const PipelineEditFetchContainer: React.FC<PipelineEditFetchContainerProps> =
-  ({ name, navigate }: PipelineEditFetchContainerProps) => {
-    const { data: pipelines } = useSWR<PipelineMetadata[]>(
-      getPipelinesFetchKey,
-      getPipelines,
-      {
-        refreshInterval: 5000,
-      }
-    )
-
-    const usedNames =
-      pipelines?.map((p) => p.name).filter((p) => p !== name) ?? []
-
-    const {
-      data: pipeline,
-      error,
-      mutate,
-    } = useSWR<PipelineDescriptor, Error>(
-      [getPipelinesFetchKey, name],
-      getPipeline,
-      {
-        revalidateOnFocus: false,
-        revalidateOnMount: true,
-      }
-    )
-
-    if (error !== undefined) {
-      return (
-        <>
-          <Header />
-          <FullError
-            error={error}
-            action={async (): Promise<void> => {
-              await mutate()
-            }}
-          />
-        </>
-      )
+export const PipelineEditFetchContainer: React.FC<
+  PipelineEditFetchContainerProps
+> = ({ name, navigate }: PipelineEditFetchContainerProps) => {
+  const { data: pipelines } = useSWR<PipelineMetadata[]>(
+    getPipelinesFetchKey,
+    getPipelines,
+    {
+      refreshInterval: 5000,
     }
+  )
 
-    if (pipeline === undefined || pipelines === undefined) {
-      return (
-        <>
-          <Header />
-          <Loading />
-        </>
-      )
+  const usedNames =
+    pipelines?.map((p) => p.name).filter((p) => p !== name) ?? []
+
+  const {
+    data: pipeline,
+    error,
+    mutate,
+  } = useSWR<PipelineDescriptor, Error>(
+    [getPipelinesFetchKey, name],
+    getPipeline,
+    {
+      revalidateOnFocus: false,
+      revalidateOnMount: true,
     }
+  )
 
-    const handleSave = async (
-      pipeline: PipelineDescriptor,
-      // Not used, se below
-      _orderer: string
-    ): Promise<void> => {
-      // delete existing pipeline
-      try {
-        await deletePipeline(name)
-      } catch (e) {
-        // Ignore if already deleted
-        if (e instanceof Error && !e.message.includes('404')) {
-          throw e
-        }
-      }
-      // We do not apply the orderer, leaving the ordering to the use in the UI
-      // In future we may want to ask the use if they have a non-no-op order selected and haven't applied it
-      // if they want to send it
-      await createPipeline(pipeline)
-      // navigate to new pipeline
-      await navigate(`/view/${pipeline.name}`, {
-        state: { initialValue: pipeline },
-      })
-    }
-
+  if (error !== undefined) {
     return (
-      <PipelineEditContainer
-        template={pipeline}
-        saveLabel="Replace Pipeline"
-        onSave={handleSave}
-        usedNames={usedNames}
-      />
+      <>
+        <Header />
+        <FullError
+          error={error}
+          action={async (): Promise<void> => {
+            await mutate()
+          }}
+        />
+      </>
     )
   }
+
+  if (pipeline === undefined || pipelines === undefined) {
+    return (
+      <>
+        <Header />
+        <Loading />
+      </>
+    )
+  }
+
+  const handleSave = async (
+    pipeline: PipelineDescriptor,
+    // Not used, se below
+    _orderer: string
+  ): Promise<void> => {
+    // delete existing pipeline
+    try {
+      await deletePipeline(name)
+    } catch (e) {
+      // Ignore if already deleted
+      if (e instanceof Error && !e.message.includes('404')) {
+        throw e
+      }
+    }
+    // We do not apply the orderer, leaving the ordering to the use in the UI
+    // In future we may want to ask the use if they have a non-no-op order selected and haven't applied it
+    // if they want to send it
+    await createPipeline(pipeline)
+    // navigate to new pipeline
+    await navigate(`/view/${pipeline.name}`, {
+      state: { initialValue: pipeline },
+    })
+  }
+
+  return (
+    <PipelineEditContainer
+      template={pipeline}
+      saveLabel="Replace Pipeline"
+      onSave={handleSave}
+      usedNames={usedNames}
+    />
+  )
+}

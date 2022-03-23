@@ -83,7 +83,7 @@ public class PipelineControllerIT {
     assertEquals(201, client.send(reqCreateNonPersisted, HttpResponse.BodyHandlers.ofString()).statusCode());
 
     //Check there's one pipeline
-    assertJsonEqual("[{\"name\":\"test1\",\"description\":\"Test Pipeline 1\"}]", client.send(reqListPipelines, HttpResponse.BodyHandlers.ofString()).body());
+    assertJsonEqual("[{\"name\":\"test1\",\"description\":\"Test Pipeline 1\",\"running\":true}]", client.send(reqListPipelines, HttpResponse.BodyHandlers.ofString()).body());
 
     //Check pipeline not persisted
     File[] filesBeforeCreation = new File("test-pipelines").listFiles();

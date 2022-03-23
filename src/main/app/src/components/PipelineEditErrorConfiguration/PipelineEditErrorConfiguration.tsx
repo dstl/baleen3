@@ -38,101 +38,102 @@ export interface PipelineEditErrorConfigurationProps {
   setErrorConfiguration: (errorConfiguration: ErrorConfiguration) => void
 }
 
-export const PipelineEditErrorConfiguration: React.FC<PipelineEditErrorConfigurationProps> =
-  ({
-    errorConfiguration,
-    setErrorConfiguration,
-  }: PipelineEditErrorConfigurationProps) => {
-    const handleSourceChange = (
-      event: React.ChangeEvent<{ value: unknown }>
-    ): void => {
-      setErrorConfiguration({
-        ...errorConfiguration,
-        onSourceError: event.target.value as OnSourceError,
-      })
-    }
-
-    const handleProcessorChange = (
-      event: React.ChangeEvent<{ value: unknown }>
-    ): void => {
-      setErrorConfiguration({
-        ...errorConfiguration,
-        onProcessorError: event.target.value as OnProcessingError,
-      })
-    }
-
-    const handleItemChange = (
-      event: React.ChangeEvent<{ value: unknown }>
-    ): void => {
-      setErrorConfiguration({
-        ...errorConfiguration,
-        onItemError: event.target.value as OnProcessingError,
-      })
-    }
-
-    return (
-      <>
-        <CenteredRow>
-          <Box display="inline-block" m={3}>
-            <Card>
-              <CardHeader>Source Error</CardHeader>
-              <CardContent>
-                <Typography>
-                  If a source error occurs, then the pipeline will take the
-                  following action:
-                </Typography>
-                <Select
-                  native
-                  value={errorConfiguration.onSourceError}
-                  onChange={handleSourceChange}
-                >
-                  <option value="IGNORE">Ignore error</option>
-                  <option value="REMOVE_SOURCE">Remove source</option>
-                </Select>
-              </CardContent>
-            </Card>
-          </Box>
-          <Box display="inline-block" m={3}>
-            <Card>
-              <CardHeader>Processor Error</CardHeader>
-              <CardContent>
-                <Typography>
-                  If a processor error occurs, then the pipeline will take the
-                  following action:
-                </Typography>
-                <Select
-                  native
-                  value={errorConfiguration.onProcessorError}
-                  onChange={handleProcessorChange}
-                >
-                  <option value="DISCARD_ITEM">Discard item</option>
-                  <option value="IGNORE">Ignore error</option>
-                  <option value="REMOVE_PROCESSOR">Remove processor</option>
-                </Select>
-              </CardContent>
-            </Card>
-          </Box>
-          <Box display="inline-block" m={3}>
-            <Card>
-              <CardHeader>Item Error</CardHeader>
-              <CardContent>
-                <Typography>
-                  If an item error occurs, then the pipeline will take the
-                  following action:
-                </Typography>
-                <Select
-                  native
-                  value={errorConfiguration.onItemError}
-                  onChange={handleItemChange}
-                >
-                  <option value="DISCARD_ITEM">Discard item</option>
-                  <option value="IGNORE">Ignore error</option>
-                  <option value="REMOVE_PROCESSOR">Remove processor</option>
-                </Select>
-              </CardContent>
-            </Card>
-          </Box>
-        </CenteredRow>
-      </>
-    )
+export const PipelineEditErrorConfiguration: React.FC<
+  PipelineEditErrorConfigurationProps
+> = ({
+  errorConfiguration,
+  setErrorConfiguration,
+}: PipelineEditErrorConfigurationProps) => {
+  const handleSourceChange = (
+    event: React.ChangeEvent<{ value: unknown }>
+  ): void => {
+    setErrorConfiguration({
+      ...errorConfiguration,
+      onSourceError: event.target.value as OnSourceError,
+    })
   }
+
+  const handleProcessorChange = (
+    event: React.ChangeEvent<{ value: unknown }>
+  ): void => {
+    setErrorConfiguration({
+      ...errorConfiguration,
+      onProcessorError: event.target.value as OnProcessingError,
+    })
+  }
+
+  const handleItemChange = (
+    event: React.ChangeEvent<{ value: unknown }>
+  ): void => {
+    setErrorConfiguration({
+      ...errorConfiguration,
+      onItemError: event.target.value as OnProcessingError,
+    })
+  }
+
+  return (
+    <>
+      <CenteredRow>
+        <Box display="inline-block" m={3}>
+          <Card>
+            <CardHeader>Source Error</CardHeader>
+            <CardContent>
+              <Typography>
+                If a source error occurs, then the pipeline will take the
+                following action:
+              </Typography>
+              <Select
+                native
+                value={errorConfiguration.onSourceError}
+                onChange={handleSourceChange}
+              >
+                <option value="IGNORE">Ignore error</option>
+                <option value="REMOVE_SOURCE">Remove source</option>
+              </Select>
+            </CardContent>
+          </Card>
+        </Box>
+        <Box display="inline-block" m={3}>
+          <Card>
+            <CardHeader>Processor Error</CardHeader>
+            <CardContent>
+              <Typography>
+                If a processor error occurs, then the pipeline will take the
+                following action:
+              </Typography>
+              <Select
+                native
+                value={errorConfiguration.onProcessorError}
+                onChange={handleProcessorChange}
+              >
+                <option value="DISCARD_ITEM">Discard item</option>
+                <option value="IGNORE">Ignore error</option>
+                <option value="REMOVE_PROCESSOR">Remove processor</option>
+              </Select>
+            </CardContent>
+          </Card>
+        </Box>
+        <Box display="inline-block" m={3}>
+          <Card>
+            <CardHeader>Item Error</CardHeader>
+            <CardContent>
+              <Typography>
+                If an item error occurs, then the pipeline will take the
+                following action:
+              </Typography>
+              <Select
+                native
+                value={errorConfiguration.onItemError}
+                onChange={handleItemChange}
+              >
+                <option value="DISCARD_ITEM">Discard item</option>
+                <option value="IGNORE">Ignore error</option>
+                <option value="REMOVE_PROCESSOR">Remove processor</option>
+              </Select>
+            </CardContent>
+          </Card>
+        </Box>
+      </CenteredRow>
+    </>
+  )
+}
