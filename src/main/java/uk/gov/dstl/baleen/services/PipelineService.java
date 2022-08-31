@@ -58,6 +58,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 import java.nio.file.StandardWatchEventKinds;
@@ -124,12 +125,8 @@ public class PipelineService {
   @PostConstruct
   public void startPersistedPipelines() {
     //Check the persistence folder exists, and if it doesn't try to create it
-    if (!persistenceFolder.exists()) {
-      LOGGER.info("Creating persistence folder {}", persistenceFolder);
-      if (!persistenceFolder.mkdirs()) {
-        LOGGER.warn("Unable to create persistence folder {}", persistenceFolder);
-        return;
-      }
+    if(!createPersistenceFolder()){
+      return;
     }
 
     //Check that the persistence folder is a directory that we can read and write
@@ -440,12 +437,9 @@ public class PipelineService {
    */
   public boolean save(PipelineDescriptor descriptor) {
     //Check the persistence folder exists and that we can write to it
-    if (!persistenceFolder.exists()) {
-      LOGGER.info("Creating persistence folder {}", persistenceFolder);
-      if (!persistenceFolder.mkdirs()) {
-        LOGGER.error("Unable to create persistence folder {} - pipeline {} will not be persisted", persistenceFolder, descriptor.getName());
-        return false;
-      }
+    if(!createPersistenceFolder()){
+      LOGGER.error("Pipeline {} will not be persisted as persistence folder does not exist", descriptor.getName());
+      return false;
     }
 
     if (!persistenceFolder.canWrite()) {
@@ -534,7 +528,7 @@ public class PipelineService {
   private List<String> getPipelineState(){
     try {
       return Files.readAllLines(stoppedState.toPath());
-    } catch (FileNotFoundException fnfe) {
+    } catch (NoSuchFileException | FileNotFoundException e) {
       return Collections.emptyList();
     } catch (IOException e) {
       LOGGER.error("Could not read pipeline state from disk", e);
@@ -551,10 +545,24 @@ public class PipelineService {
       .map(Map.Entry::getKey)
       .collect(Collectors.toList());
 
+    createPersistenceFolder();
+
     try {
       Files.write(stoppedState.toPath(), stoppedPipelines, StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE);
     } catch (IOException e) {
       LOGGER.error("Unable to persist pipeline state to disk", e);
     }
+  }
+
+  private boolean createPersistenceFolder(){
+    if (!persistenceFolder.exists()) {
+      LOGGER.info("Creating persistence folder {}", persistenceFolder);
+      if (!persistenceFolder.mkdirs()) {
+        LOGGER.warn("Unable to create persistence folder {}", persistenceFolder);
+        return false;
+      }
+    }
+
+    return true;
   }
 }
