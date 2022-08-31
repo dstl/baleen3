@@ -28,7 +28,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.web.server.LocalServerPort;
+import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
@@ -52,7 +52,7 @@ public class PipelineControllerIT {
   @LocalServerPort
   private int port;
 
-  private ObjectMapper mapper = new ObjectMapper();
+  private final ObjectMapper mapper = new ObjectMapper();
 
   @BeforeEach
   public void before() {
@@ -74,8 +74,6 @@ public class PipelineControllerIT {
     final String urlRoot = "http://localhost:" + port + "/api/v3/pipelines/";
 
     final String json = "{\"processors\":[{\"io.annot8.components.geo.processors.Mgrs\":{\"name\":\"Mgrs\",\"settings\":{\"ignoreDates\":true}}},{\"io.annot8.components.print.processors.PrintSpans\":{\"name\":\"Print Spans\"}}],\"sources\":[{\"uk.gov.dstl.annot8.baleen.RestApi\":{\"name\":\"Baleen 3 REST API\"}}]}";
-    final String pipeline1 = "{\"description\":\"Test Pipeline 1\",\"name\":\"test1\",\"processors\":[{\"io.annot8.components.geo.processors.Mgrs\":{\"name\":\"Mgrs\",\"settings\":{\"ignoreDates\":true}}},{\"io.annot8.components.print.processors.PrintSpans\":{\"name\":\"Print Spans\"}}],\"sources\":[{\"uk.gov.dstl.annot8.baleen.RestApi\":{\"name\":\"Baleen 3 REST API\"}}]}";
-    final String pipeline2 = "{\"description\":\"\",\"name\":\"test2\",\"processors\":[{\"io.annot8.components.geo.processors.Mgrs\":{\"name\":\"Mgrs\",\"settings\":{\"ignoreDates\":true}}},{\"io.annot8.components.print.processors.PrintSpans\":{\"name\":\"Print Spans\"}}],\"sources\":[{\"uk.gov.dstl.annot8.baleen.RestApi\":{\"name\":\"Baleen 3 REST API\"}}]}";
 
     HttpClient client = HttpClient.newHttpClient();
 
@@ -141,7 +139,9 @@ public class PipelineControllerIT {
     //Sleep to give plenty of time for the documents to process
     try{
       Thread.sleep(3000);
-    }catch (Exception e){}
+    }catch (Exception e){
+      //Do nothing
+    }
 
     //Check metrics for pipeline (non-persisted)
     HttpRequest reqGetMetrics1 = HttpRequest.newBuilder().GET().uri(URI.create(urlRoot + "test1/metrics")).build();
