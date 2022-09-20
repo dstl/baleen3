@@ -70,6 +70,8 @@ public class PipelineControllerIT {
   }
 
   @Test
+  // Note - this test fails when run from within some IDEs as (for unknown reasons) the file change detection doesn't seem to work
+  //  Tests pass if run as `mvn verify`
   public void endToEndTest() throws Exception {
     final String urlRoot = "http://localhost:" + port + "/api/v3/pipelines/";
 
