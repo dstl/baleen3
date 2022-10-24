@@ -7,7 +7,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.7.3</version>
+    <version>2.7.5</version>
   </parent>
 
   <groupId>uk.gov.dstl</groupId>
@@ -61,7 +61,7 @@
     <frontend-src-dir>${project.basedir}/src/main/app</frontend-src-dir>
     <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
     <node.version>v12.22.1</node.version>
-    <typescript-generator-maven-plugin.version>2.37.1128</typescript-generator-maven-plugin.version>
+    <typescript-generator-maven-plugin.version>3.0.1157</typescript-generator-maven-plugin.version>
     <yarn.version>v1.22.5</yarn.version>
   </properties>
 
@@ -76,14 +76,14 @@
     <dependency>
       <groupId>org.springdoc</groupId>
       <artifactId>springdoc-openapi-ui</artifactId>
-      <version>1.6.11</version>
+      <version>1.6.12</version>
     </dependency>
 
     <!-- JSON -->
     <dependency>
       <groupId>com.github.victools</groupId>
       <artifactId>jsonschema-generator</artifactId>
-      <version>4.26.0</version>
+      <version>4.27.0</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse</groupId>
