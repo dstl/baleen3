@@ -57,9 +57,9 @@
 
     <annot8-api.version>1.2</annot8-api.version>
     <annot8.version>1.2.2</annot8.version>
-    <frontend-maven-plugin.version>1.11.3</frontend-maven-plugin.version>
+    <frontend-maven-plugin.version>1.12.1</frontend-maven-plugin.version>
     <frontend-src-dir>${project.basedir}/src/main/app</frontend-src-dir>
-    <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
+    <maven-resources-plugin.version>3.3.0</maven-resources-plugin.version>
     <node.version>v12.22.1</node.version>
     <typescript-generator-maven-plugin.version>3.0.1157</typescript-generator-maven-plugin.version>
     <yarn.version>v1.22.5</yarn.version>
@@ -83,7 +83,7 @@
     <dependency>
       <groupId>com.github.victools</groupId>
       <artifactId>jsonschema-generator</artifactId>
-      <version>4.27.0</version>
+      <version>4.28.0</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse</groupId>
