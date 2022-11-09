@@ -33,32 +33,33 @@ interface PipelineViewLogsContainerProps {
 /**
  *
  */
-export const PipelineViewLogsContainer: React.FC<PipelineViewLogsContainerProps> =
-  ({ name }: PipelineViewLogsContainerProps) => {
-    const [max, setMax] = useState<number>(10)
-    const [level, setLevel] = useState<Level>('INFO')
+export const PipelineViewLogsContainer: React.FC<
+  PipelineViewLogsContainerProps
+> = ({ name }: PipelineViewLogsContainerProps) => {
+  const [max, setMax] = useState<number>(10)
+  const [level, setLevel] = useState<Level>('INFO')
 
-    const {
-      data: logs,
-      error,
-      mutate,
-    } = useSWR<BaleenLogEntry[], Error>(
-      ['api/v3/pipelines/{name}/logs', name, max, level],
-      getLogs
-    )
+  const {
+    data: logs,
+    error,
+    mutate,
+  } = useSWR<BaleenLogEntry[], Error>(
+    ['api/v3/pipelines/{name}/logs', name, max, level],
+    getLogs
+  )
 
-    return (
-      <PipelineViewLogs
-        level={level}
-        max={max}
-        logs={logs}
-        setLevel={setLevel}
-        setMax={setMax}
-        refresh={async (): Promise<void> => {
-          await mutate([])
-        }}
-        loading={logs === undefined}
-        error={error}
-      />
-    )
-  }
+  return (
+    <PipelineViewLogs
+      level={level}
+      max={max}
+      logs={logs}
+      setLevel={setLevel}
+      setMax={setMax}
+      refresh={async (): Promise<void> => {
+        await mutate([])
+      }}
+      loading={logs === undefined}
+      error={error}
+    />
+  )
+}

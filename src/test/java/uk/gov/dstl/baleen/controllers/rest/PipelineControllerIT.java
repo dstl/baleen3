@@ -22,12 +22,13 @@ package uk.gov.dstl.baleen.controllers.rest;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.web.server.LocalServerPort;
+import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
@@ -36,6 +37,7 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -50,25 +52,30 @@ public class PipelineControllerIT {
   @LocalServerPort
   private int port;
 
-  private ObjectMapper mapper = new ObjectMapper();
+  private final ObjectMapper mapper = new ObjectMapper();
 
   @BeforeEach
   public void before() {
-    deleteDirectory(new File("test-pipelines"));
+    deleteDirectory(new File("test-pipelines"), true);
   }
 
   @AfterEach
   public void after() {
-    deleteDirectory(new File("test-pipelines"));
+    deleteDirectory(new File("test-pipelines"), true);
+  }
+
+  @AfterAll
+  public static void afterAll() {
+    deleteDirectory(new File("test-pipelines"), false);
   }
 
   @Test
+  // Note - this test fails when run from within some IDEs as (for unknown reasons) the file change detection doesn't seem to work
+  //  Tests pass if run as `mvn verify`
   public void endToEndTest() throws Exception {
     final String urlRoot = "http://localhost:" + port + "/api/v3/pipelines/";
 
     final String json = "{\"processors\":[{\"io.annot8.components.geo.processors.Mgrs\":{\"name\":\"Mgrs\",\"settings\":{\"ignoreDates\":true}}},{\"io.annot8.components.print.processors.PrintSpans\":{\"name\":\"Print Spans\"}}],\"sources\":[{\"uk.gov.dstl.annot8.baleen.RestApi\":{\"name\":\"Baleen 3 REST API\"}}]}";
-    final String pipeline1 = "{\"description\":\"Test Pipeline 1\",\"name\":\"test1\",\"processors\":[{\"io.annot8.components.geo.processors.Mgrs\":{\"name\":\"Mgrs\",\"settings\":{\"ignoreDates\":true}}},{\"io.annot8.components.print.processors.PrintSpans\":{\"name\":\"Print Spans\"}}],\"sources\":[{\"uk.gov.dstl.annot8.baleen.RestApi\":{\"name\":\"Baleen 3 REST API\"}}]}";
-    final String pipeline2 = "{\"description\":\"\",\"name\":\"test2\",\"processors\":[{\"io.annot8.components.geo.processors.Mgrs\":{\"name\":\"Mgrs\",\"settings\":{\"ignoreDates\":true}}},{\"io.annot8.components.print.processors.PrintSpans\":{\"name\":\"Print Spans\"}}],\"sources\":[{\"uk.gov.dstl.annot8.baleen.RestApi\":{\"name\":\"Baleen 3 REST API\"}}]}";
 
     HttpClient client = HttpClient.newHttpClient();
 
@@ -83,11 +90,13 @@ public class PipelineControllerIT {
     assertEquals(201, client.send(reqCreateNonPersisted, HttpResponse.BodyHandlers.ofString()).statusCode());
 
     //Check there's one pipeline
-    assertJsonEqual("[{\"name\":\"test1\",\"description\":\"Test Pipeline 1\"}]", client.send(reqListPipelines, HttpResponse.BodyHandlers.ofString()).body());
+    assertJsonEqual("[{\"name\":\"test1\",\"description\":\"Test Pipeline 1\",\"running\":true}]", client.send(reqListPipelines, HttpResponse.BodyHandlers.ofString()).body());
 
     //Check pipeline not persisted
     File[] filesBeforeCreation = new File("test-pipelines").listFiles();
-    assertNull(filesBeforeCreation);
+    assertNotNull(filesBeforeCreation);
+    assertEquals(1, filesBeforeCreation.length);
+    assertEquals(".stopped", filesBeforeCreation[0].getName());
 
     //Create a pipeline (persisted)
     HttpRequest reqCreatePersisted = HttpRequest.newBuilder().POST(HttpRequest.BodyPublishers.ofString(json))
@@ -96,21 +105,22 @@ public class PipelineControllerIT {
     assertEquals(201, client.send(reqCreatePersisted, HttpResponse.BodyHandlers.ofString()).statusCode());
 
     //Check there's two pipelines
-    assertJsonEqual("[{\"name\":\"test2\",\"description\":\"\"},{\"name\":\"test1\",\"description\":\"Test Pipeline 1\"}]", client.send(reqListPipelines, HttpResponse.BodyHandlers.ofString()).body());
+    assertJsonEqual("[{\"name\":\"test1\",\"description\":\"Test Pipeline 1\",\"running\":true},{\"name\":\"test2\",\"description\":\"\",\"running\":true}]", client.send(reqListPipelines, HttpResponse.BodyHandlers.ofString()).body());
 
     //Check one of the pipelines is persisted
     File[] filesAfterCreation = new File("test-pipelines").listFiles();
     assertNotNull(filesAfterCreation);
-    assertEquals(1, filesAfterCreation.length);
-    assertTrue(filesAfterCreation[0].getName().endsWith(".json"));
+
+    assertEquals(filesBeforeCreation.length + 1, filesAfterCreation.length);
+    assertTrue(Arrays.stream(filesAfterCreation).allMatch(f -> f.getName().equals(".stopped") || f.getName().endsWith(".json")));
 
     //Get pipeline (non-persisted) and check descriptor
     HttpRequest reqGetPipeline1 = HttpRequest.newBuilder().GET().uri(URI.create(urlRoot + "test1")).build();
-    assertJsonEqual(pipeline1, client.send(reqGetPipeline1, HttpResponse.BodyHandlers.ofString()).body());
+    assertJsonEqual("{\"name\":\"test1\",\"description\":\"Test Pipeline 1\",\"sources\":[{\"uk.gov.dstl.annot8.baleen.RestApi\":{\"name\":\"Baleen 3 REST API\"}}],\"processors\":[{\"io.annot8.components.geo.processors.Mgrs\":{\"name\":\"Mgrs\",\"settings\":{\"ignoreDates\":true}}},{\"io.annot8.components.print.processors.PrintSpans\":{\"name\":\"Print Spans\",\"settings\":{\"logOutput\":true,\"logLevel\":\"INFO\"}}}],\"errorConfiguration\":{\"onSourceError\":\"REMOVE_SOURCE\",\"onItemError\":\"DISCARD_ITEM\",\"onProcessorError\":\"REMOVE_PROCESSOR\"}}", client.send(reqGetPipeline1, HttpResponse.BodyHandlers.ofString()).body());
 
     //Get pipeline (persisted) and check descriptor
     HttpRequest reqGetPipeline2 = HttpRequest.newBuilder().GET().uri(URI.create(urlRoot + "test2")).build();
-    assertJsonEqual(pipeline2, client.send(reqGetPipeline2, HttpResponse.BodyHandlers.ofString()).body());
+    assertJsonEqual("{\"name\":\"test2\",\"description\":\"\",\"sources\":[{\"uk.gov.dstl.annot8.baleen.RestApi\":{\"name\":\"Baleen 3 REST API\"}}],\"processors\":[{\"io.annot8.components.geo.processors.Mgrs\":{\"name\":\"Mgrs\",\"settings\":{\"ignoreDates\":true}}},{\"io.annot8.components.print.processors.PrintSpans\":{\"name\":\"Print Spans\",\"settings\":{\"logOutput\":true,\"logLevel\":\"INFO\"}}}],\"errorConfiguration\":{\"onSourceError\":\"REMOVE_SOURCE\",\"onItemError\":\"DISCARD_ITEM\",\"onProcessorError\":\"REMOVE_PROCESSOR\"}}", client.send(reqGetPipeline2, HttpResponse.BodyHandlers.ofString()).body());
 
     //Submit data to test1
     HttpRequest reqSubmit1 = HttpRequest.newBuilder().POST(HttpRequest.BodyPublishers.ofString("It was found at 4QFJ 1234 6789"))
@@ -131,15 +141,21 @@ public class PipelineControllerIT {
     //Sleep to give plenty of time for the documents to process
     try{
       Thread.sleep(3000);
-    }catch (Exception e){}
+    }catch (Exception e){
+      //Do nothing
+    }
 
     //Check metrics for pipeline (non-persisted)
     HttpRequest reqGetMetrics1 = HttpRequest.newBuilder().GET().uri(URI.create(urlRoot + "test1/metrics")).build();
-    assertTrue(client.send(reqGetMetrics1, HttpResponse.BodyHandlers.ofString()).body().contains("\"RestApiSource\":{\"items.created\":[{\"statistic\":\"COUNT\",\"value\":2.0}]}"));
+    HttpResponse<String> respGetMetrics1 = client.send(reqGetMetrics1, HttpResponse.BodyHandlers.ofString());
+    assertEquals(200, respGetMetrics1.statusCode());
+    assertTrue(respGetMetrics1.body().contains("RestApiSource\":{\"items.created\":[{\"statistic\":\"COUNT\",\"value\":2.0}]}"));
 
     //Check metrics for pipeline (persisted) using filtering
-    HttpRequest reqGetMetrics2 = HttpRequest.newBuilder().GET().uri(URI.create(urlRoot + "test2/metrics/RestApiSource")).build();
-    assertTrue(client.send(reqGetMetrics2, HttpResponse.BodyHandlers.ofString()).body().contains("\"items.created\":[{\"statistic\":\"COUNT\",\"value\":1.0}]"));
+    HttpRequest reqGetMetrics2 = HttpRequest.newBuilder().GET().uri(URI.create(urlRoot + "test2/metrics/uk.gov.dstl.annot8.baleen.RestApiSource")).build();
+    HttpResponse<String> respGetMetrics2 = client.send(reqGetMetrics2, HttpResponse.BodyHandlers.ofString());
+    assertEquals(200, respGetMetrics2.statusCode());
+    assertTrue(respGetMetrics2.body().contains("\"items.created\":[{\"statistic\":\"COUNT\",\"value\":1.0}]"));
 
     //Delete a pipeline (persisted)
     HttpRequest reqDeletePersisted = HttpRequest.newBuilder().DELETE()
@@ -149,10 +165,11 @@ public class PipelineControllerIT {
     //Check persisted pipeline is deleted
     File[] filesAfterDeletion = new File("test-pipelines").listFiles();
     assertNotNull(filesAfterDeletion);
-    assertEquals(0, filesAfterDeletion.length);
+    assertEquals(1, filesAfterDeletion.length);
+    assertEquals(".stopped", filesAfterDeletion[0].getName());
 
     //Check there's one pipeline
-    assertJsonEqual("[{\"name\":\"test1\",\"description\":\"Test Pipeline 1\"}]", client.send(reqListPipelines, HttpResponse.BodyHandlers.ofString()).body());
+    assertJsonEqual("[{\"name\":\"test1\",\"description\":\"Test Pipeline 1\",\"running\":true}]", client.send(reqListPipelines, HttpResponse.BodyHandlers.ofString()).body());
 
     //Delete a pipeline (non-persisted)
     HttpRequest reqDeleteNonPersisted = HttpRequest.newBuilder().DELETE()
@@ -163,14 +180,19 @@ public class PipelineControllerIT {
     assertJsonEqual("[]", client.send(reqListPipelines, HttpResponse.BodyHandlers.ofString()).body());
   }
 
-  private static boolean deleteDirectory(File directoryToBeDeleted) {
+  private static boolean deleteDirectory(File directoryToBeDeleted, boolean filesOnly) {
     File[] allContents = directoryToBeDeleted.listFiles();
     if (allContents != null) {
       for (File file : allContents) {
-        deleteDirectory(file);
+        deleteDirectory(file, filesOnly);
       }
     }
-    return directoryToBeDeleted.delete();
+
+    if(filesOnly && directoryToBeDeleted.isDirectory()){
+      return true;
+    }else {
+      return directoryToBeDeleted.delete();
+    }
   }
 
   private void assertJsonEqual(String s1, String s2) throws JsonProcessingException {
