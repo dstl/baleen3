@@ -63,6 +63,7 @@
     <node.version>v12.22.1</node.version>
     <typescript-generator-maven-plugin.version>2.34.976</typescript-generator-maven-plugin.version>
     <yarn.version>v1.22.5</yarn.version>
+    <log4j2.version>2.17.1</log4j2.version>
   </properties>
 
   <dependencies>
@@ -139,6 +140,19 @@
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
       <version>31.0.1-jre</version>
+    </dependency>
+
+    <!-- Update log4j version to avoid Log4Shell vuln -->
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <version>2.17.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-to-slf4j</artifactId>
+      <version>2.17.1</version>
     </dependency>
 
     <!-- Testing -->
